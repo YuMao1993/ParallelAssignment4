@@ -1,0 +1,1589 @@
+Log file created at: 2016/03/21 22:16:48
+Running on machine: compute-0-35.local
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0321 22:16:48.850929 27545 main_loop.cpp:73] Requesting worker name=my worker ;tag=1804289383
+I0321 22:16:48.852319 27545 main_loop.cpp:73] Requesting worker name=y worker ;tag=846930886
+I0321 22:16:48.852325 27545 main_loop.cpp:73] Requesting worker name= worker ;tag=1681692777
+I0321 22:16:48.852332 27545 main_loop.cpp:73] Requesting worker name=worker ;tag=1714636915
+I0321 22:16:50.357465 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=84443
+I0321 22:16:50.365245 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=75796
+I0321 22:16:50.375586 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=42057
+I0321 22:16:50.385483 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=25891
+I0321 22:16:50.395403 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=51127
+I0321 22:16:50.405575 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=40493
+I0321 22:16:50.415376 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=78380
+I0321 22:16:50.425281 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=30331
+I0321 22:16:50.435411 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=47660
+I0321 22:16:50.445763 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=58338
+I0321 22:16:50.455461 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=90812
+I0321 22:16:50.465503 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=50469
+I0321 22:16:50.475469 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=28184
+I0321 22:16:50.485277 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=75581
+I0321 22:16:50.495443 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=61837
+I0321 22:16:50.505533 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=25050
+I0321 22:16:50.515379 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=90975
+I0321 22:16:50.525507 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=98279
+I0321 22:16:50.535533 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=81022
+I0321 22:16:50.545245 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=90217
+I0321 22:16:50.555307 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=31015
+I0321 22:16:50.565476 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=72983
+I0321 22:16:50.575505 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=89884
+I0321 22:16:50.585554 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=68399
+I0321 22:16:50.595448 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4249
+I0321 22:16:50.596384 27545 master.cpp:173] >>>Master received a response from a worker: [24:Re-watch the lecture on scaling a website]
+I0321 22:16:50.596405 27545 master.cpp:177] <<Master send response back to client: 0x254c1f0
+I0321 22:16:50.596410 27545 master.cpp:180] pending_client_requests: 24
+I0321 22:16:50.636416 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=906
+I0321 22:16:50.636450 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=3907
+I0321 22:16:50.636463 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=5498
+I0321 22:16:50.636476 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=8218
+I0321 22:16:50.636487 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=8700
+I0321 22:16:50.636498 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4293
+I0321 22:16:50.636509 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=7788
+I0321 22:16:50.636523 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=2344
+I0321 22:16:50.636535 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=7246
+I0321 22:16:50.636548 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4938
+I0321 22:16:50.636557 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=126
+I0321 22:16:50.676291 27545 master.cpp:173] >>>Master received a response from a worker: [25:There may be opportunities for caching in this assignment]
+I0321 22:16:50.676322 27545 master.cpp:177] <<Master send response back to client: 0x254c1f0
+I0321 22:16:50.676329 27545 master.cpp:180] pending_client_requests: 34
+I0321 22:16:50.676358 27545 master.cpp:173] >>>Master received a response from a worker: [26:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:16:50.676398 27545 master.cpp:177] <<Master send response back to client: 0x254c340
+I0321 22:16:50.676403 27545 master.cpp:180] pending_client_requests: 33
+I0321 22:16:50.676414 27545 master.cpp:173] >>>Master received a response from a worker: [28:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:16:50.676430 27545 master.cpp:177] <<Master send response back to client: 0x254c5a0
+I0321 22:16:50.676434 27545 master.cpp:180] pending_client_requests: 32
+I0321 22:16:50.676442 27545 master.cpp:173] >>>Master received a response from a worker: [27:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:16:50.676457 27545 master.cpp:177] <<Master send response back to client: 0x254c440
+I0321 22:16:50.676461 27545 master.cpp:180] pending_client_requests: 31
+I0321 22:16:50.676470 27545 master.cpp:173] >>>Master received a response from a worker: [29:We recommend getting full credit on grading_wisdom.txt first]
+I0321 22:16:50.676498 27545 master.cpp:177] <<Master send response back to client: 0x254c6e0
+I0321 22:16:50.676499 27545 master.cpp:180] pending_client_requests: 30
+I0321 22:16:50.676503 27545 master.cpp:173] >>>Master received a response from a worker: [30:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:16:50.676512 27545 master.cpp:177] <<Master send response back to client: 0x254c800
+I0321 22:16:50.676513 27545 master.cpp:180] pending_client_requests: 29
+I0321 22:16:50.676517 27545 master.cpp:173] >>>Master received a response from a worker: [31:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:16:50.676527 27545 master.cpp:177] <<Master send response back to client: 0x254c930
+I0321 22:16:50.676527 27545 master.cpp:180] pending_client_requests: 28
+I0321 22:16:50.676638 27545 master.cpp:173] >>>Master received a response from a worker: [33:There may be opportunities for caching in this assignment]
+I0321 22:16:50.676653 27545 master.cpp:177] <<Master send response back to client: 0x254cb80
+I0321 22:16:50.676656 27545 master.cpp:180] pending_client_requests: 27
+I0321 22:16:50.676661 27545 master.cpp:173] >>>Master received a response from a worker: [32:There may be opportunities for caching in this assignment]
+I0321 22:16:50.676668 27545 master.cpp:177] <<Master send response back to client: 0x254ca50
+I0321 22:16:50.676671 27545 master.cpp:180] pending_client_requests: 26
+I0321 22:16:50.676723 27545 master.cpp:173] >>>Master received a response from a worker: [34:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:16:50.676748 27545 master.cpp:177] <<Master send response back to client: 0x254cca0
+I0321 22:16:50.676750 27545 master.cpp:180] pending_client_requests: 25
+I0321 22:16:50.676765 27545 master.cpp:173] >>>Master received a response from a worker: [35:There may be opportunities for caching in this assignment]
+I0321 22:16:50.676771 27545 master.cpp:177] <<Master send response back to client: 0x254cdd0
+I0321 22:16:50.676774 27545 master.cpp:180] pending_client_requests: 24
+I0321 22:16:51.813009 27545 master.cpp:173] >>>Master received a response from a worker: [0:Come to lecture, there might be donuts!]
+I0321 22:16:51.813024 27545 master.cpp:177] <<Master send response back to client: 0x254a160
+I0321 22:16:51.813026 27545 master.cpp:180] pending_client_requests: 23
+I0321 22:16:51.862795 27545 master.cpp:173] >>>Master received a response from a worker: [4:Flatter your TAs with compliments]
+I0321 22:16:51.862809 27545 master.cpp:177] <<Master send response back to client: 0x254a9f0
+I0321 22:16:51.862812 27545 master.cpp:180] pending_client_requests: 22
+I0321 22:16:51.894076 27545 master.cpp:173] >>>Master received a response from a worker: [2:Worse is better. Keep it simple...]
+I0321 22:16:51.894091 27545 master.cpp:177] <<Master send response back to client: 0x254a450
+I0321 22:16:51.894093 27545 master.cpp:180] pending_client_requests: 21
+I0321 22:16:51.905359 27545 master.cpp:173] >>>Master received a response from a worker: [3:OMG, 418 is so gr8!]
+I0321 22:16:51.905375 27545 master.cpp:177] <<Master send response back to client: 0x254a610
+I0321 22:16:51.905376 27545 master.cpp:180] pending_client_requests: 20
+I0321 22:16:51.908967 27545 master.cpp:173] >>>Master received a response from a worker: [18:Laugh at Kayvon's jokes]
+I0321 22:16:51.909001 27545 master.cpp:177] <<Master send response back to client: 0x254ba10
+I0321 22:16:51.909008 27545 master.cpp:180] pending_client_requests: 19
+I0321 22:16:51.935083 27545 master.cpp:173] >>>Master received a response from a worker: [5:Come to lecture, there might be donuts!]
+I0321 22:16:51.935098 27545 master.cpp:177] <<Master send response back to client: 0x254ab20
+I0321 22:16:51.935101 27545 master.cpp:180] pending_client_requests: 18
+I0321 22:16:51.942929 27545 master.cpp:173] >>>Master received a response from a worker: [7:Do a great project, and it all works out in the end]
+I0321 22:16:51.942962 27545 master.cpp:177] <<Master send response back to client: 0x254ad60
+I0321 22:16:51.942968 27545 master.cpp:180] pending_client_requests: 17
+I0321 22:16:51.976223 27545 master.cpp:173] >>>Master received a response from a worker: [11:Be careful not to optimize prematurely]
+I0321 22:16:51.976238 27545 master.cpp:177] <<Master send response back to client: 0x254b200
+I0321 22:16:51.976240 27545 master.cpp:180] pending_client_requests: 16
+I0321 22:16:51.986407 27545 master.cpp:173] >>>Master received a response from a worker: [22:OMG, 418 is so gr8!]
+I0321 22:16:51.986421 27545 master.cpp:177] <<Master send response back to client: 0x254bfc0
+I0321 22:16:51.986424 27545 master.cpp:180] pending_client_requests: 15
+I0321 22:16:52.009804 27545 master.cpp:173] >>>Master received a response from a worker: [15:Bring out all the stops in assignment 4.]
+I0321 22:16:52.009837 27545 master.cpp:177] <<Master send response back to client: 0x254b6a0
+I0321 22:16:52.009843 27545 master.cpp:180] pending_client_requests: 14
+I0321 22:16:52.012960 27545 master.cpp:173] >>>Master received a response from a worker: [16:Write a great lecture comment on your favorite idea in the class]
+I0321 22:16:52.012995 27545 master.cpp:177] <<Master send response back to client: 0x254b7c0
+I0321 22:16:52.013001 27545 master.cpp:180] pending_client_requests: 13
+I0321 22:16:52.046587 27545 master.cpp:173] >>>Master received a response from a worker: [17:You will perform amazingly on exam 2]
+I0321 22:16:52.046627 27545 master.cpp:177] <<Master send response back to client: 0x254b8f0
+I0321 22:16:52.046628 27545 master.cpp:180] pending_client_requests: 12
+I0321 22:16:52.053148 27545 master.cpp:173] >>>Master received a response from a worker: [19:If all else fails... buy Kayvon donuts]
+I0321 22:16:52.053164 27545 master.cpp:177] <<Master send response back to client: 0x254bb40
+I0321 22:16:52.053166 27545 master.cpp:180] pending_client_requests: 11
+I0321 22:16:52.063758 27545 master.cpp:173] >>>Master received a response from a worker: [8:You will perform amazingly on exam 2]
+I0321 22:16:52.063773 27545 master.cpp:177] <<Master send response back to client: 0x254ae80
+I0321 22:16:52.063776 27545 master.cpp:180] pending_client_requests: 10
+I0321 22:16:52.072340 27545 master.cpp:173] >>>Master received a response from a worker: [23:You will perform amazingly on exam 2]
+I0321 22:16:52.072355 27545 master.cpp:177] <<Master send response back to client: 0x254c0d0
+I0321 22:16:52.072357 27545 master.cpp:180] pending_client_requests: 9
+I0321 22:16:52.074764 27545 master.cpp:173] >>>Master received a response from a worker: [21:Bring out all the stops in assignment 4.]
+I0321 22:16:52.074779 27545 master.cpp:177] <<Master send response back to client: 0x254b980
+I0321 22:16:52.074781 27545 master.cpp:180] pending_client_requests: 8
+I0321 22:16:52.141451 27545 master.cpp:173] >>>Master received a response from a worker: [10:Worse is better. Keep it simple...]
+I0321 22:16:52.141466 27545 master.cpp:177] <<Master send response back to client: 0x254b0d0
+I0321 22:16:52.141471 27545 master.cpp:180] pending_client_requests: 7
+I0321 22:16:52.147611 27545 master.cpp:173] >>>Master received a response from a worker: [6:Write a great lecture comment on your favorite idea in the class]
+I0321 22:16:52.147626 27545 master.cpp:177] <<Master send response back to client: 0x254ac80
+I0321 22:16:52.147629 27545 master.cpp:180] pending_client_requests: 6
+I0321 22:16:52.224544 27545 master.cpp:173] >>>Master received a response from a worker: [9:You will perform amazingly on exam 2]
+I0321 22:16:52.224558 27545 master.cpp:177] <<Master send response back to client: 0x254afb0
+I0321 22:16:52.224561 27545 master.cpp:180] pending_client_requests: 5
+I0321 22:16:52.252542 27545 master.cpp:173] >>>Master received a response from a worker: [1:Flatter your TAs with compliments]
+I0321 22:16:52.252574 27545 master.cpp:177] <<Master send response back to client: 0x254a330
+I0321 22:16:52.252581 27545 master.cpp:180] pending_client_requests: 4
+I0321 22:16:52.301107 27545 master.cpp:173] >>>Master received a response from a worker: [20:Flatter your TAs with compliments]
+I0321 22:16:52.301141 27545 master.cpp:177] <<Master send response back to client: 0x254bbd0
+I0321 22:16:52.301146 27545 master.cpp:180] pending_client_requests: 3
+I0321 22:16:52.385179 27545 master.cpp:173] >>>Master received a response from a worker: [13:Exams are all just fun and games]
+I0321 22:16:52.385212 27545 master.cpp:177] <<Master send response back to client: 0x254b450
+I0321 22:16:52.385218 27545 master.cpp:180] pending_client_requests: 2
+I0321 22:16:52.422214 27545 master.cpp:173] >>>Master received a response from a worker: [14:Worse is better. Keep it simple...]
+I0321 22:16:52.422247 27545 master.cpp:177] <<Master send response back to client: 0x254b570
+I0321 22:16:52.422253 27545 master.cpp:180] pending_client_requests: 1
+I0321 22:16:52.462441 27545 master.cpp:173] >>>Master received a response from a worker: [12:You are going to do a great project]
+I0321 22:16:52.462457 27545 master.cpp:177] <<Master send response back to client: 0x254b320
+I0321 22:16:52.462460 27545 master.cpp:180] pending_client_requests: 0
+I0321 22:16:53.121981 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=71971
+I0321 22:16:53.129150 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=39882
+I0321 22:16:53.139240 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=82485
+I0321 22:16:53.149262 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=66815
+I0321 22:16:53.159265 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=114
+I0321 22:16:53.169200 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=49358
+I0321 22:16:53.179175 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=86761
+I0321 22:16:53.189363 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=24391
+I0321 22:16:53.199161 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=32520
+I0321 22:16:53.209167 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=87047
+I0321 22:16:53.219156 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=19106
+I0321 22:16:53.229276 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=56751
+I0321 22:16:53.239346 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=23861
+I0321 22:16:53.249317 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=96754
+I0321 22:16:53.259304 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=80318
+I0321 22:16:53.269222 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=44797
+I0321 22:16:53.279189 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=8044
+I0321 22:16:53.289407 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=32005
+I0321 22:16:53.299325 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=50794
+I0321 22:16:53.309208 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=93284
+I0321 22:16:53.319252 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=10905
+I0321 22:16:53.329231 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=55127
+I0321 22:16:53.339300 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=70656
+I0321 22:16:53.349375 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=54744
+I0321 22:16:53.398416 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=7331
+I0321 22:16:53.398442 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4863
+I0321 22:16:53.398452 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=8675
+I0321 22:16:53.398460 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=5429
+I0321 22:16:53.398471 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=5289
+I0321 22:16:53.398479 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4005
+I0321 22:16:53.398488 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=5367
+I0321 22:16:53.398495 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=3464
+I0321 22:16:53.398504 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=5181
+I0321 22:16:53.398522 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=2613
+I0321 22:16:53.398530 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=1704
+I0321 22:16:53.398546 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=1680
+I0321 22:16:53.438228 27545 master.cpp:173] >>>Master received a response from a worker: [60:Re-watch the lecture on scaling a website]
+I0321 22:16:53.438242 27545 master.cpp:177] <<Master send response back to client: 0x254c1f0
+I0321 22:16:53.438244 27545 master.cpp:180] pending_client_requests: 35
+I0321 22:16:53.438251 27545 master.cpp:173] >>>Master received a response from a worker: [61:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:16:53.438258 27545 master.cpp:177] <<Master send response back to client: 0x254c930
+I0321 22:16:53.438261 27545 master.cpp:180] pending_client_requests: 34
+I0321 22:16:53.438323 27545 master.cpp:173] >>>Master received a response from a worker: [62:Figure out a way to understand the workload characteristics in each trace.]
+I0321 22:16:53.438344 27545 master.cpp:177] <<Master send response back to client: 0x254c440
+I0321 22:16:53.438359 27545 master.cpp:180] pending_client_requests: 33
+I0321 22:16:53.438365 27545 master.cpp:173] >>>Master received a response from a worker: [63:Re-watch the lecture on scaling a website]
+I0321 22:16:53.438374 27545 master.cpp:177] <<Master send response back to client: 0x254c5a0
+I0321 22:16:53.438402 27545 master.cpp:180] pending_client_requests: 32
+I0321 22:16:53.438410 27545 master.cpp:173] >>>Master received a response from a worker: [66:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:16:53.438426 27545 master.cpp:177] <<Master send response back to client: 0x254cca0
+I0321 22:16:53.438429 27545 master.cpp:180] pending_client_requests: 31
+I0321 22:16:53.438436 27545 master.cpp:173] >>>Master received a response from a worker: [65:Figure out a way to understand the workload characteristics in each trace.]
+I0321 22:16:53.438459 27545 master.cpp:177] <<Master send response back to client: 0x254cdd0
+I0321 22:16:53.438462 27545 master.cpp:180] pending_client_requests: 30
+I0321 22:16:53.438469 27545 master.cpp:173] >>>Master received a response from a worker: [64:Re-watch the lecture on scaling a website]
+I0321 22:16:53.438482 27545 master.cpp:177] <<Master send response back to client: 0x254c800
+I0321 22:16:53.438483 27545 master.cpp:180] pending_client_requests: 29
+I0321 22:16:53.438499 27545 master.cpp:173] >>>Master received a response from a worker: [67:There may be opportunities for caching in this assignment]
+I0321 22:16:53.438510 27545 master.cpp:177] <<Master send response back to client: 0x254ca50
+I0321 22:16:53.438513 27545 master.cpp:180] pending_client_requests: 28
+I0321 22:16:53.438529 27545 master.cpp:173] >>>Master received a response from a worker: [69:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:16:53.438539 27545 master.cpp:177] <<Master send response back to client: 0x254c6e0
+I0321 22:16:53.438540 27545 master.cpp:180] pending_client_requests: 27
+I0321 22:16:53.438544 27545 master.cpp:173] >>>Master received a response from a worker: [68:Re-watch the lecture on scaling a website]
+I0321 22:16:53.438555 27545 master.cpp:177] <<Master send response back to client: 0x254c340
+I0321 22:16:53.438557 27545 master.cpp:180] pending_client_requests: 26
+I0321 22:16:53.438561 27545 master.cpp:173] >>>Master received a response from a worker: [70:There may be opportunities for caching in this assignment]
+I0321 22:16:53.438570 27545 master.cpp:177] <<Master send response back to client: 0x254cb80
+I0321 22:16:53.438571 27545 master.cpp:180] pending_client_requests: 25
+I0321 22:16:53.438606 27545 master.cpp:173] >>>Master received a response from a worker: [71:We recommend getting full credit on grading_wisdom.txt first]
+I0321 22:16:53.438618 27545 master.cpp:177] <<Master send response back to client: 0x254ded0
+I0321 22:16:53.438621 27545 master.cpp:180] pending_client_requests: 24
+I0321 22:16:53.853101 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:16:53.853107 27545 master.cpp:335] 0: 24
+I0321 22:16:53.853109 27545 master.cpp:335] 1: 0
+I0321 22:16:53.853111 27545 master.cpp:335] 2: 0
+I0321 22:16:53.853111 27545 master.cpp:335] 3: 0
+I0321 22:16:53.853112 27545 master.cpp:335] 4: 0
+I0321 22:16:53.853114 27545 master.cpp:337] 
+I0321 22:16:53.853116 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:16:53.853116 27545 master.cpp:335] 0: 0
+I0321 22:16:53.853117 27545 master.cpp:335] 1: 0
+I0321 22:16:53.853119 27545 master.cpp:335] 2: 0
+I0321 22:16:53.853121 27545 master.cpp:335] 3: 0
+I0321 22:16:53.853121 27545 master.cpp:335] 4: 0
+I0321 22:16:53.853122 27545 master.cpp:337] 
+I0321 22:16:53.853124 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:16:53.853126 27545 master.cpp:335] 0: 0
+I0321 22:16:53.853127 27545 master.cpp:335] 1: 0
+I0321 22:16:53.853127 27545 master.cpp:335] 2: 0
+I0321 22:16:53.853128 27545 master.cpp:335] 3: 0
+I0321 22:16:53.853130 27545 master.cpp:335] 4: 0
+I0321 22:16:53.853132 27545 master.cpp:337] 
+I0321 22:16:53.853132 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:16:53.853133 27545 master.cpp:335] 0: 0
+I0321 22:16:53.853135 27545 master.cpp:335] 1: 0
+I0321 22:16:53.853137 27545 master.cpp:335] 2: 0
+I0321 22:16:53.853137 27545 master.cpp:335] 3: 0
+I0321 22:16:53.853138 27545 master.cpp:335] 4: 0
+I0321 22:16:53.853139 27545 master.cpp:337] 
+I0321 22:16:54.514204 27545 master.cpp:173] >>>Master received a response from a worker: [37:Flatter your TAs with compliments]
+I0321 22:16:54.514236 27545 master.cpp:177] <<Master send response back to client: 0x254b570
+I0321 22:16:54.514242 27545 master.cpp:180] pending_client_requests: 23
+I0321 22:16:54.526840 27545 master.cpp:173] >>>Master received a response from a worker: [40:Bring out all the stops in assignment 4.]
+I0321 22:16:54.526854 27545 master.cpp:177] <<Master send response back to client: 0x254a330
+I0321 22:16:54.526857 27545 master.cpp:180] pending_client_requests: 22
+I0321 22:16:54.618175 27545 master.cpp:173] >>>Master received a response from a worker: [36:Come to lecture, there might be donuts!]
+I0321 22:16:54.618190 27545 master.cpp:177] <<Master send response back to client: 0x254b320
+I0321 22:16:54.618192 27545 master.cpp:180] pending_client_requests: 21
+I0321 22:16:54.642194 27545 master.cpp:173] >>>Master received a response from a worker: [38:Come to lecture, there might be donuts!]
+I0321 22:16:54.642226 27545 master.cpp:177] <<Master send response back to client: 0x254b450
+I0321 22:16:54.642232 27545 master.cpp:180] pending_client_requests: 20
+I0321 22:16:54.708027 27545 master.cpp:173] >>>Master received a response from a worker: [44:If all else fails... buy Kayvon donuts]
+I0321 22:16:54.708060 27545 master.cpp:177] <<Master send response back to client: 0x254b980
+I0321 22:16:54.708065 27545 master.cpp:180] pending_client_requests: 19
+I0321 22:16:54.709782 27545 master.cpp:173] >>>Master received a response from a worker: [46:Ask questions. Ask questions. Ask questions]
+I0321 22:16:54.709815 27545 master.cpp:177] <<Master send response back to client: 0x254ae80
+I0321 22:16:54.709820 27545 master.cpp:180] pending_client_requests: 18
+I0321 22:16:54.711228 27545 master.cpp:173] >>>Master received a response from a worker: [45:You will perform amazingly on exam 2]
+I0321 22:16:54.711261 27545 master.cpp:177] <<Master send response back to client: 0x254c0d0
+I0321 22:16:54.711266 27545 master.cpp:180] pending_client_requests: 17
+I0321 22:16:54.739557 27545 master.cpp:173] >>>Master received a response from a worker: [48:Do a great project, and it all works out in the end]
+I0321 22:16:54.739588 27545 master.cpp:177] <<Master send response back to client: 0x254b8f0
+I0321 22:16:54.739594 27545 master.cpp:180] pending_client_requests: 16
+I0321 22:16:54.742379 27545 master.cpp:173] >>>Master received a response from a worker: [47:Do a great project, and it all works out in the end]
+I0321 22:16:54.742394 27545 master.cpp:177] <<Master send response back to client: 0x254bb40
+I0321 22:16:54.742396 27545 master.cpp:180] pending_client_requests: 15
+I0321 22:16:54.754401 27545 master.cpp:173] >>>Master received a response from a worker: [50:Worse is better. Keep it simple...]
+I0321 22:16:54.754434 27545 master.cpp:177] <<Master send response back to client: 0x254b6a0
+I0321 22:16:54.754441 27545 master.cpp:180] pending_client_requests: 14
+I0321 22:16:54.755133 27545 master.cpp:173] >>>Master received a response from a worker: [39:Laugh at Kayvon's jokes]
+I0321 22:16:54.755164 27545 master.cpp:177] <<Master send response back to client: 0x254bbd0
+I0321 22:16:54.755172 27545 master.cpp:180] pending_client_requests: 13
+I0321 22:16:54.761358 27545 master.cpp:173] >>>Master received a response from a worker: [51:Do a great project, and it all works out in the end]
+I0321 22:16:54.761373 27545 master.cpp:177] <<Master send response back to client: 0x254bfc0
+I0321 22:16:54.761374 27545 master.cpp:180] pending_client_requests: 12
+I0321 22:16:54.789422 27545 master.cpp:173] >>>Master received a response from a worker: [42:Do a great project, and it all works out in the end]
+I0321 22:16:54.789436 27545 master.cpp:177] <<Master send response back to client: 0x254ac80
+I0321 22:16:54.789439 27545 master.cpp:180] pending_client_requests: 11
+I0321 22:16:54.821086 27545 master.cpp:173] >>>Master received a response from a worker: [43:Do a great project, and it all works out in the end]
+I0321 22:16:54.821101 27545 master.cpp:177] <<Master send response back to client: 0x254b0d0
+I0321 22:16:54.821104 27545 master.cpp:180] pending_client_requests: 10
+I0321 22:16:54.821578 27545 master.cpp:173] >>>Master received a response from a worker: [53:Flatter your TAs with compliments]
+I0321 22:16:54.821609 27545 master.cpp:177] <<Master send response back to client: 0x254ad60
+I0321 22:16:54.821615 27545 master.cpp:180] pending_client_requests: 9
+I0321 22:16:54.921913 27545 master.cpp:173] >>>Master received a response from a worker: [41:Ask questions. Ask questions. Ask questions]
+I0321 22:16:54.921955 27545 master.cpp:177] <<Master send response back to client: 0x254afb0
+I0321 22:16:54.921957 27545 master.cpp:180] pending_client_requests: 8
+I0321 22:16:54.956296 27545 master.cpp:173] >>>Master received a response from a worker: [52:Exams are all just fun and games]
+I0321 22:16:54.956311 27545 master.cpp:177] <<Master send response back to client: 0x254b200
+I0321 22:16:54.956313 27545 master.cpp:180] pending_client_requests: 7
+I0321 22:16:54.959208 27545 master.cpp:173] >>>Master received a response from a worker: [55:If all else fails... buy Kayvon donuts]
+I0321 22:16:54.959239 27545 master.cpp:177] <<Master send response back to client: 0x254ba10
+I0321 22:16:54.959244 27545 master.cpp:180] pending_client_requests: 6
+I0321 22:16:54.983090 27545 master.cpp:173] >>>Master received a response from a worker: [59:Laugh at Kayvon's jokes]
+I0321 22:16:54.983122 27545 master.cpp:177] <<Master send response back to client: 0x254a160
+I0321 22:16:54.983129 27545 master.cpp:180] pending_client_requests: 5
+I0321 22:16:55.030797 27545 master.cpp:173] >>>Master received a response from a worker: [49:Ask questions. Ask questions. Ask questions]
+I0321 22:16:55.030828 27545 master.cpp:177] <<Master send response back to client: 0x254b7c0
+I0321 22:16:55.030840 27545 master.cpp:180] pending_client_requests: 4
+I0321 22:16:55.033298 27545 master.cpp:173] >>>Master received a response from a worker: [56:You will perform amazingly on exam 2]
+I0321 22:16:55.033313 27545 master.cpp:177] <<Master send response back to client: 0x254a610
+I0321 22:16:55.033314 27545 master.cpp:180] pending_client_requests: 3
+I0321 22:16:55.064061 27545 master.cpp:173] >>>Master received a response from a worker: [54:OMG, 418 is so gr8!]
+I0321 22:16:55.064093 27545 master.cpp:177] <<Master send response back to client: 0x254ab20
+I0321 22:16:55.064100 27545 master.cpp:180] pending_client_requests: 2
+I0321 22:16:55.160439 27545 master.cpp:173] >>>Master received a response from a worker: [57:Be careful not to optimize prematurely]
+I0321 22:16:55.160454 27545 master.cpp:177] <<Master send response back to client: 0x254a450
+I0321 22:16:55.160456 27545 master.cpp:180] pending_client_requests: 1
+I0321 22:16:55.232951 27545 master.cpp:173] >>>Master received a response from a worker: [58:Write a great lecture comment on your favorite idea in the class]
+I0321 22:16:55.232991 27545 master.cpp:177] <<Master send response back to client: 0x254a9f0
+I0321 22:16:55.232993 27545 master.cpp:180] pending_client_requests: 0
+I0321 22:16:55.886039 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=61277
+I0321 22:16:55.893306 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=65666
+I0321 22:16:55.903359 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=47653
+I0321 22:16:55.913291 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=8982
+I0321 22:16:55.923398 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=75761
+I0321 22:16:55.933462 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=87677
+I0321 22:16:55.943259 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=92339
+I0321 22:16:55.953421 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=84246
+I0321 22:16:55.963157 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=89818
+I0321 22:16:55.973326 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=92309
+I0321 22:16:55.983219 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=54060
+I0321 22:16:55.993170 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=39129
+I0321 22:16:56.003394 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=70529
+I0321 22:16:56.013442 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=27563
+I0321 22:16:56.023172 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=81163
+I0321 22:16:56.033272 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=84949
+I0321 22:16:56.043226 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=89504
+I0321 22:16:56.053354 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=58980
+I0321 22:16:56.063277 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=94977
+I0321 22:16:56.073225 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=57970
+I0321 22:16:56.083397 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=45056
+I0321 22:16:56.093402 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=66025
+I0321 22:16:56.103255 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=99626
+I0321 22:16:56.113356 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=91695
+I0321 22:16:56.123311 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=7140
+I0321 22:16:56.125382 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=741
+I0321 22:16:56.127159 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=5515
+I0321 22:16:56.129405 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4378
+I0321 22:16:56.131301 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=5671
+I0321 22:16:56.133215 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=7606
+I0321 22:16:56.135408 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=2187
+I0321 22:16:56.137246 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=6584
+I0321 22:16:56.178441 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=1054
+I0321 22:16:56.178501 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=1984
+I0321 22:16:56.178526 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=7152
+I0321 22:16:56.178545 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=2993
+I0321 22:16:56.178560 27545 master.cpp:173] >>>Master received a response from a worker: [96:We recommend getting full credit on grading_wisdom.txt first]
+I0321 22:16:56.178580 27545 master.cpp:177] <<Master send response back to client: 0x254c440
+I0321 22:16:56.178586 27545 master.cpp:180] pending_client_requests: 35
+I0321 22:16:56.178596 27545 master.cpp:173] >>>Master received a response from a worker: [97:Re-watch the lecture on scaling a website]
+I0321 22:16:56.178612 27545 master.cpp:177] <<Master send response back to client: 0x254cdd0
+I0321 22:16:56.178617 27545 master.cpp:180] pending_client_requests: 34
+I0321 22:16:56.178627 27545 master.cpp:173] >>>Master received a response from a worker: [98:Figure out a way to understand the workload characteristics in each trace.]
+I0321 22:16:56.178642 27545 master.cpp:177] <<Master send response back to client: 0x254c6e0
+I0321 22:16:56.178645 27545 master.cpp:180] pending_client_requests: 33
+I0321 22:16:56.178654 27545 master.cpp:173] >>>Master received a response from a worker: [101:There may be opportunities for caching in this assignment]
+I0321 22:16:56.178669 27545 master.cpp:177] <<Master send response back to client: 0x254c340
+I0321 22:16:56.178673 27545 master.cpp:180] pending_client_requests: 32
+I0321 22:16:56.178681 27545 master.cpp:173] >>>Master received a response from a worker: [102:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:16:56.178696 27545 master.cpp:177] <<Master send response back to client: 0x254c800
+I0321 22:16:56.178700 27545 master.cpp:180] pending_client_requests: 31
+I0321 22:16:56.178709 27545 master.cpp:173] >>>Master received a response from a worker: [100:Re-watch the lecture on scaling a website]
+I0321 22:16:56.178731 27545 master.cpp:177] <<Master send response back to client: 0x254cb80
+I0321 22:16:56.178735 27545 master.cpp:180] pending_client_requests: 30
+I0321 22:16:56.178743 27545 master.cpp:173] >>>Master received a response from a worker: [103:There may be opportunities for caching in this assignment]
+I0321 22:16:56.178756 27545 master.cpp:177] <<Master send response back to client: 0x254ded0
+I0321 22:16:56.178761 27545 master.cpp:180] pending_client_requests: 29
+I0321 22:16:56.178776 27545 master.cpp:173] >>>Master received a response from a worker: [99:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:16:56.178791 27545 master.cpp:177] <<Master send response back to client: 0x254cca0
+I0321 22:16:56.178796 27545 master.cpp:180] pending_client_requests: 28
+I0321 22:16:56.257567 27545 master.cpp:173] >>>Master received a response from a worker: [105:There may be opportunities for caching in this assignment]
+I0321 22:16:56.257581 27545 master.cpp:177] <<Master send response back to client: 0x254c5a0
+I0321 22:16:56.257583 27545 master.cpp:180] pending_client_requests: 27
+I0321 22:16:56.257591 27545 master.cpp:173] >>>Master received a response from a worker: [107:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:16:56.257597 27545 master.cpp:177] <<Master send response back to client: 0x254c930
+I0321 22:16:56.257598 27545 master.cpp:180] pending_client_requests: 26
+I0321 22:16:56.257602 27545 master.cpp:173] >>>Master received a response from a worker: [106:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:16:56.257611 27545 master.cpp:177] <<Master send response back to client: 0x254ca50
+I0321 22:16:56.257611 27545 master.cpp:180] pending_client_requests: 25
+I0321 22:16:56.257616 27545 master.cpp:173] >>>Master received a response from a worker: [104:There may be opportunities for caching in this assignment]
+I0321 22:16:56.257622 27545 master.cpp:177] <<Master send response back to client: 0x254c1f0
+I0321 22:16:56.257627 27545 master.cpp:180] pending_client_requests: 24
+I0321 22:16:57.383149 27545 master.cpp:173] >>>Master received a response from a worker: [73:OMG, 418 is so gr8!]
+I0321 22:16:57.383163 27545 master.cpp:177] <<Master send response back to client: 0x254a450
+I0321 22:16:57.383167 27545 master.cpp:180] pending_client_requests: 23
+I0321 22:16:57.393965 27545 master.cpp:173] >>>Master received a response from a worker: [72:Do a great project, and it all works out in the end]
+I0321 22:16:57.393980 27545 master.cpp:177] <<Master send response back to client: 0x254a9f0
+I0321 22:16:57.393982 27545 master.cpp:180] pending_client_requests: 22
+I0321 22:16:57.400055 27545 master.cpp:173] >>>Master received a response from a worker: [75:You will perform amazingly on exam 2]
+I0321 22:16:57.400069 27545 master.cpp:177] <<Master send response back to client: 0x254a610
+I0321 22:16:57.400073 27545 master.cpp:180] pending_client_requests: 21
+I0321 22:16:57.426645 27545 master.cpp:173] >>>Master received a response from a worker: [74:You will PWN your classmates in the parallelism competition]
+I0321 22:16:57.426677 27545 master.cpp:177] <<Master send response back to client: 0x254ab20
+I0321 22:16:57.426693 27545 master.cpp:180] pending_client_requests: 20
+I0321 22:16:57.448055 27545 master.cpp:173] >>>Master received a response from a worker: [76:You are going to do a great project]
+I0321 22:16:57.448086 27545 master.cpp:177] <<Master send response back to client: 0x254b7c0
+I0321 22:16:57.448092 27545 master.cpp:180] pending_client_requests: 19
+I0321 22:16:57.457702 27545 master.cpp:173] >>>Master received a response from a worker: [77:Do as best as you can and just have fun!]
+I0321 22:16:57.457716 27545 master.cpp:177] <<Master send response back to client: 0x254a160
+I0321 22:16:57.457718 27545 master.cpp:180] pending_client_requests: 18
+I0321 22:16:57.459827 27545 master.cpp:173] >>>Master received a response from a worker: [78:Ask questions. Ask questions. Ask questions]
+I0321 22:16:57.459859 27545 master.cpp:177] <<Master send response back to client: 0x254ba10
+I0321 22:16:57.459866 27545 master.cpp:180] pending_client_requests: 17
+I0321 22:16:57.467509 27545 master.cpp:173] >>>Master received a response from a worker: [79:Ask questions. Ask questions. Ask questions]
+I0321 22:16:57.467541 27545 master.cpp:177] <<Master send response back to client: 0x254b200
+I0321 22:16:57.467547 27545 master.cpp:180] pending_client_requests: 16
+I0321 22:16:57.486701 27545 master.cpp:173] >>>Master received a response from a worker: [81:You will PWN your classmates in the parallelism competition]
+I0321 22:16:57.486732 27545 master.cpp:177] <<Master send response back to client: 0x254ad60
+I0321 22:16:57.486738 27545 master.cpp:180] pending_client_requests: 15
+I0321 22:16:57.490675 27545 master.cpp:173] >>>Master received a response from a worker: [80:Laugh at Kayvon's jokes]
+I0321 22:16:57.490706 27545 master.cpp:177] <<Master send response back to client: 0x254afb0
+I0321 22:16:57.490712 27545 master.cpp:180] pending_client_requests: 14
+I0321 22:16:57.497797 27545 master.cpp:173] >>>Master received a response from a worker: [82:Be careful not to optimize prematurely]
+I0321 22:16:57.497812 27545 master.cpp:177] <<Master send response back to client: 0x254b0d0
+I0321 22:16:57.497814 27545 master.cpp:180] pending_client_requests: 13
+I0321 22:16:57.504223 27545 master.cpp:173] >>>Master received a response from a worker: [83:Worse is better. Keep it simple...]
+I0321 22:16:57.504237 27545 master.cpp:177] <<Master send response back to client: 0x254ac80
+I0321 22:16:57.504240 27545 master.cpp:180] pending_client_requests: 12
+I0321 22:16:57.511498 27545 master.cpp:173] >>>Master received a response from a worker: [84:Come to lecture, there might be donuts!]
+I0321 22:16:57.511513 27545 master.cpp:177] <<Master send response back to client: 0x254bfc0
+I0321 22:16:57.511515 27545 master.cpp:180] pending_client_requests: 11
+I0321 22:16:57.524550 27545 master.cpp:173] >>>Master received a response from a worker: [85:If all else fails... buy Kayvon donuts]
+I0321 22:16:57.524567 27545 master.cpp:177] <<Master send response back to client: 0x254bbd0
+I0321 22:16:57.524570 27545 master.cpp:180] pending_client_requests: 10
+I0321 22:16:57.528743 27545 master.cpp:173] >>>Master received a response from a worker: [87:Come to lecture, there might be donuts!]
+I0321 22:16:57.528758 27545 master.cpp:177] <<Master send response back to client: 0x254bb40
+I0321 22:16:57.528759 27545 master.cpp:180] pending_client_requests: 9
+I0321 22:16:57.547121 27545 master.cpp:173] >>>Master received a response from a worker: [86:You will perform amazingly on exam 2]
+I0321 22:16:57.547152 27545 master.cpp:177] <<Master send response back to client: 0x254b6a0
+I0321 22:16:57.547158 27545 master.cpp:180] pending_client_requests: 8
+I0321 22:16:57.552988 27545 master.cpp:173] >>>Master received a response from a worker: [88:You will perform amazingly on exam 2]
+I0321 22:16:57.553020 27545 master.cpp:177] <<Master send response back to client: 0x254b8f0
+I0321 22:16:57.553025 27545 master.cpp:180] pending_client_requests: 7
+I0321 22:16:57.566714 27545 master.cpp:173] >>>Master received a response from a worker: [89:If all else fails... buy Kayvon donuts]
+I0321 22:16:57.566745 27545 master.cpp:177] <<Master send response back to client: 0x254c0d0
+I0321 22:16:57.566751 27545 master.cpp:180] pending_client_requests: 6
+I0321 22:16:57.579625 27545 master.cpp:173] >>>Master received a response from a worker: [92:Bring out all the stops in assignment 4.]
+I0321 22:16:57.579639 27545 master.cpp:177] <<Master send response back to client: 0x254b450
+I0321 22:16:57.579643 27545 master.cpp:180] pending_client_requests: 5
+I0321 22:16:57.584241 27545 master.cpp:173] >>>Master received a response from a worker: [91:Ask questions. Ask questions. Ask questions]
+I0321 22:16:57.584255 27545 master.cpp:177] <<Master send response back to client: 0x254b980
+I0321 22:16:57.584257 27545 master.cpp:180] pending_client_requests: 4
+I0321 22:16:57.584816 27545 master.cpp:173] >>>Master received a response from a worker: [90:Flatter your TAs with compliments]
+I0321 22:16:57.584831 27545 master.cpp:177] <<Master send response back to client: 0x254ae80
+I0321 22:16:57.584833 27545 master.cpp:180] pending_client_requests: 3
+I0321 22:16:57.587847 27545 master.cpp:173] >>>Master received a response from a worker: [94:You are going to do a great project]
+I0321 22:16:57.587862 27545 master.cpp:177] <<Master send response back to client: 0x254a330
+I0321 22:16:57.587865 27545 master.cpp:180] pending_client_requests: 2
+I0321 22:16:57.610532 27545 master.cpp:173] >>>Master received a response from a worker: [93:Worse is better. Keep it simple...]
+I0321 22:16:57.610564 27545 master.cpp:177] <<Master send response back to client: 0x254b320
+I0321 22:16:57.610570 27545 master.cpp:180] pending_client_requests: 1
+I0321 22:16:57.623793 27545 master.cpp:173] >>>Master received a response from a worker: [95:You will perform amazingly on exam 2]
+I0321 22:16:57.623807 27545 master.cpp:177] <<Master send response back to client: 0x254b570
+I0321 22:16:57.623810 27545 master.cpp:180] pending_client_requests: 0
+I0321 22:16:58.649988 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=81592
+I0321 22:16:58.657258 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=10060
+I0321 22:16:58.667249 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=14635
+I0321 22:16:58.677433 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=69767
+I0321 22:16:58.687284 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=4523
+I0321 22:16:58.697271 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=57387
+I0321 22:16:58.707252 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=91002
+I0321 22:16:58.717393 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=53420
+I0321 22:16:58.727470 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=68059
+I0321 22:16:58.737300 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=2669
+I0321 22:16:58.747148 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=63500
+I0321 22:16:58.757233 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=60634
+I0321 22:16:58.767412 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=57595
+I0321 22:16:58.777284 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=39121
+I0321 22:16:58.787274 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=37014
+I0321 22:16:58.797189 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=98052
+I0321 22:16:58.807204 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=3639
+I0321 22:16:58.817232 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=2163
+I0321 22:16:58.827419 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=96104
+I0321 22:16:58.837230 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=18497
+I0321 22:16:58.847389 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=12389
+I0321 22:16:58.853503 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:16:58.853518 27545 master.cpp:335] 0: 21
+I0321 22:16:58.853523 27545 master.cpp:335] 1: 0
+I0321 22:16:58.853526 27545 master.cpp:335] 2: 0
+I0321 22:16:58.853529 27545 master.cpp:335] 3: 0
+I0321 22:16:58.853533 27545 master.cpp:335] 4: 0
+I0321 22:16:58.853536 27545 master.cpp:337] 
+I0321 22:16:58.853540 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:16:58.853543 27545 master.cpp:335] 0: 0
+I0321 22:16:58.853546 27545 master.cpp:335] 1: 0
+I0321 22:16:58.853550 27545 master.cpp:335] 2: 0
+I0321 22:16:58.853554 27545 master.cpp:335] 3: 0
+I0321 22:16:58.853556 27545 master.cpp:335] 4: 0
+I0321 22:16:58.853560 27545 master.cpp:337] 
+I0321 22:16:58.853564 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:16:58.853566 27545 master.cpp:335] 0: 0
+I0321 22:16:58.853570 27545 master.cpp:335] 1: 0
+I0321 22:16:58.853574 27545 master.cpp:335] 2: 0
+I0321 22:16:58.853576 27545 master.cpp:335] 3: 0
+I0321 22:16:58.853580 27545 master.cpp:335] 4: 0
+I0321 22:16:58.853584 27545 master.cpp:337] 
+I0321 22:16:58.853586 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:16:58.853590 27545 master.cpp:335] 0: 0
+I0321 22:16:58.853593 27545 master.cpp:335] 1: 0
+I0321 22:16:58.853596 27545 master.cpp:335] 2: 0
+I0321 22:16:58.853600 27545 master.cpp:335] 3: 0
+I0321 22:16:58.853603 27545 master.cpp:335] 4: 0
+I0321 22:16:58.853606 27545 master.cpp:337] 
+I0321 22:16:58.857374 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=21057
+I0321 22:16:58.867251 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=80075
+I0321 22:16:58.877446 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=93697
+I0321 22:16:58.887265 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=205
+I0321 22:16:58.889219 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=3830
+I0321 22:16:58.891163 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=913
+I0321 22:16:58.893292 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=2339
+I0321 22:16:58.895231 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=1987
+I0321 22:16:58.897311 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=5822
+I0321 22:16:58.899307 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=3152
+I0321 22:16:58.901309 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=1623
+I0321 22:16:58.903266 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4533
+I0321 22:16:58.905395 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=354
+I0321 22:16:58.907316 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=908
+I0321 22:16:58.909363 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=8895
+I0321 22:16:58.927162 27545 master.cpp:173] >>>Master received a response from a worker: [133:We recommend getting full credit on grading_wisdom.txt first]
+I0321 22:16:58.927176 27545 master.cpp:177] <<Master send response back to client: 0x254c1f0
+I0321 22:16:58.927178 27545 master.cpp:180] pending_client_requests: 35
+I0321 22:16:58.927186 27545 master.cpp:173] >>>Master received a response from a worker: [132:Figure out a way to understand the workload characteristics in each trace.]
+I0321 22:16:58.927196 27545 master.cpp:177] <<Master send response back to client: 0x254c5a0
+I0321 22:16:58.927198 27545 master.cpp:180] pending_client_requests: 34
+I0321 22:16:58.927284 27545 master.cpp:173] >>>Master received a response from a worker: [134:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:16:58.927302 27545 master.cpp:177] <<Master send response back to client: 0x254ca50
+I0321 22:16:58.927307 27545 master.cpp:180] pending_client_requests: 33
+I0321 22:16:58.927314 27545 master.cpp:173] >>>Master received a response from a worker: [135:Re-watch the lecture on scaling a website]
+I0321 22:16:58.927328 27545 master.cpp:177] <<Master send response back to client: 0x254c930
+I0321 22:16:58.927331 27545 master.cpp:180] pending_client_requests: 32
+I0321 22:16:58.927337 27545 master.cpp:173] >>>Master received a response from a worker: [137:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:16:58.927347 27545 master.cpp:177] <<Master send response back to client: 0x254ded0
+I0321 22:16:58.927350 27545 master.cpp:180] pending_client_requests: 31
+I0321 22:16:58.927364 27545 master.cpp:173] >>>Master received a response from a worker: [138:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:16:58.927374 27545 master.cpp:177] <<Master send response back to client: 0x254cb80
+I0321 22:16:58.927402 27545 master.cpp:180] pending_client_requests: 30
+I0321 22:16:58.927407 27545 master.cpp:173] >>>Master received a response from a worker: [136:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:16:58.927417 27545 master.cpp:177] <<Master send response back to client: 0x254cca0
+I0321 22:16:58.927418 27545 master.cpp:180] pending_client_requests: 29
+I0321 22:16:58.927422 27545 master.cpp:173] >>>Master received a response from a worker: [139:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:16:58.927429 27545 master.cpp:177] <<Master send response back to client: 0x254c800
+I0321 22:16:58.927431 27545 master.cpp:180] pending_client_requests: 28
+I0321 22:16:58.927434 27545 master.cpp:173] >>>Master received a response from a worker: [140:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:16:58.927441 27545 master.cpp:177] <<Master send response back to client: 0x254cdd0
+I0321 22:16:58.927443 27545 master.cpp:180] pending_client_requests: 27
+I0321 22:16:58.927459 27545 master.cpp:173] >>>Master received a response from a worker: [141:There may be opportunities for caching in this assignment]
+I0321 22:16:58.927470 27545 master.cpp:177] <<Master send response back to client: 0x254c340
+I0321 22:16:58.927474 27545 master.cpp:180] pending_client_requests: 26
+I0321 22:16:58.927494 27545 master.cpp:173] >>>Master received a response from a worker: [142:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:16:58.927502 27545 master.cpp:177] <<Master send response back to client: 0x254c6e0
+I0321 22:16:58.927505 27545 master.cpp:180] pending_client_requests: 25
+I0321 22:16:58.927508 27545 master.cpp:173] >>>Master received a response from a worker: [143:Figure out a way to understand the workload characteristics in each trace.]
+I0321 22:16:58.927515 27545 master.cpp:177] <<Master send response back to client: 0x254c440
+I0321 22:16:58.927517 27545 master.cpp:180] pending_client_requests: 24
+I0321 22:17:00.139078 27545 master.cpp:173] >>>Master received a response from a worker: [108:You will PWN your classmates in the parallelism competition]
+I0321 22:17:00.139093 27545 master.cpp:177] <<Master send response back to client: 0x254b570
+I0321 22:17:00.139096 27545 master.cpp:180] pending_client_requests: 23
+I0321 22:17:00.152076 27545 master.cpp:173] >>>Master received a response from a worker: [110:You will perform amazingly on exam 2]
+I0321 22:17:00.152108 27545 master.cpp:177] <<Master send response back to client: 0x254a330
+I0321 22:17:00.152120 27545 master.cpp:180] pending_client_requests: 22
+I0321 22:17:00.167681 27545 master.cpp:173] >>>Master received a response from a worker: [109:OMG, 418 is so gr8!]
+I0321 22:17:00.167713 27545 master.cpp:177] <<Master send response back to client: 0x254b320
+I0321 22:17:00.167719 27545 master.cpp:180] pending_client_requests: 21
+I0321 22:17:00.202903 27545 master.cpp:173] >>>Master received a response from a worker: [111:You will perform amazingly on exam 2]
+I0321 22:17:00.202919 27545 master.cpp:177] <<Master send response back to client: 0x254ae80
+I0321 22:17:00.202920 27545 master.cpp:180] pending_client_requests: 20
+I0321 22:17:00.213407 27545 master.cpp:173] >>>Master received a response from a worker: [112:Exams are all just fun and games]
+I0321 22:17:00.213420 27545 master.cpp:177] <<Master send response back to client: 0x254b980
+I0321 22:17:00.213423 27545 master.cpp:180] pending_client_requests: 19
+I0321 22:17:00.221806 27545 master.cpp:173] >>>Master received a response from a worker: [113:You will PWN your classmates in the parallelism competition]
+I0321 22:17:00.221837 27545 master.cpp:177] <<Master send response back to client: 0x254b450
+I0321 22:17:00.221843 27545 master.cpp:180] pending_client_requests: 18
+I0321 22:17:00.222328 27545 master.cpp:173] >>>Master received a response from a worker: [114:Do a great project, and it all works out in the end]
+I0321 22:17:00.222388 27545 master.cpp:177] <<Master send response back to client: 0x254c0d0
+I0321 22:17:00.222395 27545 master.cpp:180] pending_client_requests: 17
+I0321 22:17:00.232683 27545 master.cpp:173] >>>Master received a response from a worker: [115:You will PWN your classmates in the parallelism competition]
+I0321 22:17:00.232698 27545 master.cpp:177] <<Master send response back to client: 0x254b8f0
+I0321 22:17:00.232702 27545 master.cpp:180] pending_client_requests: 16
+I0321 22:17:00.242125 27545 master.cpp:173] >>>Master received a response from a worker: [116:OMG, 418 is so gr8!]
+I0321 22:17:00.242139 27545 master.cpp:177] <<Master send response back to client: 0x254b6a0
+I0321 22:17:00.242142 27545 master.cpp:180] pending_client_requests: 15
+I0321 22:17:00.260320 27545 master.cpp:173] >>>Master received a response from a worker: [118:Laugh at Kayvon's jokes]
+I0321 22:17:00.260347 27545 master.cpp:177] <<Master send response back to client: 0x254bbd0
+I0321 22:17:00.260349 27545 master.cpp:180] pending_client_requests: 14
+I0321 22:17:00.262454 27545 master.cpp:173] >>>Master received a response from a worker: [117:If all else fails... buy Kayvon donuts]
+I0321 22:17:00.262470 27545 master.cpp:177] <<Master send response back to client: 0x254bb40
+I0321 22:17:00.262471 27545 master.cpp:180] pending_client_requests: 13
+I0321 22:17:00.268195 27545 master.cpp:173] >>>Master received a response from a worker: [119:You are going to do a great project]
+I0321 22:17:00.268210 27545 master.cpp:177] <<Master send response back to client: 0x254bfc0
+I0321 22:17:00.268213 27545 master.cpp:180] pending_client_requests: 12
+I0321 22:17:00.270711 27545 master.cpp:173] >>>Master received a response from a worker: [120:You will perform amazingly on exam 2]
+I0321 22:17:00.270726 27545 master.cpp:177] <<Master send response back to client: 0x254ac80
+I0321 22:17:00.270728 27545 master.cpp:180] pending_client_requests: 11
+I0321 22:17:00.286177 27545 master.cpp:173] >>>Master received a response from a worker: [122:Laugh at Kayvon's jokes]
+I0321 22:17:00.286191 27545 master.cpp:177] <<Master send response back to client: 0x254afb0
+I0321 22:17:00.286195 27545 master.cpp:180] pending_client_requests: 10
+I0321 22:17:00.286351 27545 master.cpp:173] >>>Master received a response from a worker: [121:If all else fails... buy Kayvon donuts]
+I0321 22:17:00.286362 27545 master.cpp:177] <<Master send response back to client: 0x254b0d0
+I0321 22:17:00.286365 27545 master.cpp:180] pending_client_requests: 9
+I0321 22:17:00.317787 27545 master.cpp:173] >>>Master received a response from a worker: [125:Come to lecture, there might be donuts!]
+I0321 22:17:00.317805 27545 master.cpp:177] <<Master send response back to client: 0x254ba10
+I0321 22:17:00.317807 27545 master.cpp:180] pending_client_requests: 8
+I0321 22:17:00.319074 27545 master.cpp:173] >>>Master received a response from a worker: [124:Do a great project, and it all works out in the end]
+I0321 22:17:00.319109 27545 master.cpp:177] <<Master send response back to client: 0x254b200
+I0321 22:17:00.319111 27545 master.cpp:180] pending_client_requests: 7
+I0321 22:17:00.324950 27545 master.cpp:173] >>>Master received a response from a worker: [123:Come to lecture, there might be donuts!]
+I0321 22:17:00.324982 27545 master.cpp:177] <<Master send response back to client: 0x254ad60
+I0321 22:17:00.324990 27545 master.cpp:180] pending_client_requests: 6
+I0321 22:17:00.342725 27545 master.cpp:173] >>>Master received a response from a worker: [126:Flatter your TAs with compliments]
+I0321 22:17:00.342758 27545 master.cpp:177] <<Master send response back to client: 0x254a160
+I0321 22:17:00.342764 27545 master.cpp:180] pending_client_requests: 5
+I0321 22:17:00.343878 27545 master.cpp:173] >>>Master received a response from a worker: [129:Come to lecture, there might be donuts!]
+I0321 22:17:00.343910 27545 master.cpp:177] <<Master send response back to client: 0x254a610
+I0321 22:17:00.343916 27545 master.cpp:180] pending_client_requests: 4
+I0321 22:17:00.345087 27545 master.cpp:173] >>>Master received a response from a worker: [127:Ask questions. Ask questions. Ask questions]
+I0321 22:17:00.345127 27545 master.cpp:177] <<Master send response back to client: 0x254b7c0
+I0321 22:17:00.345130 27545 master.cpp:180] pending_client_requests: 3
+I0321 22:17:00.365985 27545 master.cpp:173] >>>Master received a response from a worker: [128:Laugh at Kayvon's jokes]
+I0321 22:17:00.366000 27545 master.cpp:177] <<Master send response back to client: 0x254ab20
+I0321 22:17:00.366003 27545 master.cpp:180] pending_client_requests: 2
+I0321 22:17:00.383218 27545 master.cpp:173] >>>Master received a response from a worker: [130:Write a great lecture comment on your favorite idea in the class]
+I0321 22:17:00.383232 27545 master.cpp:177] <<Master send response back to client: 0x254a9f0
+I0321 22:17:00.383234 27545 master.cpp:180] pending_client_requests: 1
+I0321 22:17:00.386582 27545 master.cpp:173] >>>Master received a response from a worker: [131:Laugh at Kayvon's jokes]
+I0321 22:17:00.386597 27545 master.cpp:177] <<Master send response back to client: 0x254a450
+I0321 22:17:00.386600 27545 master.cpp:180] pending_client_requests: 0
+I0321 22:17:01.413913 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=19935
+I0321 22:17:01.421233 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=35855
+I0321 22:17:01.431324 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=73160
+I0321 22:17:01.441149 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=83833
+I0321 22:17:01.451289 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=91849
+I0321 22:17:01.461401 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=16942
+I0321 22:17:01.471416 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=67264
+I0321 22:17:01.481297 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=96655
+I0321 22:17:01.491279 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=5805
+I0321 22:17:01.501277 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=67620
+I0321 22:17:01.511243 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=84543
+I0321 22:17:01.521147 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=34231
+I0321 22:17:01.531355 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=25068
+I0321 22:17:01.541266 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=59679
+I0321 22:17:01.551311 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=44231
+I0321 22:17:01.561169 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=17482
+I0321 22:17:01.571321 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=47163
+I0321 22:17:01.581336 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=40990
+I0321 22:17:01.591348 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=56911
+I0321 22:17:01.601361 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=50860
+I0321 22:17:01.611264 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=31144
+I0321 22:17:01.621261 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=35715
+I0321 22:17:01.631496 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=83766
+I0321 22:17:01.641326 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=25093
+I0321 22:17:01.690374 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=5045
+I0321 22:17:01.692419 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=111
+I0321 22:17:01.694438 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=6674
+I0321 22:17:01.696388 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=3023
+I0321 22:17:01.698421 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=411
+I0321 22:17:01.700372 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=2528
+I0321 22:17:01.702420 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=2161
+I0321 22:17:01.704464 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=8579
+I0321 22:17:01.706420 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=3170
+I0321 22:17:01.708420 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=2591
+I0321 22:17:01.710373 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=3233
+I0321 22:17:01.710391 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=8523
+I0321 22:17:01.730224 27545 master.cpp:173] >>>Master received a response from a worker: [168:Figure out a way to understand the workload characteristics in each trace.]
+I0321 22:17:01.730238 27545 master.cpp:177] <<Master send response back to client: 0x254c6e0
+I0321 22:17:01.730242 27545 master.cpp:180] pending_client_requests: 35
+I0321 22:17:01.730247 27545 master.cpp:173] >>>Master received a response from a worker: [169:Re-watch the lecture on scaling a website]
+I0321 22:17:01.730254 27545 master.cpp:177] <<Master send response back to client: 0x254ded0
+I0321 22:17:01.730257 27545 master.cpp:180] pending_client_requests: 34
+I0321 22:17:01.730260 27545 master.cpp:173] >>>Master received a response from a worker: [170:There may be opportunities for caching in this assignment]
+I0321 22:17:01.730268 27545 master.cpp:177] <<Master send response back to client: 0x254c340
+I0321 22:17:01.730269 27545 master.cpp:180] pending_client_requests: 33
+I0321 22:17:01.730284 27545 master.cpp:173] >>>Master received a response from a worker: [171:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:01.730293 27545 master.cpp:177] <<Master send response back to client: 0x254cdd0
+I0321 22:17:01.730294 27545 master.cpp:180] pending_client_requests: 32
+I0321 22:17:01.730309 27545 master.cpp:173] >>>Master received a response from a worker: [174:Re-watch the lecture on scaling a website]
+I0321 22:17:01.730317 27545 master.cpp:177] <<Master send response back to client: 0x254cca0
+I0321 22:17:01.730319 27545 master.cpp:180] pending_client_requests: 31
+I0321 22:17:01.730347 27545 master.cpp:173] >>>Master received a response from a worker: [172:Re-watch the lecture on scaling a website]
+I0321 22:17:01.730365 27545 master.cpp:177] <<Master send response back to client: 0x254c1f0
+I0321 22:17:01.730366 27545 master.cpp:180] pending_client_requests: 30
+I0321 22:17:01.730372 27545 master.cpp:173] >>>Master received a response from a worker: [177:Re-watch the lecture on scaling a website]
+I0321 22:17:01.730443 27545 master.cpp:177] <<Master send response back to client: 0x254c440
+I0321 22:17:01.730445 27545 master.cpp:180] pending_client_requests: 29
+I0321 22:17:01.730449 27545 master.cpp:173] >>>Master received a response from a worker: [178:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:01.730470 27545 master.cpp:177] <<Master send response back to client: 0x254ca50
+I0321 22:17:01.730471 27545 master.cpp:180] pending_client_requests: 28
+I0321 22:17:01.730479 27545 master.cpp:173] >>>Master received a response from a worker: [176:We recommend getting full credit on grading_wisdom.txt first]
+I0321 22:17:01.730492 27545 master.cpp:177] <<Master send response back to client: 0x254c930
+I0321 22:17:01.730494 27545 master.cpp:180] pending_client_requests: 27
+I0321 22:17:01.730500 27545 master.cpp:173] >>>Master received a response from a worker: [175:Re-watch the lecture on scaling a website]
+I0321 22:17:01.730509 27545 master.cpp:177] <<Master send response back to client: 0x254cb80
+I0321 22:17:01.730510 27545 master.cpp:180] pending_client_requests: 26
+I0321 22:17:01.730515 27545 master.cpp:173] >>>Master received a response from a worker: [173:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:17:01.730527 27545 master.cpp:177] <<Master send response back to client: 0x254c800
+I0321 22:17:01.730542 27545 master.cpp:180] pending_client_requests: 25
+I0321 22:17:01.730546 27545 master.cpp:173] >>>Master received a response from a worker: [179:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:01.730554 27545 master.cpp:177] <<Master send response back to client: 0x254c5a0
+I0321 22:17:01.730566 27545 master.cpp:180] pending_client_requests: 24
+I0321 22:17:02.901000 27545 master.cpp:173] >>>Master received a response from a worker: [145:Do as best as you can and just have fun!]
+I0321 22:17:02.901013 27545 master.cpp:177] <<Master send response back to client: 0x254a9f0
+I0321 22:17:02.901016 27545 master.cpp:180] pending_client_requests: 23
+I0321 22:17:02.904736 27545 master.cpp:173] >>>Master received a response from a worker: [144:Write a great lecture comment on your favorite idea in the class]
+I0321 22:17:02.904749 27545 master.cpp:177] <<Master send response back to client: 0x254a450
+I0321 22:17:02.904752 27545 master.cpp:180] pending_client_requests: 22
+I0321 22:17:02.945981 27545 master.cpp:173] >>>Master received a response from a worker: [146:Ask questions. Ask questions. Ask questions]
+I0321 22:17:02.945994 27545 master.cpp:177] <<Master send response back to client: 0x254ab20
+I0321 22:17:02.945997 27545 master.cpp:180] pending_client_requests: 21
+I0321 22:17:02.966199 27545 master.cpp:173] >>>Master received a response from a worker: [147:You will perform amazingly on exam 2]
+I0321 22:17:02.966231 27545 master.cpp:177] <<Master send response back to client: 0x254b7c0
+I0321 22:17:02.966238 27545 master.cpp:180] pending_client_requests: 20
+I0321 22:17:02.977213 27545 master.cpp:173] >>>Master received a response from a worker: [148:Do a great project, and it all works out in the end]
+I0321 22:17:02.977228 27545 master.cpp:177] <<Master send response back to client: 0x254a610
+I0321 22:17:02.977231 27545 master.cpp:180] pending_client_requests: 19
+I0321 22:17:02.985126 27545 master.cpp:173] >>>Master received a response from a worker: [150:Flatter your TAs with compliments]
+I0321 22:17:02.985158 27545 master.cpp:177] <<Master send response back to client: 0x254ad60
+I0321 22:17:02.985164 27545 master.cpp:180] pending_client_requests: 18
+I0321 22:17:02.985718 27545 master.cpp:173] >>>Master received a response from a worker: [149:Bring out all the stops in assignment 4.]
+I0321 22:17:02.985751 27545 master.cpp:177] <<Master send response back to client: 0x254a160
+I0321 22:17:02.985757 27545 master.cpp:180] pending_client_requests: 17
+I0321 22:17:02.998457 27545 master.cpp:173] >>>Master received a response from a worker: [151:Write a great lecture comment on your favorite idea in the class]
+I0321 22:17:02.998493 27545 master.cpp:177] <<Master send response back to client: 0x254b200
+I0321 22:17:02.998497 27545 master.cpp:180] pending_client_requests: 16
+I0321 22:17:03.005872 27545 master.cpp:173] >>>Master received a response from a worker: [152:You will perform amazingly on exam 2]
+I0321 22:17:03.005887 27545 master.cpp:177] <<Master send response back to client: 0x254ba10
+I0321 22:17:03.005889 27545 master.cpp:180] pending_client_requests: 15
+I0321 22:17:03.010761 27545 master.cpp:173] >>>Master received a response from a worker: [153:You are going to do a great project]
+I0321 22:17:03.010778 27545 master.cpp:177] <<Master send response back to client: 0x254b0d0
+I0321 22:17:03.010782 27545 master.cpp:180] pending_client_requests: 14
+I0321 22:17:03.032388 27545 master.cpp:173] >>>Master received a response from a worker: [155:Be careful not to optimize prematurely]
+I0321 22:17:03.032420 27545 master.cpp:177] <<Master send response back to client: 0x254ac80
+I0321 22:17:03.032426 27545 master.cpp:180] pending_client_requests: 13
+I0321 22:17:03.034298 27545 master.cpp:173] >>>Master received a response from a worker: [156:Flatter your TAs with compliments]
+I0321 22:17:03.034313 27545 master.cpp:177] <<Master send response back to client: 0x254bfc0
+I0321 22:17:03.034315 27545 master.cpp:180] pending_client_requests: 12
+I0321 22:17:03.034798 27545 master.cpp:173] >>>Master received a response from a worker: [154:Ask questions. Ask questions. Ask questions]
+I0321 22:17:03.034813 27545 master.cpp:177] <<Master send response back to client: 0x254afb0
+I0321 22:17:03.034816 27545 master.cpp:180] pending_client_requests: 11
+I0321 22:17:03.044322 27545 master.cpp:173] >>>Master received a response from a worker: [157:Flatter your TAs with compliments]
+I0321 22:17:03.044349 27545 master.cpp:177] <<Master send response back to client: 0x254bb40
+I0321 22:17:03.044353 27545 master.cpp:180] pending_client_requests: 10
+I0321 22:17:03.061059 27545 master.cpp:173] >>>Master received a response from a worker: [158:You will PWN your classmates in the parallelism competition]
+I0321 22:17:03.061074 27545 master.cpp:177] <<Master send response back to client: 0x254bbd0
+I0321 22:17:03.061076 27545 master.cpp:180] pending_client_requests: 9
+I0321 22:17:03.077046 27545 master.cpp:173] >>>Master received a response from a worker: [159:You are going to do a great project]
+I0321 22:17:03.077061 27545 master.cpp:177] <<Master send response back to client: 0x254b6a0
+I0321 22:17:03.077064 27545 master.cpp:180] pending_client_requests: 8
+I0321 22:17:03.083391 27545 master.cpp:173] >>>Master received a response from a worker: [160:Bring out all the stops in assignment 4.]
+I0321 22:17:03.083405 27545 master.cpp:177] <<Master send response back to client: 0x254b8f0
+I0321 22:17:03.083407 27545 master.cpp:180] pending_client_requests: 7
+I0321 22:17:03.093855 27545 master.cpp:173] >>>Master received a response from a worker: [163:Come to lecture, there might be donuts!]
+I0321 22:17:03.093869 27545 master.cpp:177] <<Master send response back to client: 0x254b980
+I0321 22:17:03.093873 27545 master.cpp:180] pending_client_requests: 6
+I0321 22:17:03.099936 27545 master.cpp:173] >>>Master received a response from a worker: [162:OMG, 418 is so gr8!]
+I0321 22:17:03.099951 27545 master.cpp:177] <<Master send response back to client: 0x254b450
+I0321 22:17:03.099953 27545 master.cpp:180] pending_client_requests: 5
+I0321 22:17:03.108963 27545 master.cpp:173] >>>Master received a response from a worker: [161:Come to lecture, there might be donuts!]
+I0321 22:17:03.108978 27545 master.cpp:177] <<Master send response back to client: 0x254c0d0
+I0321 22:17:03.108980 27545 master.cpp:180] pending_client_requests: 4
+I0321 22:17:03.110975 27545 master.cpp:173] >>>Master received a response from a worker: [164:Do as best as you can and just have fun!]
+I0321 22:17:03.110991 27545 master.cpp:177] <<Master send response back to client: 0x254ae80
+I0321 22:17:03.110992 27545 master.cpp:180] pending_client_requests: 3
+I0321 22:17:03.139612 27545 master.cpp:173] >>>Master received a response from a worker: [165:Ask questions. Ask questions. Ask questions]
+I0321 22:17:03.139644 27545 master.cpp:177] <<Master send response back to client: 0x254b320
+I0321 22:17:03.139652 27545 master.cpp:180] pending_client_requests: 2
+I0321 22:17:03.145361 27545 master.cpp:173] >>>Master received a response from a worker: [166:You will perform amazingly on exam 2]
+I0321 22:17:03.145375 27545 master.cpp:177] <<Master send response back to client: 0x254a330
+I0321 22:17:03.145381 27545 master.cpp:180] pending_client_requests: 1
+I0321 22:17:03.152223 27545 master.cpp:173] >>>Master received a response from a worker: [167:You will perform amazingly on exam 2]
+I0321 22:17:03.152256 27545 master.cpp:177] <<Master send response back to client: 0x254b570
+I0321 22:17:03.152261 27545 master.cpp:180] pending_client_requests: 0
+I0321 22:17:03.854032 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:17:03.854038 27545 master.cpp:335] 0: 0
+I0321 22:17:03.854039 27545 master.cpp:335] 1: 0
+I0321 22:17:03.854040 27545 master.cpp:335] 2: 0
+I0321 22:17:03.854041 27545 master.cpp:335] 3: 0
+I0321 22:17:03.854043 27545 master.cpp:335] 4: 0
+I0321 22:17:03.854044 27545 master.cpp:337] 
+I0321 22:17:03.854045 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:17:03.854046 27545 master.cpp:335] 0: 0
+I0321 22:17:03.854048 27545 master.cpp:335] 1: 0
+I0321 22:17:03.854049 27545 master.cpp:335] 2: 0
+I0321 22:17:03.854050 27545 master.cpp:335] 3: 0
+I0321 22:17:03.854051 27545 master.cpp:335] 4: 0
+I0321 22:17:03.854053 27545 master.cpp:337] 
+I0321 22:17:03.854054 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:17:03.854055 27545 master.cpp:335] 0: 0
+I0321 22:17:03.854056 27545 master.cpp:335] 1: 0
+I0321 22:17:03.854058 27545 master.cpp:335] 2: 0
+I0321 22:17:03.854059 27545 master.cpp:335] 3: 0
+I0321 22:17:03.854060 27545 master.cpp:335] 4: 0
+I0321 22:17:03.854061 27545 master.cpp:337] 
+I0321 22:17:03.854063 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:17:03.854064 27545 master.cpp:335] 0: 0
+I0321 22:17:03.854065 27545 master.cpp:335] 1: 0
+I0321 22:17:03.854066 27545 master.cpp:335] 2: 0
+I0321 22:17:03.854068 27545 master.cpp:335] 3: 0
+I0321 22:17:03.854069 27545 master.cpp:335] 4: 0
+I0321 22:17:03.854070 27545 master.cpp:337] 
+I0321 22:17:04.177896 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=63375
+I0321 22:17:04.185320 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=62108
+I0321 22:17:04.195438 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=71562
+I0321 22:17:04.205283 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=38802
+I0321 22:17:04.215276 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=41442
+I0321 22:17:04.225244 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=65083
+I0321 22:17:04.235246 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=152
+I0321 22:17:04.245327 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=19231
+I0321 22:17:04.255223 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=33440
+I0321 22:17:04.265305 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=23941
+I0321 22:17:04.275266 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=63740
+I0321 22:17:04.285275 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=37865
+I0321 22:17:04.295392 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=87543
+I0321 22:17:04.305227 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=56815
+I0321 22:17:04.315156 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=41441
+I0321 22:17:04.325276 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=40227
+I0321 22:17:04.335364 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=70183
+I0321 22:17:04.345363 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=41823
+I0321 22:17:04.355178 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=66220
+I0321 22:17:04.365417 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=4678
+I0321 22:17:04.375237 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=44535
+I0321 22:17:04.385216 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=25922
+I0321 22:17:04.395279 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=15768
+I0321 22:17:04.405290 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=52757
+I0321 22:17:04.454448 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4385
+I0321 22:17:04.456449 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=5053
+I0321 22:17:04.458495 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=6800
+I0321 22:17:04.460448 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=7955
+I0321 22:17:04.462416 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4451
+I0321 22:17:04.462432 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=2808
+I0321 22:17:04.466415 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4202
+I0321 22:17:04.468482 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=7282
+I0321 22:17:04.470437 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=7876
+I0321 22:17:04.473461 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=7312
+I0321 22:17:04.474464 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=1692
+I0321 22:17:04.476451 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=8995
+I0321 22:17:04.494143 27545 master.cpp:173] >>>Master received a response from a worker: [204:Figure out a way to understand the workload characteristics in each trace.]
+I0321 22:17:04.494155 27545 master.cpp:177] <<Master send response back to client: 0x254c6e0
+I0321 22:17:04.494158 27545 master.cpp:180] pending_client_requests: 35
+I0321 22:17:04.494164 27545 master.cpp:173] >>>Master received a response from a worker: [205:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:04.494173 27545 master.cpp:177] <<Master send response back to client: 0x254ca50
+I0321 22:17:04.494174 27545 master.cpp:180] pending_client_requests: 34
+I0321 22:17:04.494280 27545 master.cpp:173] >>>Master received a response from a worker: [206:We recommend getting full credit on grading_wisdom.txt first]
+I0321 22:17:04.494304 27545 master.cpp:177] <<Master send response back to client: 0x254cb80
+I0321 22:17:04.494309 27545 master.cpp:180] pending_client_requests: 33
+I0321 22:17:04.494319 27545 master.cpp:173] >>>Master received a response from a worker: [207:Figure out a way to understand the workload characteristics in each trace.]
+I0321 22:17:04.494341 27545 master.cpp:177] <<Master send response back to client: 0x254c1f0
+I0321 22:17:04.494345 27545 master.cpp:180] pending_client_requests: 32
+I0321 22:17:04.494355 27545 master.cpp:173] >>>Master received a response from a worker: [208:Re-watch the lecture on scaling a website]
+I0321 22:17:04.494385 27545 master.cpp:177] <<Master send response back to client: 0x254c440
+I0321 22:17:04.494390 27545 master.cpp:180] pending_client_requests: 31
+I0321 22:17:04.494400 27545 master.cpp:173] >>>Master received a response from a worker: [211:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:17:04.494415 27545 master.cpp:177] <<Master send response back to client: 0x254c340
+I0321 22:17:04.494420 27545 master.cpp:180] pending_client_requests: 30
+I0321 22:17:04.494427 27545 master.cpp:173] >>>Master received a response from a worker: [209:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:17:04.494442 27545 master.cpp:177] <<Master send response back to client: 0x254c5a0
+I0321 22:17:04.494446 27545 master.cpp:180] pending_client_requests: 29
+I0321 22:17:04.494453 27545 master.cpp:173] >>>Master received a response from a worker: [210:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:17:04.494467 27545 master.cpp:177] <<Master send response back to client: 0x254c800
+I0321 22:17:04.494472 27545 master.cpp:180] pending_client_requests: 28
+I0321 22:17:04.494480 27545 master.cpp:173] >>>Master received a response from a worker: [212:There may be opportunities for caching in this assignment]
+I0321 22:17:04.494494 27545 master.cpp:177] <<Master send response back to client: 0x254ded0
+I0321 22:17:04.494498 27545 master.cpp:180] pending_client_requests: 27
+I0321 22:17:04.494506 27545 master.cpp:173] >>>Master received a response from a worker: [213:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:17:04.494520 27545 master.cpp:177] <<Master send response back to client: 0x254cca0
+I0321 22:17:04.494532 27545 master.cpp:180] pending_client_requests: 26
+I0321 22:17:04.494540 27545 master.cpp:173] >>>Master received a response from a worker: [214:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:17:04.494554 27545 master.cpp:177] <<Master send response back to client: 0x254c930
+I0321 22:17:04.494557 27545 master.cpp:180] pending_client_requests: 25
+I0321 22:17:04.494565 27545 master.cpp:173] >>>Master received a response from a worker: [215:Figure out a way to understand the workload characteristics in each trace.]
+I0321 22:17:04.494580 27545 master.cpp:177] <<Master send response back to client: 0x254cdd0
+I0321 22:17:04.494583 27545 master.cpp:180] pending_client_requests: 24
+I0321 22:17:05.655753 27545 master.cpp:173] >>>Master received a response from a worker: [180:If all else fails... buy Kayvon donuts]
+I0321 22:17:05.655784 27545 master.cpp:177] <<Master send response back to client: 0x254b570
+I0321 22:17:05.655787 27545 master.cpp:180] pending_client_requests: 23
+I0321 22:17:05.679581 27545 master.cpp:173] >>>Master received a response from a worker: [181:Worse is better. Keep it simple...]
+I0321 22:17:05.679595 27545 master.cpp:177] <<Master send response back to client: 0x254a330
+I0321 22:17:05.679599 27545 master.cpp:180] pending_client_requests: 22
+I0321 22:17:05.710150 27545 master.cpp:173] >>>Master received a response from a worker: [182:Write a great lecture comment on your favorite idea in the class]
+I0321 22:17:05.710165 27545 master.cpp:177] <<Master send response back to client: 0x254b320
+I0321 22:17:05.710166 27545 master.cpp:180] pending_client_requests: 21
+I0321 22:17:05.730090 27545 master.cpp:173] >>>Master received a response from a worker: [183:Exams are all just fun and games]
+I0321 22:17:05.730104 27545 master.cpp:177] <<Master send response back to client: 0x254ae80
+I0321 22:17:05.730108 27545 master.cpp:180] pending_client_requests: 20
+I0321 22:17:05.735570 27545 master.cpp:173] >>>Master received a response from a worker: [185:OMG, 418 is so gr8!]
+I0321 22:17:05.735602 27545 master.cpp:177] <<Master send response back to client: 0x254b450
+I0321 22:17:05.735608 27545 master.cpp:180] pending_client_requests: 19
+I0321 22:17:05.741179 27545 master.cpp:173] >>>Master received a response from a worker: [184:Flatter your TAs with compliments]
+I0321 22:17:05.741211 27545 master.cpp:177] <<Master send response back to client: 0x254c0d0
+I0321 22:17:05.741217 27545 master.cpp:180] pending_client_requests: 18
+I0321 22:17:05.760320 27545 master.cpp:173] >>>Master received a response from a worker: [187:You are going to do a great project]
+I0321 22:17:05.760395 27545 master.cpp:177] <<Master send response back to client: 0x254b8f0
+I0321 22:17:05.760397 27545 master.cpp:180] pending_client_requests: 17
+I0321 22:17:05.762280 27545 master.cpp:173] >>>Master received a response from a worker: [186:You will perform amazingly on exam 2]
+I0321 22:17:05.762312 27545 master.cpp:177] <<Master send response back to client: 0x254b980
+I0321 22:17:05.762318 27545 master.cpp:180] pending_client_requests: 16
+I0321 22:17:05.769789 27545 master.cpp:173] >>>Master received a response from a worker: [188:Flatter your TAs with compliments]
+I0321 22:17:05.769804 27545 master.cpp:177] <<Master send response back to client: 0x254b6a0
+I0321 22:17:05.769806 27545 master.cpp:180] pending_client_requests: 15
+I0321 22:17:05.776299 27545 master.cpp:173] >>>Master received a response from a worker: [189:You will perform amazingly on exam 2]
+I0321 22:17:05.776314 27545 master.cpp:177] <<Master send response back to client: 0x254bbd0
+I0321 22:17:05.776316 27545 master.cpp:180] pending_client_requests: 14
+I0321 22:17:05.785620 27545 master.cpp:173] >>>Master received a response from a worker: [191:Do a great project, and it all works out in the end]
+I0321 22:17:05.785648 27545 master.cpp:177] <<Master send response back to client: 0x254afb0
+I0321 22:17:05.785650 27545 master.cpp:180] pending_client_requests: 13
+I0321 22:17:05.789044 27545 master.cpp:173] >>>Master received a response from a worker: [190:Do a great project, and it all works out in the end]
+I0321 22:17:05.789062 27545 master.cpp:177] <<Master send response back to client: 0x254bb40
+I0321 22:17:05.789065 27545 master.cpp:180] pending_client_requests: 12
+I0321 22:17:05.808668 27545 master.cpp:173] >>>Master received a response from a worker: [193:Worse is better. Keep it simple...]
+I0321 22:17:05.808683 27545 master.cpp:177] <<Master send response back to client: 0x254ac80
+I0321 22:17:05.808686 27545 master.cpp:180] pending_client_requests: 11
+I0321 22:17:05.812989 27545 master.cpp:173] >>>Master received a response from a worker: [192:Write a great lecture comment on your favorite idea in the class]
+I0321 22:17:05.813004 27545 master.cpp:177] <<Master send response back to client: 0x254bfc0
+I0321 22:17:05.813006 27545 master.cpp:180] pending_client_requests: 10
+I0321 22:17:05.824466 27545 master.cpp:173] >>>Master received a response from a worker: [194:Laugh at Kayvon's jokes]
+I0321 22:17:05.824481 27545 master.cpp:177] <<Master send response back to client: 0x254b0d0
+I0321 22:17:05.824483 27545 master.cpp:180] pending_client_requests: 9
+I0321 22:17:05.838528 27545 master.cpp:173] >>>Master received a response from a worker: [195:You will PWN your classmates in the parallelism competition]
+I0321 22:17:05.838542 27545 master.cpp:177] <<Master send response back to client: 0x254ba10
+I0321 22:17:05.838546 27545 master.cpp:180] pending_client_requests: 8
+I0321 22:17:05.844754 27545 master.cpp:173] >>>Master received a response from a worker: [197:You will perform amazingly on exam 2]
+I0321 22:17:05.844769 27545 master.cpp:177] <<Master send response back to client: 0x254a160
+I0321 22:17:05.844771 27545 master.cpp:180] pending_client_requests: 7
+I0321 22:17:05.860134 27545 master.cpp:173] >>>Master received a response from a worker: [196:Bring out all the stops in assignment 4.]
+I0321 22:17:05.860167 27545 master.cpp:177] <<Master send response back to client: 0x254b200
+I0321 22:17:05.860180 27545 master.cpp:180] pending_client_requests: 6
+I0321 22:17:05.863888 27545 master.cpp:173] >>>Master received a response from a worker: [198:Laugh at Kayvon's jokes]
+I0321 22:17:05.863919 27545 master.cpp:177] <<Master send response back to client: 0x254ad60
+I0321 22:17:05.863925 27545 master.cpp:180] pending_client_requests: 5
+I0321 22:17:05.870406 27545 master.cpp:173] >>>Master received a response from a worker: [200:You are going to do a great project]
+I0321 22:17:05.870446 27545 master.cpp:177] <<Master send response back to client: 0x254b7c0
+I0321 22:17:05.870450 27545 master.cpp:180] pending_client_requests: 4
+I0321 22:17:05.889945 27545 master.cpp:173] >>>Master received a response from a worker: [199:Write a great lecture comment on your favorite idea in the class]
+I0321 22:17:05.889977 27545 master.cpp:177] <<Master send response back to client: 0x254a610
+I0321 22:17:05.889983 27545 master.cpp:180] pending_client_requests: 3
+I0321 22:17:05.904577 27545 master.cpp:173] >>>Master received a response from a worker: [201:Laugh at Kayvon's jokes]
+I0321 22:17:05.904608 27545 master.cpp:177] <<Master send response back to client: 0x254ab20
+I0321 22:17:05.904613 27545 master.cpp:180] pending_client_requests: 2
+I0321 22:17:05.905453 27545 master.cpp:173] >>>Master received a response from a worker: [202:Come to lecture, there might be donuts!]
+I0321 22:17:05.905467 27545 master.cpp:177] <<Master send response back to client: 0x254a450
+I0321 22:17:05.905470 27545 master.cpp:180] pending_client_requests: 1
+I0321 22:17:05.915920 27545 master.cpp:173] >>>Master received a response from a worker: [203:You will perform amazingly on exam 2]
+I0321 22:17:05.915933 27545 master.cpp:177] <<Master send response back to client: 0x254a9f0
+I0321 22:17:05.915936 27545 master.cpp:180] pending_client_requests: 0
+I0321 22:17:06.942008 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=63309
+I0321 22:17:06.949350 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=8346
+I0321 22:17:06.959272 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=72556
+I0321 22:17:06.969323 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=98683
+I0321 22:17:06.979516 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=40182
+I0321 22:17:06.989156 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=67852
+I0321 22:17:06.999315 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=31618
+I0321 22:17:07.009286 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=21352
+I0321 22:17:07.019273 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=71733
+I0321 22:17:07.029222 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=235
+I0321 22:17:07.039294 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=82273
+I0321 22:17:07.049249 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=52835
+I0321 22:17:07.059425 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=9778
+I0321 22:17:07.069380 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=11890
+I0321 22:17:07.079346 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=64927
+I0321 22:17:07.089372 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=87366
+I0321 22:17:07.099318 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=27998
+I0321 22:17:07.109292 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=97852
+I0321 22:17:07.119390 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=10018
+I0321 22:17:07.129357 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=85394
+I0321 22:17:07.139175 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=39670
+I0321 22:17:07.149171 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=8134
+I0321 22:17:07.159327 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=27471
+I0321 22:17:07.169261 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=45298
+I0321 22:17:07.218408 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=7131
+I0321 22:17:07.220465 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=7753
+I0321 22:17:07.222420 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=1200
+I0321 22:17:07.224386 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4688
+I0321 22:17:07.226408 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=5857
+I0321 22:17:07.228418 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=3123
+I0321 22:17:07.230468 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=7847
+I0321 22:17:07.232417 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=2505
+I0321 22:17:07.232434 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=167
+I0321 22:17:07.236419 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=366
+I0321 22:17:07.238415 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=6129
+I0321 22:17:07.240465 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=5025
+I0321 22:17:07.258164 27545 master.cpp:173] >>>Master received a response from a worker: [240:Re-watch the lecture on scaling a website]
+I0321 22:17:07.258189 27545 master.cpp:177] <<Master send response back to client: 0x254c1f0
+I0321 22:17:07.258193 27545 master.cpp:180] pending_client_requests: 35
+I0321 22:17:07.258198 27545 master.cpp:173] >>>Master received a response from a worker: [241:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:07.258205 27545 master.cpp:177] <<Master send response back to client: 0x254cdd0
+I0321 22:17:07.258208 27545 master.cpp:180] pending_client_requests: 34
+I0321 22:17:07.258211 27545 master.cpp:173] >>>Master received a response from a worker: [242:We recommend getting full credit on grading_wisdom.txt first]
+I0321 22:17:07.258219 27545 master.cpp:177] <<Master send response back to client: 0x254c800
+I0321 22:17:07.258220 27545 master.cpp:180] pending_client_requests: 33
+I0321 22:17:07.258234 27545 master.cpp:173] >>>Master received a response from a worker: [244:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:07.258254 27545 master.cpp:177] <<Master send response back to client: 0x254ca50
+I0321 22:17:07.258255 27545 master.cpp:180] pending_client_requests: 32
+I0321 22:17:07.258270 27545 master.cpp:173] >>>Master received a response from a worker: [243:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:17:07.258277 27545 master.cpp:177] <<Master send response back to client: 0x254c930
+I0321 22:17:07.258280 27545 master.cpp:180] pending_client_requests: 31
+I0321 22:17:07.258283 27545 master.cpp:173] >>>Master received a response from a worker: [247:Figure out a way to understand the workload characteristics in each trace.]
+I0321 22:17:07.258291 27545 master.cpp:177] <<Master send response back to client: 0x254c440
+I0321 22:17:07.258291 27545 master.cpp:180] pending_client_requests: 30
+I0321 22:17:07.258296 27545 master.cpp:173] >>>Master received a response from a worker: [246:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:07.258306 27545 master.cpp:177] <<Master send response back to client: 0x254cca0
+I0321 22:17:07.258307 27545 master.cpp:180] pending_client_requests: 29
+I0321 22:17:07.258311 27545 master.cpp:173] >>>Master received a response from a worker: [245:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:07.258319 27545 master.cpp:177] <<Master send response back to client: 0x254ded0
+I0321 22:17:07.258321 27545 master.cpp:180] pending_client_requests: 28
+I0321 22:17:07.258323 27545 master.cpp:173] >>>Master received a response from a worker: [248:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:07.258358 27545 master.cpp:177] <<Master send response back to client: 0x254c5a0
+I0321 22:17:07.258359 27545 master.cpp:180] pending_client_requests: 27
+I0321 22:17:07.258374 27545 master.cpp:173] >>>Master received a response from a worker: [249:There may be opportunities for caching in this assignment]
+I0321 22:17:07.258383 27545 master.cpp:177] <<Master send response back to client: 0x254c340
+I0321 22:17:07.258384 27545 master.cpp:180] pending_client_requests: 26
+I0321 22:17:07.258388 27545 master.cpp:173] >>>Master received a response from a worker: [250:Re-watch the lecture on scaling a website]
+I0321 22:17:07.258397 27545 master.cpp:177] <<Master send response back to client: 0x254cb80
+I0321 22:17:07.258399 27545 master.cpp:180] pending_client_requests: 25
+I0321 22:17:07.258402 27545 master.cpp:173] >>>Master received a response from a worker: [251:Figure out a way to understand the workload characteristics in each trace.]
+I0321 22:17:07.258410 27545 master.cpp:177] <<Master send response back to client: 0x254c6e0
+I0321 22:17:07.258412 27545 master.cpp:180] pending_client_requests: 24
+I0321 22:17:08.382196 27545 master.cpp:173] >>>Master received a response from a worker: [219:Bring out all the stops in assignment 4.]
+I0321 22:17:08.382211 27545 master.cpp:177] <<Master send response back to client: 0x254a610
+I0321 22:17:08.382213 27545 master.cpp:180] pending_client_requests: 23
+I0321 22:17:08.421880 27545 master.cpp:173] >>>Master received a response from a worker: [216:Do as best as you can and just have fun!]
+I0321 22:17:08.421912 27545 master.cpp:177] <<Master send response back to client: 0x254a9f0
+I0321 22:17:08.421918 27545 master.cpp:180] pending_client_requests: 22
+I0321 22:17:08.444772 27545 master.cpp:173] >>>Master received a response from a worker: [217:Flatter your TAs with compliments]
+I0321 22:17:08.444803 27545 master.cpp:177] <<Master send response back to client: 0x254a450
+I0321 22:17:08.444809 27545 master.cpp:180] pending_client_requests: 21
+I0321 22:17:08.475221 27545 master.cpp:173] >>>Master received a response from a worker: [218:You will PWN your classmates in the parallelism competition]
+I0321 22:17:08.475253 27545 master.cpp:177] <<Master send response back to client: 0x254ab20
+I0321 22:17:08.475260 27545 master.cpp:180] pending_client_requests: 20
+I0321 22:17:08.486923 27545 master.cpp:173] >>>Master received a response from a worker: [220:Do as best as you can and just have fun!]
+I0321 22:17:08.486938 27545 master.cpp:177] <<Master send response back to client: 0x254b7c0
+I0321 22:17:08.486943 27545 master.cpp:180] pending_client_requests: 19
+I0321 22:17:08.516831 27545 master.cpp:173] >>>Master received a response from a worker: [221:You will PWN your classmates in the parallelism competition]
+I0321 22:17:08.516862 27545 master.cpp:177] <<Master send response back to client: 0x254ad60
+I0321 22:17:08.516868 27545 master.cpp:180] pending_client_requests: 18
+I0321 22:17:08.535166 27545 master.cpp:173] >>>Master received a response from a worker: [224:OMG, 418 is so gr8!]
+I0321 22:17:08.535179 27545 master.cpp:177] <<Master send response back to client: 0x254ba10
+I0321 22:17:08.535182 27545 master.cpp:180] pending_client_requests: 17
+I0321 22:17:08.536787 27545 master.cpp:173] >>>Master received a response from a worker: [226:Ask questions. Ask questions. Ask questions]
+I0321 22:17:08.536818 27545 master.cpp:177] <<Master send response back to client: 0x254bfc0
+I0321 22:17:08.536825 27545 master.cpp:180] pending_client_requests: 16
+I0321 22:17:08.541018 27545 master.cpp:173] >>>Master received a response from a worker: [225:Flatter your TAs with compliments]
+I0321 22:17:08.541030 27545 master.cpp:177] <<Master send response back to client: 0x254b0d0
+I0321 22:17:08.541033 27545 master.cpp:180] pending_client_requests: 15
+I0321 22:17:08.566329 27545 master.cpp:173] >>>Master received a response from a worker: [228:Ask questions. Ask questions. Ask questions]
+I0321 22:17:08.566382 27545 master.cpp:177] <<Master send response back to client: 0x254bb40
+I0321 22:17:08.566388 27545 master.cpp:180] pending_client_requests: 14
+I0321 22:17:08.586331 27545 master.cpp:173] >>>Master received a response from a worker: [229:You are going to do a great project]
+I0321 22:17:08.586372 27545 master.cpp:177] <<Master send response back to client: 0x254afb0
+I0321 22:17:08.586379 27545 master.cpp:180] pending_client_requests: 13
+I0321 22:17:08.588248 27545 master.cpp:173] >>>Master received a response from a worker: [230:You will perform amazingly on exam 2]
+I0321 22:17:08.588263 27545 master.cpp:177] <<Master send response back to client: 0x254bbd0
+I0321 22:17:08.588266 27545 master.cpp:180] pending_client_requests: 12
+I0321 22:17:08.601109 27545 master.cpp:173] >>>Master received a response from a worker: [231:Ask questions. Ask questions. Ask questions]
+I0321 22:17:08.601122 27545 master.cpp:177] <<Master send response back to client: 0x254b6a0
+I0321 22:17:08.601125 27545 master.cpp:180] pending_client_requests: 11
+I0321 22:17:08.606443 27545 master.cpp:173] >>>Master received a response from a worker: [232:Exams are all just fun and games]
+I0321 22:17:08.606457 27545 master.cpp:177] <<Master send response back to client: 0x254b980
+I0321 22:17:08.606459 27545 master.cpp:180] pending_client_requests: 10
+I0321 22:17:08.625636 27545 master.cpp:173] >>>Master received a response from a worker: [235:Do as best as you can and just have fun!]
+I0321 22:17:08.625650 27545 master.cpp:177] <<Master send response back to client: 0x254b450
+I0321 22:17:08.625653 27545 master.cpp:180] pending_client_requests: 9
+I0321 22:17:08.627935 27545 master.cpp:173] >>>Master received a response from a worker: [234:Ask questions. Ask questions. Ask questions]
+I0321 22:17:08.627949 27545 master.cpp:177] <<Master send response back to client: 0x254c0d0
+I0321 22:17:08.627953 27545 master.cpp:180] pending_client_requests: 8
+I0321 22:17:08.634516 27545 master.cpp:173] >>>Master received a response from a worker: [233:If all else fails... buy Kayvon donuts]
+I0321 22:17:08.634547 27545 master.cpp:177] <<Master send response back to client: 0x254b8f0
+I0321 22:17:08.634553 27545 master.cpp:180] pending_client_requests: 7
+I0321 22:17:08.661162 27545 master.cpp:173] >>>Master received a response from a worker: [236:Ask questions. Ask questions. Ask questions]
+I0321 22:17:08.661195 27545 master.cpp:177] <<Master send response back to client: 0x254ae80
+I0321 22:17:08.661201 27545 master.cpp:180] pending_client_requests: 6
+I0321 22:17:08.667718 27545 master.cpp:173] >>>Master received a response from a worker: [237:Do as best as you can and just have fun!]
+I0321 22:17:08.667735 27545 master.cpp:177] <<Master send response back to client: 0x254b320
+I0321 22:17:08.667738 27545 master.cpp:180] pending_client_requests: 5
+I0321 22:17:08.669502 27545 master.cpp:173] >>>Master received a response from a worker: [238:Ask questions. Ask questions. Ask questions]
+I0321 22:17:08.669517 27545 master.cpp:177] <<Master send response back to client: 0x254a330
+I0321 22:17:08.669518 27545 master.cpp:180] pending_client_requests: 4
+I0321 22:17:08.678046 27545 master.cpp:173] >>>Master received a response from a worker: [239:Exams are all just fun and games]
+I0321 22:17:08.678078 27545 master.cpp:177] <<Master send response back to client: 0x254b570
+I0321 22:17:08.678084 27545 master.cpp:180] pending_client_requests: 3
+I0321 22:17:08.777055 27545 master.cpp:173] >>>Master received a response from a worker: [222:Laugh at Kayvon's jokes]
+I0321 22:17:08.777086 27545 master.cpp:177] <<Master send response back to client: 0x254b200
+I0321 22:17:08.777091 27545 master.cpp:180] pending_client_requests: 2
+I0321 22:17:08.786952 27545 master.cpp:173] >>>Master received a response from a worker: [223:Do as best as you can and just have fun!]
+I0321 22:17:08.786965 27545 master.cpp:177] <<Master send response back to client: 0x254a160
+I0321 22:17:08.786967 27545 master.cpp:180] pending_client_requests: 1
+I0321 22:17:08.819772 27545 master.cpp:173] >>>Master received a response from a worker: [227:Flatter your TAs with compliments]
+I0321 22:17:08.819799 27545 master.cpp:177] <<Master send response back to client: 0x254ac80
+I0321 22:17:08.819802 27545 master.cpp:180] pending_client_requests: 0
+I0321 22:17:08.852883 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:17:08.852890 27545 master.cpp:335] 0: 0
+I0321 22:17:08.852891 27545 master.cpp:335] 1: 0
+I0321 22:17:08.852892 27545 master.cpp:335] 2: 0
+I0321 22:17:08.852893 27545 master.cpp:335] 3: 0
+I0321 22:17:08.852895 27545 master.cpp:335] 4: 0
+I0321 22:17:08.852896 27545 master.cpp:337] 
+I0321 22:17:08.852897 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:17:08.852898 27545 master.cpp:335] 0: 0
+I0321 22:17:08.852900 27545 master.cpp:335] 1: 0
+I0321 22:17:08.852901 27545 master.cpp:335] 2: 0
+I0321 22:17:08.852902 27545 master.cpp:335] 3: 0
+I0321 22:17:08.852903 27545 master.cpp:335] 4: 0
+I0321 22:17:08.852905 27545 master.cpp:337] 
+I0321 22:17:08.852906 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:17:08.852907 27545 master.cpp:335] 0: 0
+I0321 22:17:08.852908 27545 master.cpp:335] 1: 0
+I0321 22:17:08.852910 27545 master.cpp:335] 2: 0
+I0321 22:17:08.852911 27545 master.cpp:335] 3: 0
+I0321 22:17:08.852912 27545 master.cpp:335] 4: 0
+I0321 22:17:08.852913 27545 master.cpp:337] 
+I0321 22:17:08.852915 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:17:08.852916 27545 master.cpp:335] 0: 0
+I0321 22:17:08.852917 27545 master.cpp:335] 1: 0
+I0321 22:17:08.852918 27545 master.cpp:335] 2: 0
+I0321 22:17:08.852919 27545 master.cpp:335] 3: 0
+I0321 22:17:08.852921 27545 master.cpp:335] 4: 0
+I0321 22:17:08.852922 27545 master.cpp:337] 
+I0321 22:17:09.705664 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=94651
+I0321 22:17:09.713270 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=93844
+I0321 22:17:09.723295 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=90986
+I0321 22:17:09.733355 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=4200
+I0321 22:17:09.743233 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=74914
+I0321 22:17:09.753304 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=70133
+I0321 22:17:09.763342 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=65536
+I0321 22:17:09.773152 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=71236
+I0321 22:17:09.783529 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=90271
+I0321 22:17:09.793220 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=64014
+I0321 22:17:09.803300 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=37245
+I0321 22:17:09.813278 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=53793
+I0321 22:17:09.823292 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=20784
+I0321 22:17:09.833437 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=58713
+I0321 22:17:09.843227 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=889
+I0321 22:17:09.853381 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=15102
+I0321 22:17:09.863359 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=33341
+I0321 22:17:09.873350 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=78963
+I0321 22:17:09.883246 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=71850
+I0321 22:17:09.893374 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=33825
+I0321 22:17:09.903396 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=62054
+I0321 22:17:09.913435 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=4120
+I0321 22:17:09.923272 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=16386
+I0321 22:17:09.933326 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=98192
+I0321 22:17:09.982417 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=2606
+I0321 22:17:09.984436 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=3553
+I0321 22:17:09.986462 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4936
+I0321 22:17:09.988415 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=2640
+I0321 22:17:09.990417 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4303
+I0321 22:17:09.992415 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=2157
+I0321 22:17:09.994415 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=434
+I0321 22:17:09.997417 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=1616
+I0321 22:17:09.998463 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4707
+I0321 22:17:09.998481 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=637
+I0321 22:17:10.002440 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=3628
+I0321 22:17:10.005460 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=2957
+I0321 22:17:10.022194 27545 master.cpp:173] >>>Master received a response from a worker: [276:There may be opportunities for caching in this assignment]
+I0321 22:17:10.022208 27545 master.cpp:177] <<Master send response back to client: 0x254cb80
+I0321 22:17:10.022210 27545 master.cpp:180] pending_client_requests: 35
+I0321 22:17:10.022217 27545 master.cpp:173] >>>Master received a response from a worker: [279:We recommend getting full credit on grading_wisdom.txt first]
+I0321 22:17:10.022223 27545 master.cpp:177] <<Master send response back to client: 0x254ded0
+I0321 22:17:10.022224 27545 master.cpp:180] pending_client_requests: 34
+I0321 22:17:10.022228 27545 master.cpp:173] >>>Master received a response from a worker: [277:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:10.022236 27545 master.cpp:177] <<Master send response back to client: 0x254c340
+I0321 22:17:10.022238 27545 master.cpp:180] pending_client_requests: 33
+I0321 22:17:10.022241 27545 master.cpp:173] >>>Master received a response from a worker: [278:There may be opportunities for caching in this assignment]
+I0321 22:17:10.022248 27545 master.cpp:177] <<Master send response back to client: 0x254c440
+I0321 22:17:10.022250 27545 master.cpp:180] pending_client_requests: 32
+I0321 22:17:10.022253 27545 master.cpp:173] >>>Master received a response from a worker: [281:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:10.022260 27545 master.cpp:177] <<Master send response back to client: 0x254c1f0
+I0321 22:17:10.022261 27545 master.cpp:180] pending_client_requests: 31
+I0321 22:17:10.022276 27545 master.cpp:173] >>>Master received a response from a worker: [282:There may be opportunities for caching in this assignment]
+I0321 22:17:10.022284 27545 master.cpp:177] <<Master send response back to client: 0x254c800
+I0321 22:17:10.022285 27545 master.cpp:180] pending_client_requests: 30
+I0321 22:17:10.022299 27545 master.cpp:173] >>>Master received a response from a worker: [280:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:10.022318 27545 master.cpp:177] <<Master send response back to client: 0x254ca50
+I0321 22:17:10.022320 27545 master.cpp:180] pending_client_requests: 29
+I0321 22:17:10.022325 27545 master.cpp:173] >>>Master received a response from a worker: [283:There may be opportunities for caching in this assignment]
+I0321 22:17:10.022332 27545 master.cpp:177] <<Master send response back to client: 0x254c930
+I0321 22:17:10.022337 27545 master.cpp:180] pending_client_requests: 28
+I0321 22:17:10.022341 27545 master.cpp:173] >>>Master received a response from a worker: [284:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:10.022349 27545 master.cpp:177] <<Master send response back to client: 0x254cca0
+I0321 22:17:10.022351 27545 master.cpp:180] pending_client_requests: 27
+I0321 22:17:10.022356 27545 master.cpp:173] >>>Master received a response from a worker: [286:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:17:10.022363 27545 master.cpp:177] <<Master send response back to client: 0x254cdd0
+I0321 22:17:10.022366 27545 master.cpp:180] pending_client_requests: 26
+I0321 22:17:10.022368 27545 master.cpp:173] >>>Master received a response from a worker: [285:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:10.022377 27545 master.cpp:177] <<Master send response back to client: 0x254c5a0
+I0321 22:17:10.022379 27545 master.cpp:180] pending_client_requests: 25
+I0321 22:17:10.022382 27545 master.cpp:173] >>>Master received a response from a worker: [287:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:10.022390 27545 master.cpp:177] <<Master send response back to client: 0x254c6e0
+I0321 22:17:10.022392 27545 master.cpp:180] pending_client_requests: 24
+I0321 22:17:11.111080 27545 master.cpp:173] >>>Master received a response from a worker: [255:You will perform amazingly on exam 2]
+I0321 22:17:11.111112 27545 master.cpp:177] <<Master send response back to client: 0x254b570
+I0321 22:17:11.111119 27545 master.cpp:180] pending_client_requests: 23
+I0321 22:17:11.207216 27545 master.cpp:173] >>>Master received a response from a worker: [252:Write a great lecture comment on your favorite idea in the class]
+I0321 22:17:11.207229 27545 master.cpp:177] <<Master send response back to client: 0x254ac80
+I0321 22:17:11.207232 27545 master.cpp:180] pending_client_requests: 22
+I0321 22:17:11.212967 27545 master.cpp:173] >>>Master received a response from a worker: [253:OMG, 418 is so gr8!]
+I0321 22:17:11.212998 27545 master.cpp:177] <<Master send response back to client: 0x254a160
+I0321 22:17:11.213004 27545 master.cpp:180] pending_client_requests: 21
+I0321 22:17:11.251401 27545 master.cpp:173] >>>Master received a response from a worker: [257:You are going to do a great project]
+I0321 22:17:11.251415 27545 master.cpp:177] <<Master send response back to client: 0x254b320
+I0321 22:17:11.251418 27545 master.cpp:180] pending_client_requests: 20
+I0321 22:17:11.275187 27545 master.cpp:173] >>>Master received a response from a worker: [259:You will PWN your classmates in the parallelism competition]
+I0321 22:17:11.275220 27545 master.cpp:177] <<Master send response back to client: 0x254b8f0
+I0321 22:17:11.275225 27545 master.cpp:180] pending_client_requests: 19
+I0321 22:17:11.305872 27545 master.cpp:173] >>>Master received a response from a worker: [260:Be careful not to optimize prematurely]
+I0321 22:17:11.305886 27545 master.cpp:177] <<Master send response back to client: 0x254c0d0
+I0321 22:17:11.305888 27545 master.cpp:180] pending_client_requests: 18
+I0321 22:17:11.323547 27545 master.cpp:173] >>>Master received a response from a worker: [263:If all else fails... buy Kayvon donuts]
+I0321 22:17:11.323562 27545 master.cpp:177] <<Master send response back to client: 0x254b6a0
+I0321 22:17:11.323565 27545 master.cpp:180] pending_client_requests: 17
+I0321 22:17:11.335067 27545 master.cpp:173] >>>Master received a response from a worker: [264:You are going to do a great project]
+I0321 22:17:11.335098 27545 master.cpp:177] <<Master send response back to client: 0x254bbd0
+I0321 22:17:11.335103 27545 master.cpp:180] pending_client_requests: 16
+I0321 22:17:11.354881 27545 master.cpp:173] >>>Master received a response from a worker: [262:Be careful not to optimize prematurely]
+I0321 22:17:11.354894 27545 master.cpp:177] <<Master send response back to client: 0x254b980
+I0321 22:17:11.354897 27545 master.cpp:180] pending_client_requests: 15
+I0321 22:17:11.360069 27545 master.cpp:173] >>>Master received a response from a worker: [266:Do a great project, and it all works out in the end]
+I0321 22:17:11.360082 27545 master.cpp:177] <<Master send response back to client: 0x254bb40
+I0321 22:17:11.360085 27545 master.cpp:180] pending_client_requests: 14
+I0321 22:17:11.364904 27545 master.cpp:173] >>>Master received a response from a worker: [267:Laugh at Kayvon's jokes]
+I0321 22:17:11.364936 27545 master.cpp:177] <<Master send response back to client: 0x254b0d0
+I0321 22:17:11.364943 27545 master.cpp:180] pending_client_requests: 13
+I0321 22:17:11.371948 27545 master.cpp:173] >>>Master received a response from a worker: [261:Flatter your TAs with compliments]
+I0321 22:17:11.371979 27545 master.cpp:177] <<Master send response back to client: 0x254b450
+I0321 22:17:11.371985 27545 master.cpp:180] pending_client_requests: 12
+I0321 22:17:11.384574 27545 master.cpp:173] >>>Master received a response from a worker: [265:Ask questions. Ask questions. Ask questions]
+I0321 22:17:11.384605 27545 master.cpp:177] <<Master send response back to client: 0x254afb0
+I0321 22:17:11.384611 27545 master.cpp:180] pending_client_requests: 11
+I0321 22:17:11.385231 27545 master.cpp:173] >>>Master received a response from a worker: [268:Do a great project, and it all works out in the end]
+I0321 22:17:11.385263 27545 master.cpp:177] <<Master send response back to client: 0x254bfc0
+I0321 22:17:11.385269 27545 master.cpp:180] pending_client_requests: 10
+I0321 22:17:11.392253 27545 master.cpp:173] >>>Master received a response from a worker: [271:Flatter your TAs with compliments]
+I0321 22:17:11.392267 27545 master.cpp:177] <<Master send response back to client: 0x254b7c0
+I0321 22:17:11.392269 27545 master.cpp:180] pending_client_requests: 9
+I0321 22:17:11.398329 27545 master.cpp:173] >>>Master received a response from a worker: [269:OMG, 418 is so gr8!]
+I0321 22:17:11.398349 27545 master.cpp:177] <<Master send response back to client: 0x254ba10
+I0321 22:17:11.398350 27545 master.cpp:180] pending_client_requests: 8
+I0321 22:17:11.402518 27545 master.cpp:173] >>>Master received a response from a worker: [270:Worse is better. Keep it simple...]
+I0321 22:17:11.402531 27545 master.cpp:177] <<Master send response back to client: 0x254ad60
+I0321 22:17:11.402534 27545 master.cpp:180] pending_client_requests: 7
+I0321 22:17:11.409034 27545 master.cpp:173] >>>Master received a response from a worker: [273:Laugh at Kayvon's jokes]
+I0321 22:17:11.409066 27545 master.cpp:177] <<Master send response back to client: 0x254a450
+I0321 22:17:11.409072 27545 master.cpp:180] pending_client_requests: 6
+I0321 22:17:11.413069 27545 master.cpp:173] >>>Master received a response from a worker: [272:Laugh at Kayvon's jokes]
+I0321 22:17:11.413100 27545 master.cpp:177] <<Master send response back to client: 0x254ab20
+I0321 22:17:11.413101 27545 master.cpp:180] pending_client_requests: 5
+I0321 22:17:11.503470 27545 master.cpp:173] >>>Master received a response from a worker: [256:Laugh at Kayvon's jokes]
+I0321 22:17:11.503501 27545 master.cpp:177] <<Master send response back to client: 0x254a330
+I0321 22:17:11.503507 27545 master.cpp:180] pending_client_requests: 4
+I0321 22:17:11.509506 27545 master.cpp:173] >>>Master received a response from a worker: [275:Do as best as you can and just have fun!]
+I0321 22:17:11.509537 27545 master.cpp:177] <<Master send response back to client: 0x254a610
+I0321 22:17:11.509549 27545 master.cpp:180] pending_client_requests: 3
+I0321 22:17:11.516082 27545 master.cpp:173] >>>Master received a response from a worker: [254:Exams are all just fun and games]
+I0321 22:17:11.516113 27545 master.cpp:177] <<Master send response back to client: 0x254b200
+I0321 22:17:11.516119 27545 master.cpp:180] pending_client_requests: 2
+I0321 22:17:11.527792 27545 master.cpp:173] >>>Master received a response from a worker: [274:OMG, 418 is so gr8!]
+I0321 22:17:11.527823 27545 master.cpp:177] <<Master send response back to client: 0x254a9f0
+I0321 22:17:11.527829 27545 master.cpp:180] pending_client_requests: 1
+I0321 22:17:11.637392 27545 master.cpp:173] >>>Master received a response from a worker: [258:Worse is better. Keep it simple...]
+I0321 22:17:11.637406 27545 master.cpp:177] <<Master send response back to client: 0x254ae80
+I0321 22:17:11.637408 27545 master.cpp:180] pending_client_requests: 0
+I0321 22:17:12.469791 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=41472
+I0321 22:17:12.477306 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=9940
+I0321 22:17:12.487251 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=90866
+I0321 22:17:12.497270 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=47400
+I0321 22:17:12.507478 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=84085
+I0321 22:17:12.517329 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=97623
+I0321 22:17:12.527286 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=34365
+I0321 22:17:12.537341 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=47909
+I0321 22:17:12.547266 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=69960
+I0321 22:17:12.557221 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=42653
+I0321 22:17:12.567266 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=30190
+I0321 22:17:12.577247 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=73475
+I0321 22:17:12.587287 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=89440
+I0321 22:17:12.597439 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=91969
+I0321 22:17:12.607322 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=62674
+I0321 22:17:12.617125 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=37557
+I0321 22:17:12.627457 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=97457
+I0321 22:17:12.637352 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=63888
+I0321 22:17:12.647478 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=6583
+I0321 22:17:12.657251 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=8467
+I0321 22:17:12.667244 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=74987
+I0321 22:17:12.677395 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=6115
+I0321 22:17:12.687235 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=785
+I0321 22:17:12.697196 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=39381
+I0321 22:17:12.746420 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4671
+I0321 22:17:12.748443 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4037
+I0321 22:17:12.750419 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4398
+I0321 22:17:12.752420 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=5264
+I0321 22:17:12.754411 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=6114
+I0321 22:17:12.756419 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=3807
+I0321 22:17:12.758466 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=3315
+I0321 22:17:12.760407 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=8897
+I0321 22:17:12.762418 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=2348
+I0321 22:17:12.764406 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=6994
+I0321 22:17:12.764425 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=3881
+I0321 22:17:12.768407 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=3227
+I0321 22:17:12.786190 27545 master.cpp:173] >>>Master received a response from a worker: [313:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:12.786208 27545 master.cpp:177] <<Master send response back to client: 0x254cb80
+I0321 22:17:12.786211 27545 master.cpp:180] pending_client_requests: 35
+I0321 22:17:12.786217 27545 master.cpp:173] >>>Master received a response from a worker: [314:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:17:12.786224 27545 master.cpp:177] <<Master send response back to client: 0x254ca50
+I0321 22:17:12.786226 27545 master.cpp:180] pending_client_requests: 34
+I0321 22:17:12.786229 27545 master.cpp:173] >>>Master received a response from a worker: [315:There may be opportunities for caching in this assignment]
+I0321 22:17:12.786237 27545 master.cpp:177] <<Master send response back to client: 0x254cdd0
+I0321 22:17:12.786238 27545 master.cpp:180] pending_client_requests: 33
+I0321 22:17:12.786253 27545 master.cpp:173] >>>Master received a response from a worker: [312:Re-watch the lecture on scaling a website]
+I0321 22:17:12.786262 27545 master.cpp:177] <<Master send response back to client: 0x254c340
+I0321 22:17:12.786274 27545 master.cpp:180] pending_client_requests: 32
+I0321 22:17:12.786278 27545 master.cpp:173] >>>Master received a response from a worker: [316:There may be opportunities for caching in this assignment]
+I0321 22:17:12.786291 27545 master.cpp:177] <<Master send response back to client: 0x254c1f0
+I0321 22:17:12.786293 27545 master.cpp:180] pending_client_requests: 31
+I0321 22:17:12.786298 27545 master.cpp:173] >>>Master received a response from a worker: [319:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:12.786305 27545 master.cpp:177] <<Master send response back to client: 0x254c6e0
+I0321 22:17:12.786306 27545 master.cpp:180] pending_client_requests: 30
+I0321 22:17:12.786310 27545 master.cpp:173] >>>Master received a response from a worker: [318:Figure out a way to understand the workload characteristics in each trace.]
+I0321 22:17:12.786319 27545 master.cpp:177] <<Master send response back to client: 0x254ded0
+I0321 22:17:12.786320 27545 master.cpp:180] pending_client_requests: 29
+I0321 22:17:12.786324 27545 master.cpp:173] >>>Master received a response from a worker: [320:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:17:12.786334 27545 master.cpp:177] <<Master send response back to client: 0x254c800
+I0321 22:17:12.786339 27545 master.cpp:180] pending_client_requests: 28
+I0321 22:17:12.786342 27545 master.cpp:173] >>>Master received a response from a worker: [321:There may be opportunities for caching in this assignment]
+I0321 22:17:12.786351 27545 master.cpp:177] <<Master send response back to client: 0x254cca0
+I0321 22:17:12.786353 27545 master.cpp:180] pending_client_requests: 27
+I0321 22:17:12.786356 27545 master.cpp:173] >>>Master received a response from a worker: [317:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:12.786365 27545 master.cpp:177] <<Master send response back to client: 0x254c930
+I0321 22:17:12.786366 27545 master.cpp:180] pending_client_requests: 26
+I0321 22:17:12.786370 27545 master.cpp:173] >>>Master received a response from a worker: [322:Re-watch the lecture on scaling a website]
+I0321 22:17:12.786378 27545 master.cpp:177] <<Master send response back to client: 0x254c5a0
+I0321 22:17:12.786381 27545 master.cpp:180] pending_client_requests: 25
+I0321 22:17:12.786384 27545 master.cpp:173] >>>Master received a response from a worker: [323:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:12.786391 27545 master.cpp:177] <<Master send response back to client: 0x254c440
+I0321 22:17:12.786392 27545 master.cpp:180] pending_client_requests: 24
+I0321 22:17:13.854576 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:17:13.854583 27545 master.cpp:335] 0: 24
+I0321 22:17:13.854584 27545 master.cpp:335] 1: 0
+I0321 22:17:13.854585 27545 master.cpp:335] 2: 0
+I0321 22:17:13.854589 27545 master.cpp:335] 3: 0
+I0321 22:17:13.854591 27545 master.cpp:335] 4: 0
+I0321 22:17:13.854593 27545 master.cpp:337] 
+I0321 22:17:13.854593 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:17:13.854594 27545 master.cpp:335] 0: 0
+I0321 22:17:13.854596 27545 master.cpp:335] 1: 0
+I0321 22:17:13.854598 27545 master.cpp:335] 2: 0
+I0321 22:17:13.854598 27545 master.cpp:335] 3: 0
+I0321 22:17:13.854599 27545 master.cpp:335] 4: 0
+I0321 22:17:13.854601 27545 master.cpp:337] 
+I0321 22:17:13.854603 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:17:13.854604 27545 master.cpp:335] 0: 0
+I0321 22:17:13.854604 27545 master.cpp:335] 1: 0
+I0321 22:17:13.854605 27545 master.cpp:335] 2: 0
+I0321 22:17:13.854607 27545 master.cpp:335] 3: 0
+I0321 22:17:13.854609 27545 master.cpp:335] 4: 0
+I0321 22:17:13.854609 27545 master.cpp:337] 
+I0321 22:17:13.854610 27545 master.cpp:332] ====HANDLE PROBE:====
+I0321 22:17:13.854611 27545 master.cpp:335] 0: 0
+I0321 22:17:13.854612 27545 master.cpp:335] 1: 0
+I0321 22:17:13.854614 27545 master.cpp:335] 2: 0
+I0321 22:17:13.854615 27545 master.cpp:335] 3: 0
+I0321 22:17:13.854616 27545 master.cpp:335] 4: 0
+I0321 22:17:13.854617 27545 master.cpp:337] 
+I0321 22:17:13.864830 27545 master.cpp:173] >>>Master received a response from a worker: [291:Do a great project, and it all works out in the end]
+I0321 22:17:13.864845 27545 master.cpp:177] <<Master send response back to client: 0x254a610
+I0321 22:17:13.864847 27545 master.cpp:180] pending_client_requests: 23
+I0321 22:17:13.954656 27545 master.cpp:173] >>>Master received a response from a worker: [288:Be careful not to optimize prematurely]
+I0321 22:17:13.954671 27545 master.cpp:177] <<Master send response back to client: 0x254ae80
+I0321 22:17:13.954685 27545 master.cpp:180] pending_client_requests: 22
+I0321 22:17:13.982664 27545 master.cpp:173] >>>Master received a response from a worker: [290:You are going to do a great project]
+I0321 22:17:13.982679 27545 master.cpp:177] <<Master send response back to client: 0x254b200
+I0321 22:17:13.982681 27545 master.cpp:180] pending_client_requests: 21
+I0321 22:17:14.022729 27545 master.cpp:173] >>>Master received a response from a worker: [292:Flatter your TAs with compliments]
+I0321 22:17:14.022761 27545 master.cpp:177] <<Master send response back to client: 0x254a330
+I0321 22:17:14.022768 27545 master.cpp:180] pending_client_requests: 20
+I0321 22:17:14.026985 27545 master.cpp:173] >>>Master received a response from a worker: [289:Ask questions. Ask questions. Ask questions]
+I0321 22:17:14.027016 27545 master.cpp:177] <<Master send response back to client: 0x254a9f0
+I0321 22:17:14.027022 27545 master.cpp:180] pending_client_requests: 19
+I0321 22:17:14.036548 27545 master.cpp:173] >>>Master received a response from a worker: [293:Worse is better. Keep it simple...]
+I0321 22:17:14.036579 27545 master.cpp:177] <<Master send response back to client: 0x254ab20
+I0321 22:17:14.036586 27545 master.cpp:180] pending_client_requests: 18
+I0321 22:17:14.037410 27545 master.cpp:173] >>>Master received a response from a worker: [294:Do a great project, and it all works out in the end]
+I0321 22:17:14.037425 27545 master.cpp:177] <<Master send response back to client: 0x254a450
+I0321 22:17:14.037426 27545 master.cpp:180] pending_client_requests: 17
+I0321 22:17:14.047427 27545 master.cpp:173] >>>Master received a response from a worker: [295:Do a great project, and it all works out in the end]
+I0321 22:17:14.047458 27545 master.cpp:177] <<Master send response back to client: 0x254ad60
+I0321 22:17:14.047464 27545 master.cpp:180] pending_client_requests: 16
+I0321 22:17:14.059674 27545 master.cpp:173] >>>Master received a response from a worker: [296:Flatter your TAs with compliments]
+I0321 22:17:14.059689 27545 master.cpp:177] <<Master send response back to client: 0x254ba10
+I0321 22:17:14.059690 27545 master.cpp:180] pending_client_requests: 15
+I0321 22:17:14.079063 27545 master.cpp:173] >>>Master received a response from a worker: [297:Write a great lecture comment on your favorite idea in the class]
+I0321 22:17:14.079102 27545 master.cpp:177] <<Master send response back to client: 0x254b7c0
+I0321 22:17:14.079109 27545 master.cpp:180] pending_client_requests: 14
+I0321 22:17:14.090575 27545 master.cpp:173] >>>Master received a response from a worker: [298:You will PWN your classmates in the parallelism competition]
+I0321 22:17:14.090607 27545 master.cpp:177] <<Master send response back to client: 0x254bfc0
+I0321 22:17:14.090612 27545 master.cpp:180] pending_client_requests: 13
+I0321 22:17:14.111315 27545 master.cpp:173] >>>Master received a response from a worker: [300:You will PWN your classmates in the parallelism competition]
+I0321 22:17:14.111356 27545 master.cpp:177] <<Master send response back to client: 0x254b450
+I0321 22:17:14.111363 27545 master.cpp:180] pending_client_requests: 12
+I0321 22:17:14.113828 27545 master.cpp:173] >>>Master received a response from a worker: [302:Laugh at Kayvon's jokes]
+I0321 22:17:14.113843 27545 master.cpp:177] <<Master send response back to client: 0x254bb40
+I0321 22:17:14.113845 27545 master.cpp:180] pending_client_requests: 11
+I0321 22:17:14.117311 27545 master.cpp:173] >>>Master received a response from a worker: [301:Laugh at Kayvon's jokes]
+I0321 22:17:14.117352 27545 master.cpp:177] <<Master send response back to client: 0x254b0d0
+I0321 22:17:14.117357 27545 master.cpp:180] pending_client_requests: 10
+I0321 22:17:14.127122 27545 master.cpp:173] >>>Master received a response from a worker: [303:Ask questions. Ask questions. Ask questions]
+I0321 22:17:14.127135 27545 master.cpp:177] <<Master send response back to client: 0x254b980
+I0321 22:17:14.127138 27545 master.cpp:180] pending_client_requests: 9
+I0321 22:17:14.134384 27545 master.cpp:173] >>>Master received a response from a worker: [304:You are going to do a great project]
+I0321 22:17:14.134398 27545 master.cpp:177] <<Master send response back to client: 0x254bbd0
+I0321 22:17:14.134402 27545 master.cpp:180] pending_client_requests: 8
+I0321 22:17:14.148182 27545 master.cpp:173] >>>Master received a response from a worker: [306:Laugh at Kayvon's jokes]
+I0321 22:17:14.148214 27545 master.cpp:177] <<Master send response back to client: 0x254c0d0
+I0321 22:17:14.148221 27545 master.cpp:180] pending_client_requests: 7
+I0321 22:17:14.169204 27545 master.cpp:173] >>>Master received a response from a worker: [305:If all else fails... buy Kayvon donuts]
+I0321 22:17:14.169219 27545 master.cpp:177] <<Master send response back to client: 0x254b6a0
+I0321 22:17:14.169221 27545 master.cpp:180] pending_client_requests: 6
+I0321 22:17:14.182508 27545 master.cpp:173] >>>Master received a response from a worker: [309:Laugh at Kayvon's jokes]
+I0321 22:17:14.182539 27545 master.cpp:177] <<Master send response back to client: 0x254a160
+I0321 22:17:14.182545 27545 master.cpp:180] pending_client_requests: 5
+I0321 22:17:14.222574 27545 master.cpp:173] >>>Master received a response from a worker: [307:Exams are all just fun and games]
+I0321 22:17:14.222606 27545 master.cpp:177] <<Master send response back to client: 0x254b8f0
+I0321 22:17:14.222612 27545 master.cpp:180] pending_client_requests: 4
+I0321 22:17:14.249806 27545 master.cpp:173] >>>Master received a response from a worker: [308:Be careful not to optimize prematurely]
+I0321 22:17:14.249820 27545 master.cpp:177] <<Master send response back to client: 0x254b320
+I0321 22:17:14.249824 27545 master.cpp:180] pending_client_requests: 3
+I0321 22:17:14.252568 27545 master.cpp:173] >>>Master received a response from a worker: [311:You are going to do a great project]
+I0321 22:17:14.252599 27545 master.cpp:177] <<Master send response back to client: 0x254b570
+I0321 22:17:14.252604 27545 master.cpp:180] pending_client_requests: 2
+I0321 22:17:14.476929 27545 master.cpp:173] >>>Master received a response from a worker: [310:Do a great project, and it all works out in the end]
+I0321 22:17:14.476963 27545 master.cpp:177] <<Master send response back to client: 0x254ac80
+I0321 22:17:14.476969 27545 master.cpp:180] pending_client_requests: 1
+I0321 22:17:14.516347 27545 master.cpp:173] >>>Master received a response from a worker: [299:OMG, 418 is so gr8!]
+I0321 22:17:14.516366 27545 master.cpp:177] <<Master send response back to client: 0x254afb0
+I0321 22:17:14.516368 27545 master.cpp:180] pending_client_requests: 0
+I0321 22:17:15.234019 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=6385
+I0321 22:17:15.241291 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=86358
+I0321 22:17:15.251302 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=70201
+I0321 22:17:15.261435 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=90301
+I0321 22:17:15.271322 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=45161
+I0321 22:17:15.281373 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=67692
+I0321 22:17:15.291303 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=11891
+I0321 22:17:15.301161 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=39795
+I0321 22:17:15.311435 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=20723
+I0321 22:17:15.321384 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=4210
+I0321 22:17:15.331385 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=94797
+I0321 22:17:15.341295 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=21589
+I0321 22:17:15.351451 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=14635
+I0321 22:17:15.361338 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=19797
+I0321 22:17:15.371389 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=37803
+I0321 22:17:15.381208 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=54639
+I0321 22:17:15.391278 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=15133
+I0321 22:17:15.401243 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=98869
+I0321 22:17:15.411345 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=98299
+I0321 22:17:15.421234 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=14840
+I0321 22:17:15.431228 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=40591
+I0321 22:17:15.441298 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=67993
+I0321 22:17:15.451357 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=87766
+I0321 22:17:15.461412 27545 master.cpp:215] >>Received request: cmd=418wisdom;x=49541
+I0321 22:17:15.510419 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=8254
+I0321 22:17:15.512418 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=2902
+I0321 22:17:15.514405 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4486
+I0321 22:17:15.516417 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=4488
+I0321 22:17:15.518419 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=6031
+I0321 22:17:15.521410 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=1818
+I0321 22:17:15.522442 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=5488
+I0321 22:17:15.524405 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=1969
+I0321 22:17:15.524422 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=3062
+I0321 22:17:15.528416 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=8664
+I0321 22:17:15.530416 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=8091
+I0321 22:17:15.532415 27545 master.cpp:215] >>Received request: cmd=tellmenow;x=7363
+I0321 22:17:15.550199 27545 master.cpp:173] >>>Master received a response from a worker: [348:There may be opportunities for caching in this assignment]
+I0321 22:17:15.550212 27545 master.cpp:177] <<Master send response back to client: 0x254c340
+I0321 22:17:15.550215 27545 master.cpp:180] pending_client_requests: 35
+I0321 22:17:15.550221 27545 master.cpp:173] >>>Master received a response from a worker: [350:There may be opportunities for caching in this assignment]
+I0321 22:17:15.550228 27545 master.cpp:177] <<Master send response back to client: 0x254cdd0
+I0321 22:17:15.550230 27545 master.cpp:180] pending_client_requests: 34
+I0321 22:17:15.550233 27545 master.cpp:173] >>>Master received a response from a worker: [349:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:17:15.550246 27545 master.cpp:177] <<Master send response back to client: 0x254c800
+I0321 22:17:15.550246 27545 master.cpp:180] pending_client_requests: 33
+I0321 22:17:15.550262 27545 master.cpp:173] >>>Master received a response from a worker: [354:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:17:15.550269 27545 master.cpp:177] <<Master send response back to client: 0x254ca50
+I0321 22:17:15.550271 27545 master.cpp:180] pending_client_requests: 32
+I0321 22:17:15.550274 27545 master.cpp:173] >>>Master received a response from a worker: [356:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:17:15.550293 27545 master.cpp:177] <<Master send response back to client: 0x254c5a0
+I0321 22:17:15.550300 27545 master.cpp:180] pending_client_requests: 31
+I0321 22:17:15.550304 27545 master.cpp:173] >>>Master received a response from a worker: [355:Re-watch the lecture on scaling a website]
+I0321 22:17:15.550312 27545 master.cpp:177] <<Master send response back to client: 0x254c6e0
+I0321 22:17:15.550313 27545 master.cpp:180] pending_client_requests: 30
+I0321 22:17:15.550318 27545 master.cpp:173] >>>Master received a response from a worker: [352:Re-watch the lecture on scaling a website]
+I0321 22:17:15.550324 27545 master.cpp:177] <<Master send response back to client: 0x254cca0
+I0321 22:17:15.550326 27545 master.cpp:180] pending_client_requests: 29
+I0321 22:17:15.550329 27545 master.cpp:173] >>>Master received a response from a worker: [353:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:17:15.550341 27545 master.cpp:177] <<Master send response back to client: 0x254ded0
+I0321 22:17:15.550343 27545 master.cpp:180] pending_client_requests: 28
+I0321 22:17:15.550348 27545 master.cpp:173] >>>Master received a response from a worker: [351:Yes, you can optimize for specific traces but you don't have to. A general schedule algorithm works.]
+I0321 22:17:15.550354 27545 master.cpp:177] <<Master send response back to client: 0x254cb80
+I0321 22:17:15.550355 27545 master.cpp:180] pending_client_requests: 27
+I0321 22:17:15.550359 27545 master.cpp:173] >>>Master received a response from a worker: [359:The best performance may come from a particular mixture of jobs on a worker node.]
+I0321 22:17:15.550367 27545 master.cpp:177] <<Master send response back to client: 0x254c930
+I0321 22:17:15.550369 27545 master.cpp:180] pending_client_requests: 26
+I0321 22:17:15.550372 27545 master.cpp:173] >>>Master received a response from a worker: [357:There may be opportunities for caching in this assignment]
+I0321 22:17:15.550381 27545 master.cpp:177] <<Master send response back to client: 0x254c1f0
+I0321 22:17:15.550384 27545 master.cpp:180] pending_client_requests: 25
+I0321 22:17:15.550400 27545 master.cpp:173] >>>Master received a response from a worker: [358:Re-watch the lecture on scaling a website]
+I0321 22:17:15.550406 27545 master.cpp:177] <<Master send response back to client: 0x254c440
+I0321 22:17:15.550408 27545 master.cpp:180] pending_client_requests: 24
+I0321 22:17:16.033449 27545 master.cpp:215] >>Received request: cmd=lastrequest
+I0321 22:17:16.726956 27545 master.cpp:173] >>>Master received a response from a worker: [325:OMG, 418 is so gr8!]
+I0321 22:17:16.726970 27545 master.cpp:177] <<Master send response back to client: 0x254ac80
+I0321 22:17:16.726972 27545 master.cpp:180] pending_client_requests: 23
+I0321 22:17:16.726979 27545 master.cpp:173] >>>Master received a response from a worker: [324:OMG, 418 is so gr8!]
+I0321 22:17:16.726985 27545 master.cpp:177] <<Master send response back to client: 0x254afb0
+I0321 22:17:16.726987 27545 master.cpp:180] pending_client_requests: 22
+I0321 22:17:16.771962 27545 master.cpp:173] >>>Master received a response from a worker: [328:Laugh at Kayvon's jokes]
+I0321 22:17:16.771976 27545 master.cpp:177] <<Master send response back to client: 0x254b8f0
+I0321 22:17:16.771978 27545 master.cpp:180] pending_client_requests: 21
+I0321 22:17:16.785784 27545 master.cpp:173] >>>Master received a response from a worker: [342:You are going to do a great project]
+I0321 22:17:16.785797 27545 master.cpp:177] <<Master send response back to client: 0x254ab20
+I0321 22:17:16.785799 27545 master.cpp:180] pending_client_requests: 20
+I0321 22:17:16.791936 27545 master.cpp:173] >>>Master received a response from a worker: [335:You will perform amazingly on exam 2]
+I0321 22:17:16.791951 27545 master.cpp:177] <<Master send response back to client: 0x254bb40
+I0321 22:17:16.791954 27545 master.cpp:180] pending_client_requests: 19
+I0321 22:17:16.811673 27545 master.cpp:173] >>>Master received a response from a worker: [330:Laugh at Kayvon's jokes]
+I0321 22:17:16.811705 27545 master.cpp:177] <<Master send response back to client: 0x254b6a0
+I0321 22:17:16.811712 27545 master.cpp:180] pending_client_requests: 18
+I0321 22:17:16.821859 27545 master.cpp:173] >>>Master received a response from a worker: [329:Laugh at Kayvon's jokes]
+I0321 22:17:16.821873 27545 master.cpp:177] <<Master send response back to client: 0x254a160
+I0321 22:17:16.821876 27545 master.cpp:180] pending_client_requests: 17
+I0321 22:17:16.822314 27545 master.cpp:173] >>>Master received a response from a worker: [332:Laugh at Kayvon's jokes]
+I0321 22:17:16.822329 27545 master.cpp:177] <<Master send response back to client: 0x254bbd0
+I0321 22:17:16.822330 27545 master.cpp:180] pending_client_requests: 16
+I0321 22:17:16.823695 27545 master.cpp:173] >>>Master received a response from a worker: [331:Do a great project, and it all works out in the end]
+I0321 22:17:16.823710 27545 master.cpp:177] <<Master send response back to client: 0x254c0d0
+I0321 22:17:16.823712 27545 master.cpp:180] pending_client_requests: 15
+I0321 22:17:16.859544 27545 master.cpp:173] >>>Master received a response from a worker: [334:You will PWN your classmates in the parallelism competition]
+I0321 22:17:16.859557 27545 master.cpp:177] <<Master send response back to client: 0x254b0d0
+I0321 22:17:16.859560 27545 master.cpp:180] pending_client_requests: 14
+I0321 22:17:16.868557 27545 master.cpp:173] >>>Master received a response from a worker: [333:Ask questions. Ask questions. Ask questions]
+I0321 22:17:16.868571 27545 master.cpp:177] <<Master send response back to client: 0x254b980
+I0321 22:17:16.868574 27545 master.cpp:180] pending_client_requests: 13
+I0321 22:17:16.868906 27545 master.cpp:173] >>>Master received a response from a worker: [326:Do a great project, and it all works out in the end]
+I0321 22:17:16.868921 27545 master.cpp:177] <<Master send response back to client: 0x254b570
+I0321 22:17:16.868923 27545 master.cpp:180] pending_client_requests: 12
+I0321 22:17:16.894791 27545 master.cpp:173] >>>Master received a response from a worker: [327:Exams are all just fun and games]
+I0321 22:17:16.894824 27545 master.cpp:177] <<Master send response back to client: 0x254b320
+I0321 22:17:16.894829 27545 master.cpp:180] pending_client_requests: 11
+I0321 22:17:16.897624 27545 master.cpp:173] >>>Master received a response from a worker: [336:You will perform amazingly on exam 2]
+I0321 22:17:16.897639 27545 master.cpp:177] <<Master send response back to client: 0x254b450
+I0321 22:17:16.897641 27545 master.cpp:180] pending_client_requests: 10
+I0321 22:17:16.899837 27545 master.cpp:173] >>>Master received a response from a worker: [340:Exams are all just fun and games]
+I0321 22:17:16.899852 27545 master.cpp:177] <<Master send response back to client: 0x254ad60
+I0321 22:17:16.899853 27545 master.cpp:180] pending_client_requests: 9
+I0321 22:17:16.913682 27545 master.cpp:173] >>>Master received a response from a worker: [338:Exams are all just fun and games]
+I0321 22:17:16.913697 27545 master.cpp:177] <<Master send response back to client: 0x254b7c0
+I0321 22:17:16.913699 27545 master.cpp:180] pending_client_requests: 8
+I0321 22:17:16.918500 27545 master.cpp:173] >>>Master received a response from a worker: [343:You will PWN your classmates in the parallelism competition]
+I0321 22:17:16.918514 27545 master.cpp:177] <<Master send response back to client: 0x254a9f0
+I0321 22:17:16.918519 27545 master.cpp:180] pending_client_requests: 7
+I0321 22:17:16.919132 27545 master.cpp:173] >>>Master received a response from a worker: [341:You will perform amazingly on exam 2]
+I0321 22:17:16.919164 27545 master.cpp:177] <<Master send response back to client: 0x254a450
+I0321 22:17:16.919170 27545 master.cpp:180] pending_client_requests: 6
+I0321 22:17:16.926422 27545 master.cpp:173] >>>Master received a response from a worker: [345:Flatter your TAs with compliments]
+I0321 22:17:16.926453 27545 master.cpp:177] <<Master send response back to client: 0x254b200
+I0321 22:17:16.926460 27545 master.cpp:180] pending_client_requests: 5
+I0321 22:17:17.149596 27545 master.cpp:173] >>>Master received a response from a worker: [346:OMG, 418 is so gr8!]
+I0321 22:17:17.149627 27545 master.cpp:177] <<Master send response back to client: 0x254ae80
+I0321 22:17:17.149633 27545 master.cpp:180] pending_client_requests: 4
+I0321 22:17:17.157227 27545 master.cpp:173] >>>Master received a response from a worker: [344:Ask questions. Ask questions. Ask questions]
+I0321 22:17:17.157241 27545 master.cpp:177] <<Master send response back to client: 0x254a330
+I0321 22:17:17.157243 27545 master.cpp:180] pending_client_requests: 3
+I0321 22:17:17.172549 27545 master.cpp:173] >>>Master received a response from a worker: [347:Come to lecture, there might be donuts!]
+I0321 22:17:17.172580 27545 master.cpp:177] <<Master send response back to client: 0x254a610
+I0321 22:17:17.172585 27545 master.cpp:180] pending_client_requests: 2
+I0321 22:17:17.187801 27545 master.cpp:173] >>>Master received a response from a worker: [337:Be careful not to optimize prematurely]
+I0321 22:17:17.187834 27545 master.cpp:177] <<Master send response back to client: 0x254bfc0
+I0321 22:17:17.187839 27545 master.cpp:180] pending_client_requests: 1
+I0321 22:17:17.202648 27545 master.cpp:173] >>>Master received a response from a worker: [339:Write a great lecture comment on your favorite idea in the class]
+I0321 22:17:17.202662 27545 master.cpp:177] <<Master send response back to client: 0x254ba10
+I0321 22:17:17.202666 27545 master.cpp:180] pending_client_requests: 0
+I0321 22:17:17.211787 27545 main_loop.cpp:138] Shutting down

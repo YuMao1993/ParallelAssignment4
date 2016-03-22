@@ -8,7 +8,7 @@
 #include <map>
 
 #define MAX_EXEC_CONTEXT 24
-#define INIT_NUM_WORKER 2
+#define INIT_NUM_WORKER 1
 #define THRESHOLD 5
 
 /**
@@ -35,6 +35,8 @@ typedef struct _Request_info {
   client_req(client_req){}
 
 } Request_info;
+
+typedef int WorkType;
 
 /**
  * the state of worker
@@ -81,9 +83,31 @@ static struct Master_state {
   //tag type map
   std::map<int, int> tagTypeMap;
 
+  //update mstate
+  inline void handle_work_done(const Response_msg& resp, unsigned int worker_idx)
+  {
+    int tag = resp.get_tag();
+    int type = this->tagTypeMap[tag];
+    this->my_workers[worker_idx].num_work_type[type]--;
+    this->my_workers[worker_idx].num_running_task--;
+  }
+
 } mstate;
 
-
+static inline void send_and_update(Client_handle client_handle, 
+            Worker_handle worker_handle, const Request_msg& client_req,
+            unsigned int worker_idx, WorkType work_type)
+{
+  int tag = mstate.next_tag++;
+  worker_handle = mstate.my_workers[worker_idx].worker_handle;
+  Request_msg worker_req(tag, client_req);
+  mstate.tagClientMap[tag] = client_handle;
+  mstate.tagTypeMap[tag] = work_type;
+  
+  send_request_to_worker(worker_handle, worker_req);
+  mstate.my_workers[worker_idx].num_work_type[work_type]++;
+  mstate.my_workers[worker_idx].num_running_task++;
+}
 
 void master_node_init(int max_workers, int& tick_period) {
 
@@ -140,7 +164,8 @@ void handle_new_worker_online(Worker_handle worker_handle, int tag) {
   }
 }
 
-void handle_worker_response(Worker_handle worker_handle, const Response_msg& resp) {
+void handle_worker_response(Worker_handle worker_handle, const Response_msg& resp) 
+{
 
   // Master node has received a response from one of its workers.
   // Here we directly return this response to the client.
@@ -159,11 +184,8 @@ void handle_worker_response(Worker_handle worker_handle, const Response_msg& res
   {
     if(mstate.my_workers[i].worker_handle == worker_handle)
     {
-      // update mstate: num_work_type, num_running_task
-      int tag = resp.get_tag();
-      int type = mstate.tagTypeMap[tag];
-      mstate.my_workers[i].num_work_type[type]--;
-      mstate.my_workers[i].num_running_task--;
+      // update mstate
+      mstate.handle_work_done(resp, i);
       break;
     }
   }
@@ -188,15 +210,16 @@ void handle_worker_response(Worker_handle worker_handle, const Response_msg& res
 
 }
 
-void handle_client_request(Client_handle client_handle, const Request_msg& client_req) {
-
+void handle_client_request(Client_handle client_handle, const Request_msg& client_req) 
+{
   DLOG(INFO) << ">>Received request: " << client_req.get_request_string() << std::endl;
   std::string request_arg = client_req.get_arg("cmd");
 
   // You can assume that traces end with this special message.  It
   // exists because it might be useful for debugging to dump
   // information about the entire run here: statistics, etc.
-  if (request_arg == "lastrequest") {
+  if (request_arg == "lastrequest") 
+  {
     Response_msg resp(0);
     resp.set_response("ack");
     send_client_response(client_handle, resp);
@@ -210,31 +233,15 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
   // assign to low workload node 
   if (request_arg == "418wisdom")
   {
-    int min = mstate.my_workers[0].num_work_type[WISDOM];
-    int min_index = 0;
-    for(unsigned int i=0; i<mstate.my_workers.size(); i++)
+    for(unsigned int i = 0; i < mstate.my_workers.size(); i++)
     {
-      if (min > mstate.my_workers[i].num_work_type[WISDOM] && 
-          !mstate.my_workers[i].num_work_type[PROJECTIDEA])
+      if(mstate.my_workers[i].num_running_task <= MAX_EXEC_CONTEXT)
       {
-        min = mstate.my_workers[i].num_work_type[WISDOM];
-        min_index = i;
+        send_and_update(client_handle, mstate.my_workers[i].worker_handle,
+                        client_req, i, WISDOM);
+        is_assigned = true;
+        break;
       }
-
-    }
-
-    if (min <= MAX_EXEC_CONTEXT / 2)
-    {
-      Worker_handle worker_handle = mstate.my_workers[min_index].worker_handle;
-      int tag = mstate.next_tag++;
-      Request_msg worker_req(tag, client_req);
-      mstate.tagClientMap[tag] = client_handle;
-      mstate.tagTypeMap[tag] = WISDOM;
-      
-      send_request_to_worker(worker_handle, worker_req);
-      mstate.my_workers[min_index].num_work_type[WISDOM]++;
-      mstate.my_workers[min_index].num_running_task++;
-      is_assigned = true;
     }
   }
   // assign to idle node 
@@ -242,17 +249,10 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
   {
     for(unsigned int i=0; i<mstate.my_workers.size(); i++)
     {
-      if(mstate.my_workers[i].num_running_task <= 1)
+      if(mstate.my_workers[i].num_running_task <= MAX_EXEC_CONTEXT)
       {
-        Worker_handle worker_handle = mstate.my_workers[i].worker_handle;
-        int tag = mstate.next_tag++;
-        Request_msg worker_req(tag, client_req);
-        mstate.tagClientMap[tag] = client_handle;
-        mstate.tagTypeMap[tag] = PROJECTIDEA;
-        
-        send_request_to_worker(worker_handle, worker_req);
-        mstate.my_workers[i].num_work_type[PROJECTIDEA]++;
-        mstate.my_workers[i].num_running_task++;
+        send_and_update(client_handle, mstate.my_workers[i].worker_handle,
+                        client_req, i, PROJECTIDEA);
         is_assigned = true;
         break;
       } 
@@ -265,15 +265,8 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
     {
       if(mstate.my_workers[i].num_running_task < MAX_EXEC_CONTEXT)
       {
-        Worker_handle worker_handle = mstate.my_workers[i].worker_handle;
-        int tag = mstate.next_tag++;
-        Request_msg worker_req(tag, client_req);
-        mstate.tagClientMap[tag] = client_handle;
-        mstate.tagTypeMap[tag] = TELLMENOW;
-        
-        send_request_to_worker(worker_handle, worker_req);
-        mstate.my_workers[i].num_work_type[TELLMENOW]++;
-        mstate.my_workers[i].num_running_task++;
+        send_and_update(client_handle, mstate.my_workers[i].worker_handle,
+                        client_req, i, TELLMENOW);
         is_assigned = true;
         break;
       }
@@ -284,20 +277,10 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
   {
     for(unsigned int i=0; i<mstate.my_workers.size(); i++)
     {
-
-      if(!mstate.my_workers[i].num_work_type[WISDOM] && 
-         !mstate.my_workers[i].num_work_type[PROJECTIDEA] &&
-         mstate.my_workers[i].num_running_task < MAX_EXEC_CONTEXT)
+      if(mstate.my_workers[i].num_running_task < MAX_EXEC_CONTEXT)
       {
-        Worker_handle worker_handle = mstate.my_workers[i].worker_handle;
-        int tag = mstate.next_tag++;
-        Request_msg worker_req(tag, client_req);
-        mstate.tagClientMap[tag] = client_handle;
-        mstate.tagTypeMap[tag] = COUNTPRIMES;
-        
-        send_request_to_worker(worker_handle, worker_req);
-        mstate.my_workers[i].num_work_type[COUNTPRIMES]++;
-        mstate.my_workers[i].num_running_task++;
+        send_and_update(client_handle, mstate.my_workers[i].worker_handle,
+                        client_req, i, COUNTPRIMES);
         is_assigned = true;
         break;
       }
@@ -308,22 +291,10 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
   {
     for(unsigned int i=0; i<mstate.my_workers.size(); i++)
     {
-      if(!mstate.my_workers[i].num_work_type[WISDOM] && 
-         !mstate.my_workers[i].num_work_type[PROJECTIDEA] &&
-         mstate.my_workers[i].num_running_task < MAX_EXEC_CONTEXT)
-      {
-        Worker_handle worker_handle = mstate.my_workers[i].worker_handle;
-        int tag = mstate.next_tag++;
-        Request_msg worker_req(tag, client_req);
-        mstate.tagClientMap[tag] = client_handle;
-        mstate.tagTypeMap[tag] = COMPAREPRIMES;
-        
-        send_request_to_worker(worker_handle, worker_req);
-        mstate.my_workers[i].num_work_type[COMPAREPRIMES]++;
-        mstate.my_workers[i].num_running_task++;
-        is_assigned = true;
-        break;
-      }
+      send_and_update(client_handle, mstate.my_workers[i].worker_handle,
+                        client_req, i, COMPAREPRIMES);
+      is_assigned = true;
+      break;
     }
   }
 
@@ -347,7 +318,6 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
   // process calls another one of your handlers when action is
   // required.
   return;
-
 }
 
 void handle_tick() {
@@ -355,6 +325,18 @@ void handle_tick() {
   // TODO: you may wish to take action here.  This method is called at
   // fixed time intervals, according to how you set 'tick_period' in
   // 'master_node_init'.
+
+  // profile worker usage
+  for (unsigned int i = 0; i < mstate.my_workers.size(); i++)
+  {
+    DLOG(INFO) << "====HANDLE PROBE:====" << std::endl;
+    for (int j = 0; j < NUM_OF_WORKTYPE; j++)
+    {
+      DLOG(INFO) << j << ": " << mstate.my_workers[i].num_work_type[j] << std::endl;
+    }
+    DLOG(INFO) << std::endl;
+     
+  }
   // DLOG(INFO) << "request_queue size: " << mstate.requests_queue.size() << std::endl;
   // DLOG(INFO) << "request_queue vip size: " << mstate.requests_queue_vip.size() << std::endl;
   // if (!mstate.requests_queue.size() && mstate.my_workers.size() > 1)

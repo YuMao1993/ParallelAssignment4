@@ -26,6 +26,19 @@ static void create_computeprimes_req(Request_msg& req, int n) {
   req.set_arg("n", oss.str());
 }
 
+struct thread_primes_args
+{
+  Request_msg request;
+  Response_msg response;
+};
+
+static void* thread_primes(void* args)
+{
+  thread_primes_args* arg = (thread_primes_args*)args;
+  execute_work(arg->request, arg->response);
+  return NULL;
+}
+
 // Implements logic required by compareprimes command via multiple
 // calls to execute_work.  This function fills in the appropriate
 // response.
@@ -40,14 +53,29 @@ static void execute_compareprimes(const Request_msg& req, Response_msg& resp) {
     params[2] = atoi(req.get_arg("n3").c_str());
     params[3] = atoi(req.get_arg("n4").c_str());
 
-    for (int i=0; i<4; i++) {
-      Request_msg dummy_req(0);
-      Response_msg dummy_resp(0);
-      create_computeprimes_req(dummy_req, params[i]);
-      execute_work(dummy_req, dummy_resp);
-      counts[i] = atoi(dummy_resp.get_response().c_str());
+    //run 4 independent work in parallel
+    thread_primes_args args[4];
+    pthread_t tid[3];
+    for (int i=0; i<3; i++) {
+      create_computeprimes_req(args[i].request, params[i]);
+      pthread_create(&tid[i], NULL, thread_primes, (void*)&args[i]);
+    }
+    create_computeprimes_req(args[3].request, params[3]);
+    thread_primes((void*)&args[3]);
+
+    //reap all the 3 threads
+    for(int i=0; i<3; i++)
+    {
+      pthread_join(tid[i], NULL);
     }
 
+    //convert response to counts
+    for(int i=0; i<4; i++)
+    {
+      counts[i] = atoi(args[i].response.get_response().c_str());
+    }
+
+    //generate response
     if (counts[1]-counts[0] > counts[3]-counts[2])
       resp.set_response("There are more primes in first range.");
     else

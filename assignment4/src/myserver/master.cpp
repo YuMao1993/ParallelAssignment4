@@ -327,16 +327,16 @@ void handle_tick() {
   // 'master_node_init'.
 
   // profile worker usage
-  for (unsigned int i = 0; i < mstate.my_workers.size(); i++)
-  {
-    DLOG(INFO) << "====HANDLE PROBE:====" << std::endl;
-    for (int j = 0; j < NUM_OF_WORKTYPE; j++)
-    {
-      DLOG(INFO) << j << ": " << mstate.my_workers[i].num_work_type[j] << std::endl;
-    }
-    DLOG(INFO) << std::endl;
+  // for (unsigned int i = 0; i < mstate.my_workers.size(); i++)
+  // {
+  //   DLOG(INFO) << "====HANDLE PROBE:====" << std::endl;
+  //   for (int j = 0; j < NUM_OF_WORKTYPE; j++)
+  //   {
+  //     DLOG(INFO) << j << ": " << mstate.my_workers[i].num_work_type[j] << std::endl;
+  //   }
+  //   DLOG(INFO) << std::endl;
      
-  }
+  // }
   // DLOG(INFO) << "request_queue size: " << mstate.requests_queue.size() << std::endl;
   // DLOG(INFO) << "request_queue vip size: " << mstate.requests_queue_vip.size() << std::endl;
   // if (!mstate.requests_queue.size() && mstate.my_workers.size() > 1)

@@ -1,0 +1,435 @@
+Log file created at: 2016/03/23 18:48:54
+Running on machine: compute-0-5.local
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0323 18:48:54.864543  7359 main.cpp:49] Booting worker. Hostname: compute-0-5.local
+I0323 18:48:55.867804  7359 main.cpp:62] Connected to master compute-0-13.local:15418
+I0323 18:48:55.867820  7359 worker.cpp:93] **** Initializing worker: y worker ****
+I0323 18:48:56.055145  7360 worker.cpp:121] Worker got request: [0:cmd=countprimes;n=700342]
+I0323 18:48:56.055191  7362 worker.cpp:121] Worker got request: [1:cmd=projectidea;x=84443]
+I0323 18:48:56.679013  7360 worker.cpp:141] Worker completed work in 623.822 ms (0)
+I0323 18:48:57.931459  7361 worker.cpp:121] Worker got request: [2:cmd=countprimes;n=848073]
+I0323 18:48:58.029914  7363 worker.cpp:121] Worker got request: [3:cmd=projectidea;x=75796]
+I0323 18:48:58.736786  7361 worker.cpp:141] Worker completed work in 805.289 ms (2)
+I0323 18:48:59.091047  7362 worker.cpp:141] Worker completed work in 3035.81 ms (1)
+I0323 18:48:59.954484  7364 worker.cpp:121] Worker got request: [4:cmd=projectidea;x=42057]
+I0323 18:49:00.024554  7365 worker.cpp:121] Worker got request: [5:cmd=countprimes;n=960281]
+I0323 18:49:00.983975  7363 worker.cpp:141] Worker completed work in 2954.02 ms (3)
+I0323 18:49:00.997681  7365 worker.cpp:141] Worker completed work in 973.092 ms (5)
+I0323 18:49:01.803371  7366 worker.cpp:121] Worker got request: [6:cmd=projectidea;x=25891]
+I0323 18:49:02.015712  7367 worker.cpp:121] Worker got request: [7:cmd=countprimes;n=773173]
+I0323 18:49:02.737967  7367 worker.cpp:141] Worker completed work in 722.22 ms (7)
+I0323 18:49:02.994367  7364 worker.cpp:141] Worker completed work in 3039.84 ms (4)
+I0323 18:49:03.582125  7368 worker.cpp:121] Worker got request: [8:cmd=projectidea;x=51127]
+I0323 18:49:04.001947  7369 worker.cpp:121] Worker got request: [9:cmd=countprimes;n=797561]
+I0323 18:49:04.759691  7369 worker.cpp:141] Worker completed work in 757.709 ms (9)
+I0323 18:49:04.928213  7366 worker.cpp:141] Worker completed work in 3124.79 ms (6)
+I0323 18:49:05.292804  7370 worker.cpp:121] Worker got request: [10:cmd=projectidea;x=40493]
+I0323 18:49:05.984253  7371 worker.cpp:121] Worker got request: [11:cmd=countprimes;n=961142]
+I0323 18:49:06.748702  7368 worker.cpp:141] Worker completed work in 3166.53 ms (8)
+I0323 18:49:06.937499  7372 worker.cpp:121] Worker got request: [12:cmd=projectidea;x=78380]
+I0323 18:49:06.955467  7371 worker.cpp:141] Worker completed work in 971.176 ms (11)
+I0323 18:49:08.000931  7373 worker.cpp:121] Worker got request: [13:cmd=countprimes;n=757320]
+I0323 18:49:08.400022  7370 worker.cpp:141] Worker completed work in 3107.17 ms (10)
+I0323 18:49:08.519027  7374 worker.cpp:121] Worker got request: [14:cmd=projectidea;x=30331]
+I0323 18:49:08.726183  7373 worker.cpp:141] Worker completed work in 725.218 ms (13)
+I0323 18:49:09.933974  7375 worker.cpp:121] Worker got request: [15:cmd=countprimes;n=870253]
+I0323 18:49:10.415784  7372 worker.cpp:141] Worker completed work in 3478.24 ms (12)
+I0323 18:49:10.789748  7375 worker.cpp:141] Worker completed work in 855.743 ms (15)
+I0323 18:49:11.503963  7376 worker.cpp:121] Worker got request: [17:cmd=projectidea;x=58338]
+I0323 18:49:11.900882  7377 worker.cpp:121] Worker got request: [18:cmd=countprimes;n=771585]
+I0323 18:49:11.962471  7374 worker.cpp:141] Worker completed work in 3443.39 ms (14)
+I0323 18:49:12.616459  7377 worker.cpp:141] Worker completed work in 715.544 ms (18)
+I0323 18:49:12.910572  7378 worker.cpp:121] Worker got request: [19:cmd=projectidea;x=90812]
+I0323 18:49:13.865509  7379 worker.cpp:121] Worker got request: [20:cmd=countprimes;n=990263]
+I0323 18:49:14.694638  7376 worker.cpp:141] Worker completed work in 3190.61 ms (17)
+I0323 18:49:14.879217  7379 worker.cpp:141] Worker completed work in 1013.67 ms (20)
+I0323 18:49:15.564841  7380 worker.cpp:121] Worker got request: [22:cmd=projectidea;x=28184]
+I0323 18:49:15.823745  7381 worker.cpp:121] Worker got request: [23:cmd=countprimes;n=940954]
+I0323 18:49:16.000704  7378 worker.cpp:141] Worker completed work in 3090.08 ms (19)
+I0323 18:49:16.777596  7381 worker.cpp:141] Worker completed work in 953.815 ms (23)
+I0323 18:49:16.815584  7382 worker.cpp:121] Worker got request: [24:cmd=projectidea;x=75581]
+I0323 18:49:17.778481  7383 worker.cpp:121] Worker got request: [25:cmd=countprimes;n=834391]
+I0323 18:49:18.596117  7383 worker.cpp:141] Worker completed work in 817.592 ms (25)
+I0323 18:49:18.937492  7380 worker.cpp:141] Worker completed work in 3372.6 ms (22)
+I0323 18:49:19.175562  7360 worker.cpp:121] Worker got request: [27:cmd=projectidea;x=25050]
+I0323 18:49:19.728029  7361 worker.cpp:121] Worker got request: [28:cmd=countprimes;n=724133]
+I0323 18:49:20.265586  7382 worker.cpp:141] Worker completed work in 3449.95 ms (24)
+I0323 18:49:20.288240  7362 worker.cpp:121] Worker got request: [29:cmd=projectidea;x=90975]
+I0323 18:49:20.375721  7361 worker.cpp:141] Worker completed work in 647.669 ms (28)
+I0323 18:49:21.673769  7363 worker.cpp:121] Worker got request: [31:cmd=countprimes;n=796016]
+I0323 18:49:22.085856  7360 worker.cpp:141] Worker completed work in 2910.25 ms (27)
+I0323 18:49:22.387228  7365 worker.cpp:121] Worker got request: [32:cmd=projectidea;x=81022]
+I0323 18:49:22.411727  7363 worker.cpp:141] Worker completed work in 737.937 ms (31)
+I0323 18:49:23.653895  7367 worker.cpp:121] Worker got request: [34:cmd=countprimes;n=852382]
+I0323 18:49:23.726609  7362 worker.cpp:141] Worker completed work in 3438.32 ms (29)
+I0323 18:49:24.328205  7364 worker.cpp:121] Worker got request: [35:cmd=projectidea;x=31015]
+I0323 18:49:24.464172  7367 worker.cpp:141] Worker completed work in 810.241 ms (34)
+I0323 18:49:25.550753  7369 worker.cpp:121] Worker got request: [37:cmd=countprimes;n=979851]
+I0323 18:49:25.883268  7365 worker.cpp:141] Worker completed work in 3495.98 ms (32)
+I0323 18:49:26.124083  7366 worker.cpp:121] Worker got request: [38:cmd=projectidea;x=89884]
+I0323 18:49:26.536950  7369 worker.cpp:141] Worker completed work in 985.731 ms (37)
+I0323 18:49:27.478709  7364 worker.cpp:141] Worker completed work in 3150.46 ms (35)
+I0323 18:49:27.482940  7368 worker.cpp:121] Worker got request: [40:cmd=countprimes;n=732717]
+I0323 18:49:27.504456  7371 worker.cpp:121] Worker got request: [41:cmd=countprimes;n=865380]
+I0323 18:49:27.526710  7370 worker.cpp:121] Worker got request: [42:cmd=countprimes;n=911969]
+I0323 18:49:27.548689  7373 worker.cpp:121] Worker got request: [43:cmd=countprimes;n=864232]
+I0323 18:49:27.570858  7372 worker.cpp:121] Worker got request: [44:cmd=countprimes;n=944340]
+I0323 18:49:27.592682  7375 worker.cpp:121] Worker got request: [45:cmd=countprimes;n=862085]
+I0323 18:49:27.614734  7374 worker.cpp:121] Worker got request: [46:cmd=countprimes;n=989152]
+I0323 18:49:27.636661  7377 worker.cpp:121] Worker got request: [47:cmd=countprimes;n=880956]
+I0323 18:49:27.658646  7376 worker.cpp:121] Worker got request: [48:cmd=countprimes;n=876285]
+I0323 18:49:27.680701  7379 worker.cpp:121] Worker got request: [49:cmd=countprimes;n=833497]
+I0323 18:49:27.702662  7378 worker.cpp:121] Worker got request: [50:cmd=countprimes;n=878886]
+I0323 18:49:27.724647  7381 worker.cpp:121] Worker got request: [51:cmd=countprimes;n=815470]
+I0323 18:49:27.746656  7383 worker.cpp:121] Worker got request: [52:cmd=countprimes;n=872695]
+I0323 18:49:27.768666  7380 worker.cpp:121] Worker got request: [53:cmd=countprimes;n=787099]
+I0323 18:49:27.790640  7382 worker.cpp:121] Worker got request: [54:cmd=countprimes;n=756817]
+I0323 18:49:27.812660  7361 worker.cpp:121] Worker got request: [55:cmd=countprimes;n=756019]
+I0323 18:49:27.823648  7360 worker.cpp:121] Worker got request: [56:cmd=projectidea;x=47214]
+I0323 18:49:27.834713  7363 worker.cpp:121] Worker got request: [57:cmd=countprimes;n=883832]
+I0323 18:49:27.856674  7362 worker.cpp:121] Worker got request: [58:cmd=countprimes;n=896998]
+I0323 18:49:27.878669  7367 worker.cpp:121] Worker got request: [59:cmd=countprimes;n=842959]
+I0323 18:49:27.900707  7365 worker.cpp:121] Worker got request: [60:cmd=countprimes;n=726947]
+I0323 18:49:27.922670  7369 worker.cpp:121] Worker got request: [61:cmd=countprimes;n=927281]
+I0323 18:49:27.944653  7364 worker.cpp:121] Worker got request: [62:cmd=countprimes;n=963031]
+I0323 18:49:28.878181  7368 worker.cpp:141] Worker completed work in 1395.21 ms (40)
+I0323 18:49:28.918179  7368 worker.cpp:121] Worker got request: [106:cmd=countprimes;n=872786]
+I0323 18:49:28.923626  7380 worker.cpp:141] Worker completed work in 1154.93 ms (53)
+I0323 18:49:28.993870  7377 worker.cpp:141] Worker completed work in 1357.18 ms (47)
+I0323 18:49:28.994094  7380 worker.cpp:121] Worker got request: [108:cmd=countprimes;n=811042]
+I0323 18:49:28.998987  7373 worker.cpp:141] Worker completed work in 1450.27 ms (43)
+I0323 18:49:29.000403  7377 worker.cpp:121] Worker got request: [111:cmd=countprimes;n=706490]
+I0323 18:49:29.001679  7363 worker.cpp:141] Worker completed work in 1166.94 ms (57)
+I0323 18:49:29.081873  7373 worker.cpp:121] Worker got request: [112:cmd=countprimes;n=988310]
+I0323 18:49:29.081873  7363 worker.cpp:121] Worker got request: [113:cmd=countprimes;n=755491]
+I0323 18:49:29.221632  7371 worker.cpp:141] Worker completed work in 1717.15 ms (41)
+I0323 18:49:29.255542  7370 worker.cpp:141] Worker completed work in 1728.79 ms (42)
+I0323 18:49:29.262209  7371 worker.cpp:121] Worker got request: [120:cmd=countprimes;n=730450]
+I0323 18:49:29.262229  7370 worker.cpp:121] Worker got request: [121:cmd=countprimes;n=766249]
+I0323 18:49:29.281342  7375 worker.cpp:141] Worker completed work in 1688.64 ms (45)
+I0323 18:49:29.291363  7382 worker.cpp:141] Worker completed work in 1500.7 ms (54)
+I0323 18:49:29.297636  7361 worker.cpp:141] Worker completed work in 1484.94 ms (55)
+I0323 18:49:29.336072  7365 worker.cpp:141] Worker completed work in 1435.32 ms (60)
+I0323 18:49:29.336305  7375 worker.cpp:121] Worker got request: [124:cmd=countprimes;n=805088]
+I0323 18:49:29.336328  7361 worker.cpp:121] Worker got request: [125:cmd=countprimes;n=754095]
+I0323 18:49:29.346659  7382 worker.cpp:121] Worker got request: [126:cmd=countprimes;n=851091]
+I0323 18:49:29.370987  7376 worker.cpp:141] Worker completed work in 1712.32 ms (48)
+I0323 18:49:29.371213  7365 worker.cpp:121] Worker got request: [127:cmd=countprimes;n=711813]
+I0323 18:49:29.385244  7381 worker.cpp:141] Worker completed work in 1660.57 ms (51)
+I0323 18:49:29.385458  7376 worker.cpp:121] Worker got request: [128:cmd=countprimes;n=730276]
+I0323 18:49:29.400905  7372 worker.cpp:141] Worker completed work in 1830.02 ms (44)
+I0323 18:49:29.401113  7381 worker.cpp:121] Worker got request: [129:cmd=countprimes;n=996471]
+I0323 18:49:29.452095  7378 worker.cpp:141] Worker completed work in 1749.4 ms (50)
+I0323 18:49:29.452327  7372 worker.cpp:121] Worker got request: [130:cmd=countprimes;n=759806]
+I0323 18:49:29.501864  7378 worker.cpp:121] Worker got request: [132:cmd=countprimes;n=919480]
+I0323 18:49:29.544714  7374 worker.cpp:141] Worker completed work in 1929.94 ms (46)
+I0323 18:49:29.557351  7383 worker.cpp:141] Worker completed work in 1810.67 ms (52)
+I0323 18:49:29.596218  7383 worker.cpp:121] Worker got request: [138:cmd=countprimes;n=717415]
+I0323 18:49:29.596220  7374 worker.cpp:121] Worker got request: [137:cmd=countprimes;n=901792]
+I0323 18:49:29.656486  7379 worker.cpp:141] Worker completed work in 1975.76 ms (49)
+I0323 18:49:29.696156  7379 worker.cpp:121] Worker got request: [142:cmd=countprimes;n=802694]
+I0323 18:49:29.779103  7367 worker.cpp:141] Worker completed work in 1900.4 ms (59)
+I0323 18:49:29.819162  7367 worker.cpp:121] Worker got request: [147:cmd=countprimes;n=841488]
+I0323 18:49:29.934933  7362 worker.cpp:141] Worker completed work in 2078.23 ms (58)
+I0323 18:49:29.975173  7362 worker.cpp:121] Worker got request: [155:cmd=countprimes;n=868180]
+I0323 18:49:30.021747  7363 worker.cpp:141] Worker completed work in 939.837 ms (113)
+I0323 18:49:30.059741  7364 worker.cpp:141] Worker completed work in 2115.06 ms (62)
+I0323 18:49:30.062197  7364 worker.cpp:121] Worker got request: [160:cmd=countprimes;n=784265]
+I0323 18:49:30.062206  7363 worker.cpp:121] Worker got request: [159:cmd=countprimes;n=713708]
+I0323 18:49:30.079406  7380 worker.cpp:141] Worker completed work in 1085.29 ms (108)
+I0323 18:49:30.098726  7369 worker.cpp:141] Worker completed work in 2176.02 ms (61)
+I0323 18:49:30.160863  7369 worker.cpp:121] Worker got request: [162:cmd=countprimes;n=985939]
+I0323 18:49:30.160888  7380 worker.cpp:121] Worker got request: [163:cmd=countprimes;n=805668]
+I0323 18:49:30.274266  7361 worker.cpp:141] Worker completed work in 937.909 ms (125)
+I0323 18:49:30.314182  7361 worker.cpp:121] Worker got request: [169:cmd=countprimes;n=914686]
+I0323 18:49:30.330005  7377 worker.cpp:141] Worker completed work in 1329.58 ms (111)
+I0323 18:49:30.409863  7377 worker.cpp:121] Worker got request: [172:cmd=countprimes;n=895250]
+I0323 18:49:30.711040  7371 worker.cpp:141] Worker completed work in 1448.81 ms (120)
+I0323 18:49:30.737987  7365 worker.cpp:141] Worker completed work in 1366.74 ms (127)
+I0323 18:49:30.744737  7370 worker.cpp:141] Worker completed work in 1482.48 ms (121)
+I0323 18:49:30.751140  7371 worker.cpp:121] Worker got request: [184:cmd=countprimes;n=747306]
+I0323 18:49:30.754343  7365 worker.cpp:121] Worker got request: [186:cmd=countprimes;n=833606]
+I0323 18:49:30.754467  7370 worker.cpp:121] Worker got request: [187:cmd=countprimes;n=714033]
+I0323 18:49:30.765221  7366 worker.cpp:141] Worker completed work in 4641.08 ms (38)
+I0323 18:49:30.844878  7366 worker.cpp:121] Worker got request: [188:cmd=countprimes;n=858272]
+I0323 18:49:30.892920  7376 worker.cpp:141] Worker completed work in 1507.44 ms (128)
+I0323 18:49:30.933115  7376 worker.cpp:121] Worker got request: [193:cmd=countprimes;n=848375]
+I0323 18:49:30.951232  7368 worker.cpp:141] Worker completed work in 2033.03 ms (106)
+I0323 18:49:30.964216  7363 worker.cpp:141] Worker completed work in 901.982 ms (159)
+I0323 18:49:31.030830  7368 worker.cpp:121] Worker got request: [199:cmd=countprimes;n=898659]
+I0323 18:49:31.030846  7363 worker.cpp:121] Worker got request: [200:cmd=countprimes;n=825468]
+I0323 18:49:31.084497  7380 worker.cpp:141] Worker completed work in 923.583 ms (163)
+I0323 18:49:31.124145  7380 worker.cpp:121] Worker got request: [208:cmd=countprimes;n=820545]
+I0323 18:49:31.164613  7383 worker.cpp:141] Worker completed work in 1568.37 ms (138)
+I0323 18:49:31.170411  7375 worker.cpp:141] Worker completed work in 1834.08 ms (124)
+I0323 18:49:31.184255  7382 worker.cpp:141] Worker completed work in 1837.57 ms (126)
+I0323 18:49:31.201608  7373 worker.cpp:141] Worker completed work in 2119.69 ms (112)
+I0323 18:49:31.205168  7383 worker.cpp:121] Worker got request: [212:cmd=countprimes;n=915197]
+I0323 18:49:31.205178  7375 worker.cpp:121] Worker got request: [213:cmd=countprimes;n=700707]
+I0323 18:49:31.222421  7382 worker.cpp:121] Worker got request: [214:cmd=countprimes;n=946820]
+I0323 18:49:31.223403  7373 worker.cpp:121] Worker got request: [215:cmd=projectidea;x=91302]
+I0323 18:49:31.249418  7372 worker.cpp:141] Worker completed work in 1797.07 ms (130)
+I0323 18:49:31.314946  7379 worker.cpp:141] Worker completed work in 1618.77 ms (142)
+I0323 18:49:31.315161  7372 worker.cpp:121] Worker got request: [217:cmd=countprimes;n=729335]
+I0323 18:49:31.371852  7379 worker.cpp:121] Worker got request: [220:cmd=countprimes;n=962097]
+I0323 18:49:31.384912  7378 worker.cpp:141] Worker completed work in 1883 ms (132)
+I0323 18:49:31.433684  7374 worker.cpp:141] Worker completed work in 1837.42 ms (137)
+I0323 18:49:31.433902  7378 worker.cpp:121] Worker got request: [223:cmd=countprimes;n=730054]
+I0323 18:49:31.481881  7374 worker.cpp:121] Worker got request: [225:cmd=countprimes;n=819009]
+I0323 18:49:31.537822  7381 worker.cpp:141] Worker completed work in 2136.68 ms (129)
+I0323 18:49:31.578156  7381 worker.cpp:121] Worker got request: [230:cmd=countprimes;n=958408]
+I0323 18:49:31.618419  7364 worker.cpp:141] Worker completed work in 1556.2 ms (160)
+I0323 18:49:31.658170  7364 worker.cpp:121] Worker got request: [234:cmd=countprimes;n=804116]
+I0323 18:49:31.771236  7361 worker.cpp:141] Worker completed work in 1457.01 ms (169)
+I0323 18:49:31.811192  7361 worker.cpp:121] Worker got request: [240:cmd=countprimes;n=867507]
+I0323 18:49:31.831457  7362 worker.cpp:141] Worker completed work in 1856.26 ms (155)
+I0323 18:49:31.910835  7362 worker.cpp:121] Worker got request: [243:cmd=countprimes;n=972956]
+I0323 18:49:31.975039  7367 worker.cpp:141] Worker completed work in 2155.85 ms (147)
+I0323 18:49:32.015137  7367 worker.cpp:121] Worker got request: [249:cmd=countprimes;n=970813]
+I0323 18:49:32.151059  7370 worker.cpp:141] Worker completed work in 1396.56 ms (187)
+I0323 18:49:32.195211  7370 worker.cpp:121] Worker got request: [259:cmd=countprimes;n=936887]
+I0323 18:49:32.284018  7377 worker.cpp:141] Worker completed work in 1874.11 ms (172)
+I0323 18:49:32.308928  7369 worker.cpp:141] Worker completed work in 2148.04 ms (162)
+I0323 18:49:32.324170  7369 worker.cpp:121] Worker got request: [266:cmd=countprimes;n=786859]
+I0323 18:49:32.324167  7377 worker.cpp:121] Worker got request: [265:cmd=countprimes;n=994575]
+I0323 18:49:32.330745  7378 worker.cpp:141] Worker completed work in 896.816 ms (223)
+I0323 18:49:32.397979  7371 worker.cpp:141] Worker completed work in 1646.81 ms (184)
+I0323 18:49:32.398211  7378 worker.cpp:121] Worker got request: [267:cmd=countprimes;n=818437]
+I0323 18:49:32.424003  7365 worker.cpp:141] Worker completed work in 1669.62 ms (186)
+I0323 18:49:32.424218  7371 worker.cpp:121] Worker got request: [270:cmd=countprimes;n=843419]
+I0323 18:49:32.454049  7380 worker.cpp:141] Worker completed work in 1329.87 ms (208)
+I0323 18:49:32.454249  7365 worker.cpp:121] Worker got request: [271:cmd=countprimes;n=771912]
+I0323 18:49:32.511052  7375 worker.cpp:141] Worker completed work in 1305.85 ms (213)
+I0323 18:49:32.511313  7380 worker.cpp:121] Worker got request: [273:cmd=countprimes;n=753876]
+I0323 18:49:32.559844  7375 worker.cpp:121] Worker got request: [275:cmd=countprimes;n=721258]
+I0323 18:49:32.569339  7366 worker.cpp:141] Worker completed work in 1724.42 ms (188)
+I0323 18:49:32.648856  7366 worker.cpp:121] Worker got request: [278:cmd=countprimes;n=824416]
+I0323 18:49:32.667361  7376 worker.cpp:141] Worker completed work in 1734.22 ms (193)
+I0323 18:49:32.675289  7363 worker.cpp:141] Worker completed work in 1644.41 ms (200)
+I0323 18:49:32.746861  7376 worker.cpp:121] Worker got request: [282:cmd=countprimes;n=952255]
+I0323 18:49:32.746886  7363 worker.cpp:121] Worker got request: [283:cmd=countprimes;n=992869]
+I0323 18:49:32.854063  7372 worker.cpp:141] Worker completed work in 1538.88 ms (217)
+I0323 18:49:32.894279  7372 worker.cpp:121] Worker got request: [291:cmd=countprimes;n=975907]
+I0323 18:49:33.075577  7368 worker.cpp:141] Worker completed work in 2044.72 ms (199)
+I0323 18:49:33.115061  7374 worker.cpp:141] Worker completed work in 1633.14 ms (225)
+I0323 18:49:33.115139  7368 worker.cpp:121] Worker got request: [302:cmd=countprimes;n=818142]
+I0323 18:49:33.150203  7361 worker.cpp:141] Worker completed work in 1338.97 ms (240)
+I0323 18:49:33.157143  7374 worker.cpp:121] Worker got request: [304:cmd=countprimes;n=834563]
+I0323 18:49:33.180200  7361 worker.cpp:121] Worker got request: [305:cmd=countprimes;n=846586]
+I0323 18:49:33.250715  7383 worker.cpp:141] Worker completed work in 2045.52 ms (212)
+I0323 18:49:33.291148  7383 worker.cpp:121] Worker got request: [310:cmd=countprimes;n=996538]
+I0323 18:49:33.435956  7364 worker.cpp:141] Worker completed work in 1777.76 ms (234)
+I0323 18:49:33.445713  7378 worker.cpp:141] Worker completed work in 1047.47 ms (267)
+I0323 18:49:33.453884  7382 worker.cpp:141] Worker completed work in 2231.43 ms (214)
+I0323 18:49:33.476161  7364 worker.cpp:121] Worker got request: [318:cmd=countprimes;n=970904]
+I0323 18:49:33.488445  7378 worker.cpp:121] Worker got request: [320:cmd=countprimes;n=903076]
+I0323 18:49:33.510424  7382 worker.cpp:121] Worker got request: [321:cmd=countprimes;n=735673]
+I0323 18:49:33.589081  7379 worker.cpp:141] Worker completed work in 2217.2 ms (220)
+I0323 18:49:33.623453  7380 worker.cpp:141] Worker completed work in 1112.09 ms (273)
+I0323 18:49:33.629137  7379 worker.cpp:121] Worker got request: [325:cmd=countprimes;n=984389]
+I0323 18:49:33.642518  7380 worker.cpp:121] Worker got request: [327:cmd=countprimes;n=743906]
+I0323 18:49:33.902519  7381 worker.cpp:141] Worker completed work in 2324.33 ms (230)
+I0323 18:49:33.942150  7381 worker.cpp:121] Worker got request: [340:cmd=countprimes;n=975114]
+I0323 18:49:33.976786  7370 worker.cpp:141] Worker completed work in 1781.54 ms (259)
+I0323 18:49:33.977906  7365 worker.cpp:141] Worker completed work in 1523.63 ms (271)
+I0323 18:49:33.990998  7375 worker.cpp:141] Worker completed work in 1431.13 ms (275)
+I0323 18:49:33.997165  7369 worker.cpp:141] Worker completed work in 1672.97 ms (266)
+I0323 18:49:34.056871  7375 worker.cpp:121] Worker got request: [345:cmd=countprimes;n=760597]
+I0323 18:49:34.056880  7370 worker.cpp:121] Worker got request: [344:cmd=countprimes;n=901021]
+I0323 18:49:34.056880  7365 worker.cpp:121] Worker got request: [346:cmd=countprimes;n=882931]
+I0323 18:49:34.060459  7369 worker.cpp:121] Worker got request: [347:cmd=countprimes;n=765632]
+I0323 18:49:34.114114  7362 worker.cpp:141] Worker completed work in 2203.25 ms (243)
+I0323 18:49:34.154160  7362 worker.cpp:121] Worker got request: [350:cmd=countprimes;n=969703]
+I0323 18:49:34.190973  7371 worker.cpp:141] Worker completed work in 1766.73 ms (270)
+I0323 18:49:34.200235  7367 worker.cpp:141] Worker completed work in 2185.07 ms (249)
+I0323 18:49:34.270828  7371 worker.cpp:121] Worker got request: [353:cmd=countprimes;n=744510]
+I0323 18:49:34.273699  7366 worker.cpp:141] Worker completed work in 1624.8 ms (278)
+I0323 18:49:34.273746  7366 worker.cpp:121] Worker got request: [354:cmd=countprimes;n=777064]
+I0323 18:49:34.353847  7367 worker.cpp:121] Worker got request: [357:cmd=countprimes;n=874885]
+I0323 18:49:34.435595  7361 worker.cpp:141] Worker completed work in 1255.36 ms (305)
+I0323 18:49:34.476181  7361 worker.cpp:121] Worker got request: [365:cmd=countprimes;n=712189]
+I0323 18:49:34.497776  7377 worker.cpp:141] Worker completed work in 2173.57 ms (265)
+I0323 18:49:34.577885  7377 worker.cpp:121] Worker got request: [367:cmd=countprimes;n=953187]
+I0323 18:49:34.687283  7378 worker.cpp:141] Worker completed work in 1198.8 ms (320)
+I0323 18:49:34.730224  7378 worker.cpp:121] Worker got request: [376:cmd=countprimes;n=872162]
+I0323 18:49:34.843924  7374 worker.cpp:141] Worker completed work in 1686.75 ms (304)
+I0323 18:49:34.871261  7380 worker.cpp:141] Worker completed work in 1228.71 ms (327)
+I0323 18:49:34.884181  7374 worker.cpp:121] Worker got request: [383:cmd=countprimes;n=761831]
+I0323 18:49:34.884254  7380 worker.cpp:121] Worker got request: [384:cmd=countprimes;n=860625]
+I0323 18:49:34.950086  7363 worker.cpp:141] Worker completed work in 2203.16 ms (283)
+I0323 18:49:34.980979  7368 worker.cpp:141] Worker completed work in 1865.81 ms (302)
+I0323 18:49:34.990188  7363 worker.cpp:121] Worker got request: [388:cmd=countprimes;n=937312]
+I0323 18:49:34.993934  7382 worker.cpp:141] Worker completed work in 1483.49 ms (321)
+I0323 18:49:35.016290  7368 worker.cpp:121] Worker got request: [389:cmd=countprimes;n=816571]
+I0323 18:49:35.018455  7376 worker.cpp:141] Worker completed work in 2271.57 ms (282)
+I0323 18:49:35.034112  7372 worker.cpp:141] Worker completed work in 2139.81 ms (291)
+I0323 18:49:35.097848  7382 worker.cpp:121] Worker got request: [391:cmd=countprimes;n=955395]
+I0323 18:49:35.097856  7376 worker.cpp:121] Worker got request: [392:cmd=countprimes;n=939418]
+I0323 18:49:35.114701  7372 worker.cpp:121] Worker got request: [393:cmd=countprimes;n=897096]
+I0323 18:49:35.552489  7369 worker.cpp:141] Worker completed work in 1492.01 ms (347)
+I0323 18:49:35.592201  7369 worker.cpp:121] Worker got request: [415:cmd=countprimes;n=902063]
+I0323 18:49:35.600965  7361 worker.cpp:141] Worker completed work in 1124.74 ms (365)
+I0323 18:49:35.604039  7375 worker.cpp:141] Worker completed work in 1547.14 ms (345)
+I0323 18:49:35.621544  7370 worker.cpp:141] Worker completed work in 1564.62 ms (344)
+I0323 18:49:35.680869  7375 worker.cpp:121] Worker got request: [419:cmd=countprimes;n=883531]
+I0323 18:49:35.680879  7361 worker.cpp:121] Worker got request: [418:cmd=countprimes;n=823342]
+I0323 18:49:35.680883  7370 worker.cpp:121] Worker got request: [420:cmd=countprimes;n=816005]
+I0323 18:49:35.693183  7383 worker.cpp:141] Worker completed work in 2402 ms (310)
+I0323 18:49:35.772835  7383 worker.cpp:121] Worker got request: [422:cmd=countprimes;n=841267]
+I0323 18:49:35.784554  7364 worker.cpp:141] Worker completed work in 2308.36 ms (318)
+I0323 18:49:35.791929  7366 worker.cpp:141] Worker completed work in 1518.15 ms (354)
+I0323 18:49:35.862687  7365 worker.cpp:141] Worker completed work in 1805.76 ms (346)
+I0323 18:49:35.862926  7364 worker.cpp:121] Worker got request: [426:cmd=countprimes;n=888990]
+I0323 18:49:35.862939  7366 worker.cpp:121] Worker got request: [427:cmd=countprimes;n=731587]
+I0323 18:49:35.876099  7378 worker.cpp:141] Worker completed work in 1145.84 ms (376)
+I0323 18:49:35.876313  7365 worker.cpp:121] Worker got request: [429:cmd=countprimes;n=804000]
+I0323 18:49:35.925851  7378 worker.cpp:121] Worker got request: [430:cmd=countprimes;n=815024]
+I0323 18:49:36.000849  7379 worker.cpp:141] Worker completed work in 2371.68 ms (325)
+I0323 18:49:36.018791  7371 worker.cpp:141] Worker completed work in 1747.94 ms (353)
+I0323 18:49:36.041275  7379 worker.cpp:121] Worker got request: [436:cmd=countprimes;n=889694]
+I0323 18:49:36.051694  7371 worker.cpp:121] Worker got request: [437:cmd=countprimes;n=801359]
+I0323 18:49:36.122997  7377 worker.cpp:141] Worker completed work in 1545.07 ms (367)
+I0323 18:49:36.158859  7381 worker.cpp:141] Worker completed work in 2216.68 ms (340)
+I0323 18:49:36.163275  7377 worker.cpp:121] Worker got request: [441:cmd=countprimes;n=936570]
+I0323 18:49:36.163355  7381 worker.cpp:121] Worker got request: [442:cmd=countprimes;n=738132]
+I0323 18:49:36.221024  7367 worker.cpp:141] Worker completed work in 1867.15 ms (357)
+I0323 18:49:36.243402  7362 worker.cpp:141] Worker completed work in 2089.21 ms (350)
+I0323 18:49:36.261332  7367 worker.cpp:121] Worker got request: [446:cmd=countprimes;n=961761]
+I0323 18:49:36.261342  7362 worker.cpp:121] Worker got request: [447:cmd=countprimes;n=904302]
+I0323 18:49:36.377362  7374 worker.cpp:141] Worker completed work in 1493.15 ms (383)
+I0323 18:49:36.410311  7380 worker.cpp:141] Worker completed work in 1526.02 ms (384)
+I0323 18:49:36.417301  7374 worker.cpp:121] Worker got request: [453:cmd=countprimes;n=833374]
+I0323 18:49:36.437230  7380 worker.cpp:121] Worker got request: [454:cmd=countprimes;n=926985]
+I0323 18:49:36.683634  7368 worker.cpp:141] Worker completed work in 1667.32 ms (389)
+I0323 18:49:36.724181  7368 worker.cpp:121] Worker got request: [467:cmd=countprimes;n=728042]
+I0323 18:49:36.919477  7370 worker.cpp:141] Worker completed work in 1238.56 ms (420)
+I0323 18:49:36.938333  7360 worker.cpp:141] Worker completed work in 9114.57 ms (56)
+I0323 18:49:36.959198  7370 worker.cpp:121] Worker got request: [478:cmd=countprimes;n=980727]
+I0323 18:49:36.959265  7360 worker.cpp:121] Worker got request: [480:cmd=projectidea;x=54870]
+I0323 18:49:36.968488  7363 worker.cpp:141] Worker completed work in 1978.26 ms (388)
+I0323 18:49:36.968971  7378 worker.cpp:141] Worker completed work in 1043.09 ms (430)
+I0323 18:49:37.047842  7363 worker.cpp:121] Worker got request: [481:cmd=countprimes;n=729763]
+I0323 18:49:37.047845  7378 worker.cpp:121] Worker got request: [484:cmd=countprimes;n=920284]
+I0323 18:49:37.094924  7361 worker.cpp:141] Worker completed work in 1414.01 ms (418)
+I0323 18:49:37.107914  7376 worker.cpp:141] Worker completed work in 2010.03 ms (392)
+I0323 18:49:37.135184  7361 worker.cpp:121] Worker got request: [488:cmd=countprimes;n=709040]
+I0323 18:49:37.142487  7376 worker.cpp:121] Worker got request: [490:cmd=countprimes;n=988673]
+I0323 18:49:37.164167  7382 worker.cpp:141] Worker completed work in 2066.29 ms (391)
+I0323 18:49:37.225836  7366 worker.cpp:141] Worker completed work in 1362.87 ms (427)
+I0323 18:49:37.226052  7382 worker.cpp:121] Worker got request: [492:cmd=countprimes;n=723561]
+I0323 18:49:37.304849  7366 worker.cpp:121] Worker got request: [494:cmd=countprimes;n=807776]
+I0323 18:49:37.308308  7372 worker.cpp:141] Worker completed work in 2193.58 ms (393)
+I0323 18:49:37.387848  7372 worker.cpp:121] Worker got request: [498:cmd=countprimes;n=992298]
+I0323 18:49:37.490160  7365 worker.cpp:141] Worker completed work in 1613.82 ms (429)
+I0323 18:49:37.530164  7365 worker.cpp:121] Worker got request: [507:cmd=countprimes;n=736956]
+I0323 18:49:37.549792  7369 worker.cpp:141] Worker completed work in 1957.56 ms (415)
+I0323 18:49:37.616794  7375 worker.cpp:141] Worker completed work in 1935.9 ms (419)
+I0323 18:49:37.616998  7369 worker.cpp:121] Worker got request: [510:cmd=countprimes;n=707395]
+I0323 18:49:37.624073  7381 worker.cpp:141] Worker completed work in 1460.69 ms (442)
+I0323 18:49:37.651235  7375 worker.cpp:121] Worker got request: [513:cmd=countprimes;n=756097]
+I0323 18:49:37.654079  7383 worker.cpp:141] Worker completed work in 1881.22 ms (422)
+I0323 18:49:37.721317  7377 worker.cpp:141] Worker completed work in 1558 ms (441)
+I0323 18:49:37.721552  7381 worker.cpp:121] Worker got request: [515:cmd=countprimes;n=803335]
+I0323 18:49:37.731686  7383 worker.cpp:121] Worker got request: [516:cmd=countprimes;n=987752]
+I0323 18:49:37.773881  7377 worker.cpp:121] Worker got request: [518:cmd=countprimes;n=989956]
+I0323 18:49:37.870344  7371 worker.cpp:141] Worker completed work in 1818.63 ms (437)
+I0323 18:49:37.910133  7371 worker.cpp:121] Worker got request: [525:cmd=countprimes;n=755213]
+I0323 18:49:37.997670  7373 worker.cpp:141] Worker completed work in 6774.18 ms (215)
+I0323 18:49:38.008652  7379 worker.cpp:141] Worker completed work in 1967.35 ms (436)
+I0323 18:49:38.038188  7379 worker.cpp:121] Worker got request: [530:cmd=countprimes;n=969303]
+I0323 18:49:38.038197  7373 worker.cpp:121] Worker got request: [531:cmd=countprimes;n=983704]
+I0323 18:49:38.062662  7361 worker.cpp:141] Worker completed work in 927.452 ms (488)
+I0323 18:49:38.062698  7361 worker.cpp:121] Worker got request: [532:cmd=projectidea;x=71971]
+I0323 18:49:38.090001  7374 worker.cpp:141] Worker completed work in 1672.67 ms (453)
+I0323 18:49:38.147851  7374 worker.cpp:121] Worker got request: [536:cmd=countprimes;n=926458]
+I0323 18:49:38.163981  7364 worker.cpp:141] Worker completed work in 2301.02 ms (426)
+I0323 18:49:38.186691  7362 worker.cpp:141] Worker completed work in 1925.32 ms (447)
+I0323 18:49:38.208533  7380 worker.cpp:141] Worker completed work in 1771.26 ms (454)
+I0323 18:49:38.209177  7364 worker.cpp:121] Worker got request: [539:cmd=countprimes;n=713876]
+I0323 18:49:38.248829  7362 worker.cpp:121] Worker got request: [540:cmd=countprimes;n=739670]
+I0323 18:49:38.248859  7380 worker.cpp:121] Worker got request: [541:cmd=countprimes;n=706164]
+I0323 18:49:38.279219  7368 worker.cpp:141] Worker completed work in 1555.02 ms (467)
+I0323 18:49:38.358845  7368 worker.cpp:121] Worker got request: [544:cmd=countprimes;n=826069]
+I0323 18:49:38.422709  7378 worker.cpp:141] Worker completed work in 1374.82 ms (484)
+I0323 18:49:38.424268  7363 worker.cpp:141] Worker completed work in 1376.4 ms (481)
+I0323 18:49:38.463197  7378 worker.cpp:121] Worker got request: [551:cmd=countprimes;n=833443]
+I0323 18:49:38.478142  7367 worker.cpp:141] Worker completed work in 2216.78 ms (446)
+I0323 18:49:38.493186  7363 worker.cpp:121] Worker got request: [552:cmd=countprimes;n=810777]
+I0323 18:49:38.532869  7367 worker.cpp:121] Worker got request: [553:cmd=countprimes;n=984680]
+I0323 18:49:38.540099  7370 worker.cpp:141] Worker completed work in 1580.87 ms (478)
+I0323 18:49:38.619902  7370 worker.cpp:121] Worker got request: [556:cmd=countprimes;n=825168]
+I0323 18:49:38.778265  7382 worker.cpp:141] Worker completed work in 1552.19 ms (492)
+I0323 18:49:38.818147  7382 worker.cpp:121] Worker got request: [567:cmd=countprimes;n=938697]
+I0323 18:49:38.883998  7366 worker.cpp:141] Worker completed work in 1579.11 ms (494)
+I0323 18:49:38.924154  7366 worker.cpp:121] Worker got request: [573:cmd=countprimes;n=774387]
+I0323 18:49:38.943084  7365 worker.cpp:141] Worker completed work in 1412.88 ms (507)
+I0323 18:49:39.022871  7365 worker.cpp:121] Worker got request: [575:cmd=countprimes;n=981132]
+I0323 18:49:39.028481  7369 worker.cpp:141] Worker completed work in 1411.46 ms (510)
+I0323 18:49:39.102123  7380 worker.cpp:141] Worker completed work in 853.233 ms (541)
+I0323 18:49:39.102349  7369 worker.cpp:121] Worker got request: [579:cmd=countprimes;n=844986]
+I0323 18:49:39.108690  7375 worker.cpp:141] Worker completed work in 1457.43 ms (513)
+I0323 18:49:39.134788  7377 worker.cpp:141] Worker completed work in 1360.87 ms (518)
+I0323 18:49:39.184875  7375 worker.cpp:121] Worker got request: [584:cmd=countprimes;n=702333]
+I0323 18:49:39.184883  7380 worker.cpp:121] Worker got request: [583:cmd=countprimes;n=885621]
+I0323 18:49:39.184888  7377 worker.cpp:121] Worker got request: [585:cmd=countprimes;n=789568]
+I0323 18:49:39.358719  7381 worker.cpp:141] Worker completed work in 1637.14 ms (515)
+I0323 18:49:39.380267  7371 worker.cpp:141] Worker completed work in 1470.11 ms (525)
+I0323 18:49:39.399189  7381 worker.cpp:121] Worker got request: [594:cmd=countprimes;n=769709]
+I0323 18:49:39.399500  7371 worker.cpp:121] Worker got request: [595:cmd=countprimes;n=928599]
+I0323 18:49:39.575171  7370 worker.cpp:141] Worker completed work in 955.243 ms (556)
+I0323 18:49:39.615183  7370 worker.cpp:121] Worker got request: [604:cmd=countprimes;n=818870]
+I0323 18:49:39.662946  7372 worker.cpp:141] Worker completed work in 2275.07 ms (498)
+I0323 18:49:39.705117  7372 worker.cpp:121] Worker got request: [608:cmd=countprimes;n=926567]
+I0323 18:49:39.791012  7364 worker.cpp:141] Worker completed work in 1581.81 ms (539)
+I0323 18:49:39.823647  7376 worker.cpp:141] Worker completed work in 2681.13 ms (490)
+I0323 18:49:39.831135  7364 worker.cpp:121] Worker got request: [615:cmd=countprimes;n=801967]
+I0323 18:49:39.834307  7383 worker.cpp:141] Worker completed work in 2102.6 ms (516)
+I0323 18:49:39.834329  7383 worker.cpp:121] Worker got request: [616:cmd=countprimes;n=859056]
+I0323 18:49:39.913836  7376 worker.cpp:121] Worker got request: [617:cmd=countprimes;n=774714]
+I0323 18:49:40.059680  7374 worker.cpp:141] Worker completed work in 1911.79 ms (536)
+I0323 18:49:40.107287  7374 worker.cpp:121] Worker got request: [627:cmd=countprimes;n=890378]
+I0323 18:49:40.111778  7368 worker.cpp:141] Worker completed work in 1752.91 ms (544)
+I0323 18:49:40.123306  7363 worker.cpp:141] Worker completed work in 1630.08 ms (552)
+I0323 18:49:40.151890  7373 worker.cpp:141] Worker completed work in 2113.65 ms (531)
+I0323 18:49:40.175845  7378 worker.cpp:141] Worker completed work in 1712.61 ms (551)
+I0323 18:49:40.181920  7377 worker.cpp:141] Worker completed work in 997.003 ms (585)
+I0323 18:49:40.191854  7368 worker.cpp:121] Worker got request: [630:cmd=countprimes;n=936454]
+I0323 18:49:40.191870  7363 worker.cpp:121] Worker got request: [631:cmd=countprimes;n=787676]
+I0323 18:49:40.191877  7373 worker.cpp:121] Worker got request: [632:cmd=countprimes;n=811541]
+I0323 18:49:40.192497  7379 worker.cpp:141] Worker completed work in 2154.28 ms (530)
+I0323 18:49:40.218248  7378 worker.cpp:121] Worker got request: [633:cmd=countprimes;n=888643]
+I0323 18:49:40.249698  7362 worker.cpp:141] Worker completed work in 2000.84 ms (540)
+I0323 18:49:40.249933  7379 worker.cpp:121] Worker got request: [635:cmd=countprimes;n=909110]
+I0323 18:49:40.249939  7377 worker.cpp:121] Worker got request: [634:cmd=countprimes;n=747121]
+I0323 18:49:40.303846  7362 worker.cpp:121] Worker got request: [636:cmd=countprimes;n=814428]
+I0323 18:49:40.412663  7366 worker.cpp:141] Worker completed work in 1488.47 ms (573)
+I0323 18:49:40.453166  7366 worker.cpp:121] Worker got request: [643:cmd=countprimes;n=843015]
+I0323 18:49:40.548362  7375 worker.cpp:141] Worker completed work in 1363.47 ms (584)
+I0323 18:49:40.572162  7380 worker.cpp:141] Worker completed work in 1387.24 ms (583)
+I0323 18:49:40.588210  7375 worker.cpp:121] Worker got request: [649:cmd=countprimes;n=923563]
+I0323 18:49:40.588234  7380 worker.cpp:121] Worker got request: [650:cmd=countprimes;n=715721]
+I0323 18:49:40.775964  7367 worker.cpp:141] Worker completed work in 2243.06 ms (553)
+I0323 18:49:40.826002  7369 worker.cpp:141] Worker completed work in 1723.63 ms (579)
+I0323 18:49:40.840621  7382 worker.cpp:141] Worker completed work in 2022.45 ms (567)
+I0323 18:49:40.855657  7370 worker.cpp:141] Worker completed work in 1240.44 ms (604)
+I0323 18:49:40.915547  7381 worker.cpp:141] Worker completed work in 1516.34 ms (594)
+I0323 18:49:41.017622  7365 worker.cpp:141] Worker completed work in 1994.71 ms (575)
+I0323 18:49:41.175319  7377 worker.cpp:141] Worker completed work in 925.346 ms (634)
+I0323 18:49:41.242137  7376 worker.cpp:141] Worker completed work in 1328.28 ms (617)
+I0323 18:49:41.311744  7374 worker.cpp:141] Worker completed work in 1204.42 ms (627)
+I0323 18:49:41.451835  7363 worker.cpp:141] Worker completed work in 1259.94 ms (631)
+I0323 18:49:41.556326  7364 worker.cpp:141] Worker completed work in 1725.17 ms (615)
+I0323 18:49:41.561592  7371 worker.cpp:141] Worker completed work in 2162.07 ms (595)
+I0323 18:49:41.588326  7368 worker.cpp:141] Worker completed work in 1396.45 ms (630)
+I0323 18:49:41.616287  7372 worker.cpp:141] Worker completed work in 1911.14 ms (608)
+I0323 18:49:41.619078  7380 worker.cpp:141] Worker completed work in 1030.81 ms (650)
+I0323 18:49:41.647181  7383 worker.cpp:141] Worker completed work in 1812.83 ms (616)
+I0323 18:49:41.672334  7379 worker.cpp:141] Worker completed work in 1422.38 ms (635)
+I0323 18:49:41.793706  7366 worker.cpp:141] Worker completed work in 1340.51 ms (643)
+I0323 18:49:41.840186  7362 worker.cpp:141] Worker completed work in 1536.32 ms (636)
+I0323 18:49:41.930207  7373 worker.cpp:141] Worker completed work in 1738.29 ms (632)
+I0323 18:49:42.077953  7375 worker.cpp:141] Worker completed work in 1489.72 ms (649)
+I0323 18:49:42.088906  7378 worker.cpp:141] Worker completed work in 1870.62 ms (633)
+I0323 18:49:43.407104  7360 worker.cpp:141] Worker completed work in 6447.75 ms (480)
+I0323 18:49:43.771703  7361 worker.cpp:141] Worker completed work in 5708.93 ms (532)
+I0323 18:49:44.211365  7359 main.cpp:103] Worker on compute-0-5.local is shutting down (master terminated connection)

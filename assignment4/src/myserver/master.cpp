@@ -87,9 +87,16 @@ static struct Master_state {
   inline void handle_work_done(const Response_msg& resp, unsigned int worker_idx)
   {
     int tag = resp.get_tag();
-    int type = this->tagTypeMap[tag];
-    this->my_workers[worker_idx].num_work_type[type]--;
-    this->my_workers[worker_idx].num_running_task--;
+    int work_type = tagTypeMap[tag];
+    my_workers[worker_idx].num_work_type[work_type]--;
+    if (work_type == COMPAREPRIMES)
+    {
+      my_workers[worker_idx].num_running_task -= 4;
+    }
+    else
+    {
+      my_workers[worker_idx].num_running_task--;
+    }
   }
 
 } mstate;
@@ -106,7 +113,17 @@ static inline void send_and_update(Client_handle client_handle,
   
   send_request_to_worker(worker_handle, worker_req);
   mstate.my_workers[worker_idx].num_work_type[work_type]++;
-  mstate.my_workers[worker_idx].num_running_task++;
+
+  if (work_type == COMPAREPRIMES)
+  {
+    mstate.my_workers[worker_idx].num_running_task += 4;
+  }
+  else
+  {
+    mstate.my_workers[worker_idx].num_running_task++;
+  }
+
+
 }
 
 void master_node_init(int max_workers, int& tick_period) {
@@ -249,13 +266,14 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
   {
     for(unsigned int i=0; i<mstate.my_workers.size(); i++)
     {
-      if(mstate.my_workers[i].num_running_task <= MAX_EXEC_CONTEXT)
+      if(mstate.my_workers[i].num_running_task <= MAX_EXEC_CONTEXT &&
+         mstate.my_workers[i].num_work_type[PROJECTIDEA] < 2)
       {
         send_and_update(client_handle, mstate.my_workers[i].worker_handle,
                         client_req, i, PROJECTIDEA);
         is_assigned = true;
         break;
-      } 
+      }
     }
   }
   // find any possible spot
@@ -291,6 +309,10 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
   {
     for(unsigned int i=0; i<mstate.my_workers.size(); i++)
     {
+      ///only execute if remianing context > 4
+      if(MAX_EXEC_CONTEXT - mstate.my_workers[i].num_running_task < 4) 
+        continue;
+      
       send_and_update(client_handle, mstate.my_workers[i].worker_handle,
                         client_req, i, COMPAREPRIMES);
       is_assigned = true;
@@ -302,7 +324,7 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
   //if all workers are busy, push the request to queue
   if(!is_assigned)
   {
-    if (request_arg == "tellmenow")
+    if (request_arg == "tellmenow" || request_arg == "projectidea")
     {
       DLOG(INFO) << "enque vip:" << client_req.get_tag() << ":" << client_req.get_request_string() << std::endl;
       mstate.requests_queue_vip.push(Request_info(client_handle, client_req));

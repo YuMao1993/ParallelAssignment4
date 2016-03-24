@@ -7,9 +7,20 @@
 #include <queue>
 #include <map>
 
+#define RESERVED_CONTEXT 1
 #define MAX_EXEC_CONTEXT 24
+#define ELASTICx
+
+#define RESERVE_CONTEXT_FOR_PI(N) \
+if(true)\
+{ \
+  if(mstate.my_workers[i].num_running_task == MAX_EXEC_CONTEXT - N - RESERVED_CONTEXT + 1) \
+    continue;\
+}
+
+
 #define INIT_NUM_WORKER 1
-#define THRESHOLD 5
+#define THRESHOLD 1
 
 /**
  * Enum type of work
@@ -48,6 +59,13 @@ typedef struct _Worker_state {
 } Worker_state;
 
 /**
+ * Cache Manager
+ */
+static struct Cache_manager {
+  std::map<std::string, std::string>cacheMap;
+} cache_manager;
+
+/**
  * the state of the master
  */
 static struct Master_state {
@@ -83,6 +101,9 @@ static struct Master_state {
   //tag type map
   std::map<int, int> tagTypeMap;
 
+  //tag request_string map
+  std::map<int, std::string> tagReqStringMap;
+
   //update mstate
   inline void handle_work_done(const Response_msg& resp, unsigned int worker_idx)
   {
@@ -110,6 +131,7 @@ static inline void send_and_update(Client_handle client_handle,
   Request_msg worker_req(tag, client_req);
   mstate.tagClientMap[tag] = client_handle;
   mstate.tagTypeMap[tag] = work_type;
+  mstate.tagReqStringMap[tag] = client_req.get_request_string();
   
   send_request_to_worker(worker_handle, worker_req);
   mstate.my_workers[worker_idx].num_work_type[work_type]++;
@@ -196,6 +218,12 @@ void handle_worker_response(Worker_handle worker_handle, const Response_msg& res
   mstate.num_pending_client_requests --;
   DLOG(INFO) << "pending_client_requests: " <<  mstate.num_pending_client_requests << std::endl;
 
+  //store to cache
+  int tag = resp.get_tag(); 
+  std::string req_string = mstate.tagReqStringMap[tag];
+  cache_manager.cacheMap[req_string] = resp.get_response();
+
+
   //find the worker
   for(unsigned int i=0; i< mstate.my_workers.size(); i++)
   {
@@ -229,8 +257,10 @@ void handle_worker_response(Worker_handle worker_handle, const Response_msg& res
 
 void handle_client_request(Client_handle client_handle, const Request_msg& client_req) 
 {
-  DLOG(INFO) << ">>Received request: " << client_req.get_request_string() << std::endl;
+  
+  std::string request_string = client_req.get_request_string();
   std::string request_arg = client_req.get_arg("cmd");
+  DLOG(INFO) << ">>Received request: " << request_string << std::endl;
 
   // You can assume that traces end with this special message.  It
   // exists because it might be useful for debugging to dump
@@ -243,8 +273,21 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
     return;
   }
 
-  mstate.num_pending_client_requests++;
+
+  // cache early response
+  if (cache_manager.cacheMap.find(request_string) != cache_manager.cacheMap.end())
+  {
+    std::string response_string = cache_manager.cacheMap[request_string];
+    Response_msg resp;
+
+    resp.set_response(response_string);
+    send_client_response(client_handle, resp);
+    // hit and return
+    return;
+  }
+
   bool is_assigned = false;
+  mstate.num_pending_client_requests++;
 
   // Assign to worker base on its work_status
   // assign to low workload node 
@@ -252,8 +295,10 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
   {
     for(unsigned int i = 0; i < mstate.my_workers.size(); i++)
     {
+      RESERVE_CONTEXT_FOR_PI(1);
       if(mstate.my_workers[i].num_running_task <= MAX_EXEC_CONTEXT)
       {
+
         send_and_update(client_handle, mstate.my_workers[i].worker_handle,
                         client_req, i, WISDOM);
         is_assigned = true;
@@ -266,8 +311,9 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
   {
     for(unsigned int i=0; i<mstate.my_workers.size(); i++)
     {
+      // RESERVE_CONTEXT_FOR_PI(1);
       if(mstate.my_workers[i].num_running_task <= MAX_EXEC_CONTEXT &&
-         mstate.my_workers[i].num_work_type[PROJECTIDEA] < 2)
+         mstate.my_workers[i].num_work_type[PROJECTIDEA] < 1)
       {
         send_and_update(client_handle, mstate.my_workers[i].worker_handle,
                         client_req, i, PROJECTIDEA);
@@ -275,6 +321,17 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
         break;
       }
     }
+    // if(!is_assigned)
+    // {
+    //   //try the reserved context
+    //   if(mstate.my_workers[0].num_running_task <= MAX_EXEC_CONTEXT && 
+    //      mstate.my_workers[0].num_work_type[PROJECTIDEA] < 2)
+    //   {
+    //     send_and_update(client_handle, mstate.my_workers[0].worker_handle,
+    //                     client_req, 0, PROJECTIDEA);   
+    //     is_assigned = true;    
+    //   }
+    // }
   }
   // find any possible spot
   if (request_arg == "tellmenow")
@@ -295,6 +352,7 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
   {
     for(unsigned int i=0; i<mstate.my_workers.size(); i++)
     {
+      RESERVE_CONTEXT_FOR_PI(1);
       if(mstate.my_workers[i].num_running_task < MAX_EXEC_CONTEXT)
       {
         send_and_update(client_handle, mstate.my_workers[i].worker_handle,
@@ -309,6 +367,7 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
   {
     for(unsigned int i=0; i<mstate.my_workers.size(); i++)
     {
+      RESERVE_CONTEXT_FOR_PI(4);
       ///only execute if remianing context > 4
       if(MAX_EXEC_CONTEXT - mstate.my_workers[i].num_running_task < 4) 
         continue;
@@ -347,39 +406,53 @@ void handle_tick() {
   // TODO: you may wish to take action here.  This method is called at
   // fixed time intervals, according to how you set 'tick_period' in
   // 'master_node_init'.
-
+  unsigned int queue_size = mstate.requests_queue.size() + mstate.requests_queue_vip.size();
   // profile worker usage
+  // printf("current queue size: %u\n", queue_size);
+  // printf("current num_worker: %d\n", mstate.current_num_wokers);
+  // printf("max num_worker: %d\n", mstate.max_num_workers);
   // for (unsigned int i = 0; i < mstate.my_workers.size(); i++)
   // {
   //   DLOG(INFO) << "====HANDLE PROBE:====" << std::endl;
+  //   printf("====HANDLE PROBE:====\n");
   //   for (int j = 0; j < NUM_OF_WORKTYPE; j++)
   //   {
   //     DLOG(INFO) << j << ": " << mstate.my_workers[i].num_work_type[j] << std::endl;
+  //     printf("worktype: %d\n", mstate.my_workers[i].num_work_type[j]);
   //   }
+  //   printf("\n");
   //   DLOG(INFO) << std::endl;
      
   // }
   // DLOG(INFO) << "request_queue size: " << mstate.requests_queue.size() << std::endl;
   // DLOG(INFO) << "request_queue vip size: " << mstate.requests_queue_vip.size() << std::endl;
-  // if (!mstate.requests_queue.size() && mstate.my_workers.size() > 1)
-  // {
-  //   for (unsigned int i = 0; i < mstate.my_workers.size(); i++)
-  //   {
-  //     if (!mstate.my_workers[i].num_running_task)
-  //     {
-  //       kill_worker_node(mstate.my_workers[i].worker_handle);
-  //       mstate.my_workers.erase(mstate.my_workers.begin()+i);
-  //       mstate.current_num_wokers--;
-  //     }
-  //   }
-  // }
-  // else if (mstate.requests_queue.size() > THRESHOLD && 
-  //          mstate.current_num_wokers < master.max_num_workers)
-  // {
-  //   int workerid = random();
-  //   Request_msg req(workerid);
-  //   req.set_arg("name", "my worker " + workerid);
-  //   request_new_worker_node(req);
-  // }
+  #ifdef ELASTIC
+  if (!queue_size && mstate.my_workers.size() > 1)
+  {
+    for (unsigned int i = 0; i < mstate.my_workers.size(); i++)
+    {
+      if (!mstate.my_workers[i].num_running_task)
+      {
+        kill_worker_node(mstate.my_workers[i].worker_handle);
+        mstate.my_workers.erase(mstate.my_workers.begin()+i);
+        mstate.current_num_wokers--;
+        // printf("decrease worker node\n");
+        // printf("current num_worker: %d\n", mstate.current_num_wokers);
+        // printf("max num_worker: %d\n", mstate.max_num_workers);
+      }
+    }
+  }
+  else if ((queue_size > THRESHOLD) &&
+           mstate.current_num_wokers < mstate.max_num_workers)
+  {
+    // printf("increase worker node\n");
+    // printf("current num_worker: %d\n", mstate.current_num_wokers);
+    // printf("max num_worker: %d\n", mstate.max_num_workers);
+    int workerid = random();
+    Request_msg req(workerid);
+    req.set_arg("name", "my worker new");
+    request_new_worker_node(req);
+  }
+  #endif
 }
 

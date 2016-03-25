@@ -13,7 +13,7 @@
 /*The worker node contains two, six-core Xeon e5-2620 v3 processors 
 (2.4 GHz, 15MB L3 cache, hyper-threading, AVX2 instruction support)
 thus the total working context number is 2 * 6 * 2 = 24*/
-#define NUM_WORKER_THREADS 24
+#define NUM_WORKER_THREADS 48
 static void* workerThread(void* args);
 
 WorkQueue<Request_msg> workQueue;
@@ -130,7 +130,19 @@ static void* workerThread(void* args)
       // execute_work.
       execute_compareprimes(req, resp);
 
-    } else {
+    } 
+    else if(req.get_arg("cmd").compare("projectidea"))
+    {
+      //make sure one core has only one project idea running on it
+      {
+        static int coreid = 0;
+        cpu_set_t cpuset;
+        CPU_ZERO(&cpuset);
+        CPU_SET(coreid, &cpuset);
+        pthread_t current_thread = pthread_self();    
+        pthread_setaffinity_np(current_thread, sizeof(cpu_set_t), &cpuset);
+        coreid = 0? 1: 0;  //flip the core id
+      }
 
       // actually perform the work.  The response string is filled in by
       // 'execute_work'

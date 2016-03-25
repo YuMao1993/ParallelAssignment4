@@ -14,6 +14,8 @@
 (2.4 GHz, 15MB L3 cache, hyper-threading, AVX2 instruction support)
 thus the total working context number is 2 * 6 * 2 = 24*/
 #define NUM_WORKER_THREADS 48
+#define NUM_CONTEXT 24
+
 static void* workerThread(void* args);
 
 WorkQueue<Request_msg> workQueue;
@@ -141,7 +143,7 @@ static void* workerThread(void* args)
         CPU_SET(coreid, &cpuset);
         pthread_t current_thread = pthread_self();    
         pthread_setaffinity_np(current_thread, sizeof(cpu_set_t), &cpuset);
-        coreid = 0? 1: 0;  //flip the core id
+        coreid = 0? (NUM_CONTEXT-1): 0;  //flip the core id
       }
 
       // actually perform the work.  The response string is filled in by

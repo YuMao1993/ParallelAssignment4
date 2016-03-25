@@ -1,0 +1,12 @@
+
+spawning master process on compute-0-33.local (0 of 5)
+compute-0-15 compute-0-23 compute-0-27 compute-0-29 compute-0-33
+Username is  cheyuanl
+command was: '/home/cheyuanl/15618/ParallelAssignment4/assignment4/harness.sh 4 tests/grading_uniform1.txt'
+Waiting for server to initialize...
+Server ready, beginning trace...
+Request 4: req: "cmd=countprimes;n=780123", resp: "62475", latency: 1388 ms
+Request 1: req: "cmd=countprimes;n=779069", resp: "62402", latency: 1742 ms
+Request 0: req: "cmd=countprimes;n=848393", resp: "67497", latency: 1837 ms
+Request 30: req: "cmd=countprimes;n=848393", resp: "67497", latency: 0 ms
+Cleaning up after a completed test...

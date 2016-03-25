@@ -1,0 +1,19 @@
+Log file created at: 2016/03/24 19:24:43
+Running on machine: compute-0-13.local
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0324 19:24:43.279453 50655 main.cpp:49] Booting worker. Hostname: compute-0-13.local
+I0324 19:24:44.284355 50655 main.cpp:62] Connected to master compute-0-25.local:15418
+I0324 19:24:44.284386 50655 worker.cpp:93] **** Initializing worker: my worker new ****
+I0324 19:24:44.285795 50656 worker.cpp:121] Worker got request: [181:cmd=418wisdom;x=62108]
+I0324 19:24:44.287268 50657 worker.cpp:121] Worker got request: [182:cmd=418wisdom;x=38802]
+I0324 19:24:44.329463 50658 worker.cpp:121] Worker got request: [183:cmd=418wisdom;x=41442]
+I0324 19:24:44.371580 50659 worker.cpp:121] Worker got request: [184:cmd=418wisdom;x=65083]
+I0324 19:24:44.459244 50660 worker.cpp:121] Worker got request: [187:cmd=418wisdom;x=19231]
+I0324 19:24:44.497369 50661 worker.cpp:121] Worker got request: [188:cmd=418wisdom;x=33440]
+I0324 19:24:46.181277 50657 worker.cpp:141] Worker completed work in 1893.98 ms (182)
+I0324 19:24:46.183364 50656 worker.cpp:141] Worker completed work in 1897.52 ms (181)
+I0324 19:24:46.202355 50658 worker.cpp:141] Worker completed work in 1872.86 ms (183)
+I0324 19:24:46.224393 50659 worker.cpp:141] Worker completed work in 1852.79 ms (184)
+I0324 19:24:46.434078 50660 worker.cpp:141] Worker completed work in 1974.81 ms (187)
+I0324 19:24:46.453537 50661 worker.cpp:141] Worker completed work in 1956.14 ms (188)
+I0324 19:24:46.792079 50655 main.cpp:103] Worker on compute-0-13.local is shutting down (master terminated connection)

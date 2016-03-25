@@ -1,0 +1,25 @@
+Log file created at: 2016/03/23 21:33:09
+Running on machine: compute-0-15.local
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0323 21:33:09.156265 57977 main.cpp:49] Booting worker. Hostname: compute-0-15.local
+I0323 21:33:10.159991 57977 main.cpp:62] Connected to master compute-0-27.local:15418
+I0323 21:33:10.160020 57977 worker.cpp:93] **** Initializing worker: worker ****
+I0323 21:33:12.723772 57978 worker.cpp:121] Worker got request: [37:cmd=418wisdom;x=39882]
+I0323 21:33:13.007658 57979 worker.cpp:121] Worker got request: [41:cmd=418wisdom;x=49358]
+I0323 21:33:13.078402 57980 worker.cpp:121] Worker got request: [42:cmd=418wisdom;x=86761]
+I0323 21:33:14.765930 57978 worker.cpp:141] Worker completed work in 2042.11 ms (37)
+I0323 21:33:14.906824 57979 worker.cpp:141] Worker completed work in 1899.14 ms (41)
+I0323 21:33:14.940733 57980 worker.cpp:141] Worker completed work in 1862.3 ms (42)
+I0323 21:33:16.060367 57981 worker.cpp:121] Worker got request: [84:cmd=418wisdom;x=70529]
+I0323 21:33:17.835422 57982 worker.cpp:121] Worker got request: [109:cmd=418wisdom;x=10060]
+I0323 21:33:17.932133 57981 worker.cpp:141] Worker completed work in 1871.71 ms (84)
+I0323 21:33:19.042385 57983 worker.cpp:121] Worker got request: [126:cmd=418wisdom;x=96104]
+I0323 21:33:19.820781 57982 worker.cpp:141] Worker completed work in 1985.33 ms (109)
+I0323 21:33:20.922871 57983 worker.cpp:141] Worker completed work in 1880.46 ms (126)
+I0323 21:33:21.882390 57984 worker.cpp:121] Worker got request: [166:cmd=418wisdom;x=83766]
+I0323 21:33:23.843096 57984 worker.cpp:141] Worker completed work in 1960.67 ms (166)
+I0323 21:33:26.923403 57985 worker.cpp:121] Worker got request: [237:cmd=418wisdom;x=8134]
+I0323 21:33:28.863592 57985 worker.cpp:141] Worker completed work in 1940.18 ms (237)
+I0323 21:33:30.260426 57986 worker.cpp:121] Worker got request: [284:cmd=418wisdom;x=52305]
+I0323 21:33:32.240597 57986 worker.cpp:141] Worker completed work in 1980.14 ms (284)
+I0323 21:33:41.419319 57977 main.cpp:103] Worker on compute-0-15.local is shutting down (master terminated connection)

@@ -1,0 +1,27 @@
+Log file created at: 2016/03/24 19:23:56
+Running on machine: compute-0-23.local
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0324 19:23:56.382166 40590 main.cpp:49] Booting worker. Hostname: compute-0-23.local
+I0324 19:23:57.386618 40590 main.cpp:62] Connected to master compute-0-25.local:15418
+I0324 19:23:57.386651 40590 worker.cpp:93] **** Initializing worker: my worker new ****
+I0324 19:23:57.637394 40591 worker.cpp:121] Worker got request: [98:cmd=tellmenow;x=5515]
+I0324 19:23:57.637615 40591 worker.cpp:141] Worker completed work in 0.189913 ms (98)
+I0324 19:23:57.718556 40593 worker.cpp:121] Worker got request: [99:cmd=tellmenow;x=4378]
+I0324 19:23:57.718582 40593 worker.cpp:141] Worker completed work in 0.00619702 ms (99)
+I0324 19:23:57.718588 40592 worker.cpp:121] Worker got request: [100:cmd=tellmenow;x=5671]
+I0324 19:23:57.718611 40592 worker.cpp:141] Worker completed work in 0.00551715 ms (100)
+I0324 19:23:57.718632 40593 worker.cpp:121] Worker got request: [102:cmd=tellmenow;x=2187]
+I0324 19:23:57.718641 40592 worker.cpp:121] Worker got request: [103:cmd=tellmenow;x=6584]
+I0324 19:23:57.718643 40593 worker.cpp:141] Worker completed work in 0.00345334 ms (102)
+I0324 19:23:57.718644 40597 worker.cpp:121] Worker got request: [101:cmd=tellmenow;x=7606]
+I0324 19:23:57.718649 40592 worker.cpp:141] Worker completed work in 0.00265706 ms (103)
+I0324 19:23:57.718669 40597 worker.cpp:141] Worker completed work in 0.00703335 ms (101)
+I0324 19:23:57.718705 40595 worker.cpp:121] Worker got request: [104:cmd=tellmenow;x=1054]
+I0324 19:23:57.718732 40593 worker.cpp:121] Worker got request: [105:cmd=tellmenow;x=1984]
+I0324 19:23:57.718729 40595 worker.cpp:141] Worker completed work in 0.00587013 ms (104)
+I0324 19:23:57.718741 40593 worker.cpp:141] Worker completed work in 0.00270363 ms (105)
+I0324 19:23:57.718789 40599 worker.cpp:121] Worker got request: [106:cmd=tellmenow;x=7152]
+I0324 19:23:57.718816 40599 worker.cpp:141] Worker completed work in 0.00398606 ms (106)
+I0324 19:23:57.718847 40600 worker.cpp:121] Worker got request: [107:cmd=tellmenow;x=2993]
+I0324 19:23:57.718863 40600 worker.cpp:141] Worker completed work in 0.00375323 ms (107)
+I0324 19:23:57.861347 40590 main.cpp:103] Worker on compute-0-23.local is shutting down (master terminated connection)

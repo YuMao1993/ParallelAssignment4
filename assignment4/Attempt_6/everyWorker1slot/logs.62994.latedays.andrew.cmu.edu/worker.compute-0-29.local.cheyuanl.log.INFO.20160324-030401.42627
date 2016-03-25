@@ -1,0 +1,29 @@
+Log file created at: 2016/03/24 03:04:01
+Running on machine: compute-0-29.local
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0324 03:04:01.326726 42627 main.cpp:49] Booting worker. Hostname: compute-0-29.local
+I0324 03:04:02.330181 42627 main.cpp:62] Connected to master compute-0-33.local:15418
+I0324 03:04:02.330209 42627 worker.cpp:93] **** Initializing worker: y worker ****
+I0324 03:04:48.210100 42628 worker.cpp:121] Worker got request: [763:cmd=projectidea;x=920870]
+I0324 03:04:51.898138 42628 worker.cpp:141] Worker completed work in 3687.69 ms (763)
+I0324 03:04:52.132944 42629 worker.cpp:121] Worker got request: [878:cmd=projectidea;x=624716]
+I0324 03:04:55.979516 42629 worker.cpp:141] Worker completed work in 3846.53 ms (878)
+I0324 03:04:55.994468 42631 worker.cpp:121] Worker got request: [993:cmd=projectidea;x=678444]
+I0324 03:04:58.205489 42630 worker.cpp:121] Worker got request: [1063:cmd=compareprimes;n1=954979;n2=997159;n3=951599;n4=982449]
+I0324 03:04:59.752851 42631 worker.cpp:141] Worker completed work in 3758.34 ms (993)
+I0324 03:04:59.930217 42630 worker.cpp:141] Worker completed work in 1724.69 ms (1063)
+I0324 03:05:00.194516 42632 worker.cpp:121] Worker got request: [1128:cmd=projectidea;x=238187]
+I0324 03:05:03.666172 42632 worker.cpp:141] Worker completed work in 3471.61 ms (1128)
+I0324 03:05:03.673506 42633 worker.cpp:121] Worker got request: [1244:cmd=projectidea;x=876512]
+I0324 03:05:06.659749 42633 worker.cpp:141] Worker completed work in 2986.2 ms (1244)
+I0324 03:05:06.990073 42634 worker.cpp:121] Worker got request: [1355:cmd=projectidea;x=930302]
+I0324 03:05:10.471740 42634 worker.cpp:141] Worker completed work in 3481.63 ms (1355)
+I0324 03:05:10.506686 42635 worker.cpp:121] Worker got request: [1466:cmd=projectidea;x=999882]
+I0324 03:05:13.499224 42635 worker.cpp:141] Worker completed work in 2992.5 ms (1466)
+I0324 03:05:14.172430 42636 worker.cpp:121] Worker got request: [1562:cmd=projectidea;x=38182]
+I0324 03:05:18.003260 42636 worker.cpp:141] Worker completed work in 3830.78 ms (1562)
+I0324 03:05:18.072454 42637 worker.cpp:121] Worker got request: [1652:cmd=projectidea;x=778325]
+I0324 03:05:21.070755 42637 worker.cpp:141] Worker completed work in 2998.26 ms (1652)
+I0324 03:05:23.442309 42638 worker.cpp:121] Worker got request: [1758:cmd=projectidea;x=913695]
+I0324 03:05:27.008159 42638 worker.cpp:141] Worker completed work in 3565.8 ms (1758)
+I0324 03:06:04.932548 42627 main.cpp:103] Worker on compute-0-29.local is shutting down (master terminated connection)

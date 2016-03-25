@@ -1,0 +1,149 @@
+Log file created at: 2016/03/24 19:16:21
+Running on machine: compute-0-21.local
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0324 19:16:21.508757 79910 main_loop.cpp:73] Requesting worker name=my worker ;tag=1804289383
+I0324 19:16:21.510396 79910 main_loop.cpp:73] Requesting worker name=y worker ;tag=846930886
+I0324 19:16:21.510412 79910 main_loop.cpp:73] Requesting worker name= worker ;tag=1681692777
+I0324 19:16:21.510422 79910 main_loop.cpp:73] Requesting worker name=worker ;tag=1714636915
+I0324 19:16:23.029799 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=803182;n2=837769;n3=603566;n4=668229
+I0324 19:16:23.514472 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=661974;n2=704510;n3=621325;n4=813520
+I0324 19:16:23.934968 79910 master.cpp:212] >>>Master received a response from a worker: [0:There are more primes in second range.]
+I0324 19:16:23.935012 79910 master.cpp:216] <<Master send response back to client: 0x1a86470
+I0324 19:16:23.935024 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:24.014266 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=624059;n2=791933;n3=773594;n4=859536
+I0324 19:16:24.289093 79910 master.cpp:212] >>>Master received a response from a worker: [1:There are more primes in second range.]
+I0324 19:16:24.289130 79910 master.cpp:216] <<Master send response back to client: 0x1a7e720
+I0324 19:16:24.289137 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:24.514112 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=604197;n2=822011;n3=505616;n4=719480
+I0324 19:16:24.873373 79910 master.cpp:212] >>>Master received a response from a worker: [2:There are more primes in first range.]
+I0324 19:16:24.873407 79910 master.cpp:216] <<Master send response back to client: 0x1a86470
+I0324 19:16:24.873425 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:25.014192 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=659529;n2=787882;n3=767261;n4=829938
+I0324 19:16:25.395612 79910 master.cpp:212] >>>Master received a response from a worker: [3:There are more primes in first range.]
+I0324 19:16:25.395630 79910 master.cpp:216] <<Master send response back to client: 0x1a7e720
+I0324 19:16:25.395633 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:25.514148 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=500457;n2=697431;n3=597564;n4=847041
+I0324 19:16:25.864483 79910 master.cpp:212] >>>Master received a response from a worker: [4:There are more primes in first range.]
+I0324 19:16:25.864519 79910 master.cpp:216] <<Master send response back to client: 0x1a86470
+I0324 19:16:25.864526 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:26.014246 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=630082;n2=848189;n3=576427;n4=727004
+I0324 19:16:26.350339 79910 master.cpp:212] >>>Master received a response from a worker: [5:There are more primes in second range.]
+I0324 19:16:26.350374 79910 master.cpp:216] <<Master send response back to client: 0x1a7e720
+I0324 19:16:26.350381 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:26.514245 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=595446;n2=887017;n3=679188;n4=821272
+I0324 19:16:26.930305 79910 master.cpp:212] >>>Master received a response from a worker: [6:There are more primes in first range.]
+I0324 19:16:26.930325 79910 master.cpp:216] <<Master send response back to client: 0x1a86470
+I0324 19:16:26.930327 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:27.014302 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=532178;n2=628022;n3=703176;n4=873134
+I0324 19:16:27.493559 79910 master.cpp:212] >>>Master received a response from a worker: [7:There are more primes in first range.]
+I0324 19:16:27.493594 79910 master.cpp:216] <<Master send response back to client: 0x1a7e720
+I0324 19:16:27.493600 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:27.514158 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=543623;n2=720507;n3=718976;n4=782625
+I0324 19:16:27.904896 79910 master.cpp:212] >>>Master received a response from a worker: [8:There are more primes in second range.]
+I0324 19:16:27.904945 79910 master.cpp:216] <<Master send response back to client: 0x1a86470
+I0324 19:16:27.904947 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:28.014302 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=716113;n2=825787;n3=741274;n4=885536
+I0324 19:16:28.261104 79910 master.cpp:212] >>>Master received a response from a worker: [9:There are more primes in first range.]
+I0324 19:16:28.261123 79910 master.cpp:216] <<Master send response back to client: 0x1a7e720
+I0324 19:16:28.261126 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:28.514245 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=677996;n2=735047;n3=653960;n4=738515
+I0324 19:16:28.913359 79910 master.cpp:212] >>>Master received a response from a worker: [10:There are more primes in second range.]
+I0324 19:16:28.913395 79910 master.cpp:216] <<Master send response back to client: 0x1a86470
+I0324 19:16:28.913401 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:29.014259 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=616132;n2=730260;n3=574691;n4=575756
+I0324 19:16:29.290611 79910 master.cpp:212] >>>Master received a response from a worker: [11:There are more primes in second range.]
+I0324 19:16:29.290647 79910 master.cpp:216] <<Master send response back to client: 0x1a7e720
+I0324 19:16:29.290653 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:29.514240 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=745109;n2=762664;n3=535929;n4=690612
+I0324 19:16:29.746810 79910 master.cpp:212] >>>Master received a response from a worker: [12:There are more primes in first range.]
+I0324 19:16:29.746845 79910 master.cpp:216] <<Master send response back to client: 0x1a86470
+I0324 19:16:29.746852 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:30.014225 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=803042;n2=850709;n3=836984;n4=869353
+I0324 19:16:30.263955 79910 master.cpp:212] >>>Master received a response from a worker: [13:There are more primes in second range.]
+I0324 19:16:30.263995 79910 master.cpp:216] <<Master send response back to client: 0x1a7e720
+I0324 19:16:30.263998 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:30.514222 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=859270;n2=869233;n3=656518;n4=716240
+I0324 19:16:30.966994 79910 master.cpp:212] >>>Master received a response from a worker: [14:There are more primes in first range.]
+I0324 19:16:30.967027 79910 master.cpp:216] <<Master send response back to client: 0x1a86470
+I0324 19:16:30.967031 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:31.014328 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=610253;n2=782114;n3=824652;n4=839795
+I0324 19:16:31.510269 79910 master.cpp:212] >>>Master received a response from a worker: [15:There are more primes in second range.]
+I0324 19:16:31.510305 79910 master.cpp:216] <<Master send response back to client: 0x1a7e720
+I0324 19:16:31.510311 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:31.514204 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=735921;n2=858016;n3=731878;n4=879906
+I0324 19:16:31.967919 79910 master.cpp:212] >>>Master received a response from a worker: [16:There are more primes in first range.]
+I0324 19:16:31.967954 79910 master.cpp:216] <<Master send response back to client: 0x1a86470
+I0324 19:16:31.967962 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:32.014315 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=680225;n2=764098;n3=866777;n4=898504
+I0324 19:16:32.463774 79910 master.cpp:212] >>>Master received a response from a worker: [17:There are more primes in second range.]
+I0324 19:16:32.463810 79910 master.cpp:216] <<Master send response back to client: 0x1a7e720
+I0324 19:16:32.463816 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:32.514241 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=532949;n2=817330;n3=694578;n4=745113
+I0324 19:16:32.993269 79910 master.cpp:212] >>>Master received a response from a worker: [18:There are more primes in first range.]
+I0324 19:16:32.993305 79910 master.cpp:216] <<Master send response back to client: 0x1a86470
+I0324 19:16:32.993319 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:33.014237 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=752059;n2=838031;n3=597214;n4=792596
+I0324 19:16:33.446926 79910 master.cpp:212] >>>Master received a response from a worker: [19:There are more primes in first range.]
+I0324 19:16:33.446962 79910 master.cpp:216] <<Master send response back to client: 0x1a7e720
+I0324 19:16:33.446969 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:33.514253 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=546853;n2=588184;n3=633014;n4=817833
+I0324 19:16:33.934769 79910 master.cpp:212] >>>Master received a response from a worker: [20:There are more primes in second range.]
+I0324 19:16:33.934804 79910 master.cpp:216] <<Master send response back to client: 0x1a86470
+I0324 19:16:33.934811 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:34.014246 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=540243;n2=826366;n3=558543;n4=779068
+I0324 19:16:34.313542 79910 master.cpp:212] >>>Master received a response from a worker: [21:There are more primes in second range.]
+I0324 19:16:34.313591 79910 master.cpp:216] <<Master send response back to client: 0x1a7e720
+I0324 19:16:34.313594 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:34.514135 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=518093;n2=729546;n3=713679;n4=864007
+I0324 19:16:34.902786 79910 master.cpp:212] >>>Master received a response from a worker: [22:There are more primes in first range.]
+I0324 19:16:34.902822 79910 master.cpp:216] <<Master send response back to client: 0x1a86470
+I0324 19:16:34.902829 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:35.014253 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=510678;n2=772236;n3=742535;n4=754000
+I0324 19:16:35.342519 79910 master.cpp:212] >>>Master received a response from a worker: [23:There are more primes in first range.]
+I0324 19:16:35.342555 79910 master.cpp:216] <<Master send response back to client: 0x1a7e720
+I0324 19:16:35.342571 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:35.514219 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=656484;n2=730381;n3=648056;n4=892207
+I0324 19:16:35.851246 79910 master.cpp:212] >>>Master received a response from a worker: [24:There are more primes in first range.]
+I0324 19:16:35.851281 79910 master.cpp:216] <<Master send response back to client: 0x1a86470
+I0324 19:16:35.851289 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:36.014252 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=508654;n2=514556;n3=573988;n4=884413
+I0324 19:16:36.415112 79910 master.cpp:212] >>>Master received a response from a worker: [25:There are more primes in second range.]
+I0324 19:16:36.415144 79910 master.cpp:216] <<Master send response back to client: 0x1a7e720
+I0324 19:16:36.415148 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:36.514164 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=549558;n2=584230;n3=820299;n4=874788
+I0324 19:16:36.907341 79910 master.cpp:212] >>>Master received a response from a worker: [26:There are more primes in second range.]
+I0324 19:16:36.907361 79910 master.cpp:216] <<Master send response back to client: 0x1a86470
+I0324 19:16:36.907363 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:37.014248 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=509113;n2=670247;n3=540600;n4=603968
+I0324 19:16:37.398514 79910 master.cpp:212] >>>Master received a response from a worker: [27:There are more primes in second range.]
+I0324 19:16:37.398532 79910 master.cpp:216] <<Master send response back to client: 0x1a7e720
+I0324 19:16:37.398535 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:37.514186 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=588331;n2=758770;n3=572127;n4=640117
+I0324 19:16:37.693039 79910 master.cpp:212] >>>Master received a response from a worker: [28:There are more primes in first range.]
+I0324 19:16:37.693064 79910 master.cpp:216] <<Master send response back to client: 0x1a86470
+I0324 19:16:37.693068 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:38.014237 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=515751;n2=701455;n3=540368;n4=895295
+I0324 19:16:38.305523 79910 master.cpp:212] >>>Master received a response from a worker: [29:There are more primes in first range.]
+I0324 19:16:38.305559 79910 master.cpp:216] <<Master send response back to client: 0x1a7e720
+I0324 19:16:38.305567 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:38.514272 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=579742;n2=643422;n3=792640;n4=835331
+I0324 19:16:38.888372 79910 master.cpp:212] >>>Master received a response from a worker: [30:There are more primes in second range.]
+I0324 19:16:38.888408 79910 master.cpp:216] <<Master send response back to client: 0x1a86470
+I0324 19:16:38.888416 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:39.014166 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=567770;n2=867393;n3=769056;n4=886620
+I0324 19:16:39.349993 79910 master.cpp:212] >>>Master received a response from a worker: [31:There are more primes in first range.]
+I0324 19:16:39.350029 79910 master.cpp:216] <<Master send response back to client: 0x1a7e720
+I0324 19:16:39.350035 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:39.514273 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=523220;n2=770481;n3=636925;n4=838170
+I0324 19:16:39.952627 79910 master.cpp:212] >>>Master received a response from a worker: [32:There are more primes in first range.]
+I0324 19:16:39.952663 79910 master.cpp:216] <<Master send response back to client: 0x1a86470
+I0324 19:16:39.952671 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:40.014272 79910 master.cpp:263] >>Received request: cmd=compareprimes;n1=600275;n2=738717;n3=569927;n4=676926
+I0324 19:16:40.339742 79910 master.cpp:212] >>>Master received a response from a worker: [33:There are more primes in first range.]
+I0324 19:16:40.339779 79910 master.cpp:216] <<Master send response back to client: 0x1a7e720
+I0324 19:16:40.339787 79910 master.cpp:219] pending_client_requests: 1
+I0324 19:16:40.514221 79910 master.cpp:263] >>Received request: cmd=lastrequest
+I0324 19:16:40.756685 79910 master.cpp:212] >>>Master received a response from a worker: [34:There are more primes in first range.]
+I0324 19:16:40.756705 79910 master.cpp:216] <<Master send response back to client: 0x1a86470
+I0324 19:16:40.756708 79910 master.cpp:219] pending_client_requests: 0
+I0324 19:16:40.765049 79910 main_loop.cpp:138] Shutting down

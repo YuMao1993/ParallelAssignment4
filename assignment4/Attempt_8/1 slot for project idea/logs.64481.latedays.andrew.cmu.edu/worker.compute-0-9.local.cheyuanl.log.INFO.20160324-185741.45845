@@ -1,0 +1,13 @@
+Log file created at: 2016/03/24 18:57:41
+Running on machine: compute-0-9.local
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0324 18:57:41.079607 45845 main.cpp:49] Booting worker. Hostname: compute-0-9.local
+I0324 18:57:42.083492 45845 main.cpp:62] Connected to master compute-0-15.local:15418
+I0324 18:57:42.083525 45845 worker.cpp:93] **** Initializing worker: my worker new ****
+I0324 18:57:42.254357 45847 worker.cpp:121] Worker got request: [222:cmd=projectidea;x=51723]
+I0324 18:57:43.336346 45846 worker.cpp:121] Worker got request: [240:cmd=projectidea;x=862109]
+I0324 18:57:43.607470 45848 worker.cpp:121] Worker got request: [244:cmd=compareprimes;n1=957979;n2=990208;n3=955383;n4=962947]
+I0324 18:57:45.355970 45848 worker.cpp:141] Worker completed work in 1748.47 ms (244)
+I0324 18:57:46.860942 45847 worker.cpp:141] Worker completed work in 4606.55 ms (222)
+I0324 18:57:47.032038 45846 worker.cpp:141] Worker completed work in 3695.66 ms (240)
+I0324 18:57:47.537210 45845 main.cpp:103] Worker on compute-0-9.local is shutting down (master terminated connection)

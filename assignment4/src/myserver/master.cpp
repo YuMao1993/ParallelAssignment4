@@ -8,14 +8,22 @@
 #include <map>
 
 #define RESERVED_CONTEXT 1
-#define MAX_EXEC_CONTEXT 48
-#define THRESHOLD 0
-#define ELASTICx
+#define MAX_EXEC_CONTEXT_LEVEL1 24
+#define MAX_EXEC_CONTEXT_LEVEL2 48
+#define THRESHOLD 0.7
+#define INIT_NUM_WORKER 1 
+#define ELASTIC
 
 
-#define RESERVE_CONTEXT_FOR_PI(N) \
-if(mstate.my_workers[i].num_running_task == MAX_EXEC_CONTEXT - N - RESERVED_CONTEXT + 1) \
+#define RESERVE_CONTEXT_FOR_PI_LEVEL1(N) \
+if(mstate.my_workers[i].num_running_task == MAX_EXEC_CONTEXT_LEVEL1 - N - RESERVED_CONTEXT + 1) \
   continue;
+
+#define RESERVE_CONTEXT_FOR_PI_LEVEL2(N) \
+if(mstate.my_workers[i].num_running_task == MAX_EXEC_CONTEXT_LEVEL2 - N - RESERVED_CONTEXT + 1) \
+  continue;
+
+
 
 /**
  * Enum type of work
@@ -160,7 +168,7 @@ void master_node_init(int max_workers, int& tick_period) {
   mstate.server_ready = false;
 
   // fire up new workers
-  int initNumWorker = max_workers;
+  int initNumWorker = INIT_NUM_WORKER;
   for(int i = 0; i<initNumWorker; i++)
   {
     int tag = random();
@@ -288,10 +296,11 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
   // assign to low workload node 
   if (request_arg == "418wisdom")
   {
+    // Level 1 
     for(unsigned int i = 0; i < mstate.my_workers.size(); i++)
     {
-      RESERVE_CONTEXT_FOR_PI(1);
-      if(mstate.my_workers[i].num_running_task <= MAX_EXEC_CONTEXT)
+      RESERVE_CONTEXT_FOR_PI_LEVEL1(1);
+      if(mstate.my_workers[i].num_running_task <= MAX_EXEC_CONTEXT_LEVEL1)
       {
 
         send_and_update(client_handle, mstate.my_workers[i].worker_handle,
@@ -300,14 +309,34 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
         break;
       }
     }
+  
+    // Level 2
+    if (!is_assigned)
+    {
+      for(unsigned int i = 0; i < mstate.my_workers.size(); i++)
+      {
+        RESERVE_CONTEXT_FOR_PI_LEVEL2(1);
+        if(mstate.my_workers[i].num_running_task <= MAX_EXEC_CONTEXT_LEVEL2)
+        {
+
+          send_and_update(client_handle, mstate.my_workers[i].worker_handle,
+                          client_req, i, WISDOM);
+          is_assigned = true;
+          break;
+        }
+      }
+    }
+
+
   }
+
   // assign to idle node 
   if (request_arg == "projectidea")
   {
+    // Level 1
     for(unsigned int i=0; i<mstate.my_workers.size(); i++)
     {
-      // RESERVE_CONTEXT_FOR_PI(1);
-      if(mstate.my_workers[i].num_running_task <= MAX_EXEC_CONTEXT &&
+      if(mstate.my_workers[i].num_running_task <= MAX_EXEC_CONTEXT_LEVEL1 &&
          mstate.my_workers[i].num_work_type[PROJECTIDEA] <= 1)
       {
         send_and_update(client_handle, mstate.my_workers[i].worker_handle,
@@ -316,24 +345,32 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
         break;
       }
     }
-    // if(!is_assigned)
-    // {
-    //   //try the reserved context
-    //   if(mstate.my_workers[0].num_running_task <= MAX_EXEC_CONTEXT && 
-    //      mstate.my_workers[0].num_work_type[PROJECTIDEA] < 2)
-    //   {
-    //     send_and_update(client_handle, mstate.my_workers[0].worker_handle,
-    //                     client_req, 0, PROJECTIDEA);   
-    //     is_assigned = true;    
-    //   }
-    // }
+
+    // Level 2
+    if (!is_assigned)
+    {
+      for(unsigned int i=0; i<mstate.my_workers.size(); i++)
+      {
+        // RESERVE_CONTEXT_FOR_PI(1);
+        if(mstate.my_workers[i].num_running_task <= MAX_EXEC_CONTEXT_LEVEL2 &&
+           mstate.my_workers[i].num_work_type[PROJECTIDEA] <= 1)
+        {
+          send_and_update(client_handle, mstate.my_workers[i].worker_handle,
+                          client_req, i, PROJECTIDEA);
+          is_assigned = true;
+          break;
+        }
+      }
+    }
   }
+
   // find any possible spot
   if (request_arg == "tellmenow")
   {
+    // Level 1
     for(unsigned int i=0; i<mstate.my_workers.size(); i++)
     {
-      if(mstate.my_workers[i].num_running_task < MAX_EXEC_CONTEXT)
+      if(mstate.my_workers[i].num_running_task < MAX_EXEC_CONTEXT_LEVEL1)
       {
         send_and_update(client_handle, mstate.my_workers[i].worker_handle,
                         client_req, i, TELLMENOW);
@@ -341,14 +378,30 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
         break;
       }
     }
+
+    // // Level 2
+    if (!is_assigned)
+    {
+      for(unsigned int i=0; i<mstate.my_workers.size(); i++)
+      {
+        if(mstate.my_workers[i].num_running_task < MAX_EXEC_CONTEXT_LEVEL2)
+        {
+          send_and_update(client_handle, mstate.my_workers[i].worker_handle,
+                          client_req, i, TELLMENOW);
+          is_assigned = true;
+          break;
+        }
+      }
+    }
   }
   // find node that has low workload
   if (request_arg == "countprimes")
   {
+    // Level 1
     for(unsigned int i=0; i<mstate.my_workers.size(); i++)
     {
-      RESERVE_CONTEXT_FOR_PI(1);
-      if(mstate.my_workers[i].num_running_task < MAX_EXEC_CONTEXT)
+      RESERVE_CONTEXT_FOR_PI_LEVEL1(1);
+      if(mstate.my_workers[i].num_running_task < MAX_EXEC_CONTEXT_LEVEL1)
       {
         send_and_update(client_handle, mstate.my_workers[i].worker_handle,
                         client_req, i, COUNTPRIMES);
@@ -356,21 +409,55 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
         break;
       }
     }
+
+    // Level 2
+    if (!is_assigned)
+    { 
+      for(unsigned int i=0; i<mstate.my_workers.size(); i++)
+      {
+        RESERVE_CONTEXT_FOR_PI_LEVEL2(1);
+        if(mstate.my_workers[i].num_running_task < MAX_EXEC_CONTEXT_LEVEL2)
+        {
+          send_and_update(client_handle, mstate.my_workers[i].worker_handle,
+                          client_req, i, COUNTPRIMES);
+          is_assigned = true;
+          break;
+        }
+      }
+    }
   }
   // find node that has more than 4 context
   if (request_arg == "compareprimes")
   {
+    // Level 1
     for(unsigned int i=0; i<mstate.my_workers.size(); i++)
     {
-      RESERVE_CONTEXT_FOR_PI(4);
+      RESERVE_CONTEXT_FOR_PI_LEVEL1(4);
       ///only execute if remianing context > 4
-      if(MAX_EXEC_CONTEXT - mstate.my_workers[i].num_running_task < 4) 
+      if(MAX_EXEC_CONTEXT_LEVEL1 - mstate.my_workers[i].num_running_task < 4) 
         continue;
       
       send_and_update(client_handle, mstate.my_workers[i].worker_handle,
                         client_req, i, COMPAREPRIMES);
       is_assigned = true;
       break;
+    }
+
+    // Level 2
+    if (!is_assigned)
+    {
+      for(unsigned int i=0; i<mstate.my_workers.size(); i++)
+      {
+        RESERVE_CONTEXT_FOR_PI_LEVEL2(4);
+        ///only execute if remianing context > 4
+        if(MAX_EXEC_CONTEXT_LEVEL2 - mstate.my_workers[i].num_running_task < 4) 
+          continue;
+        
+        send_and_update(client_handle, mstate.my_workers[i].worker_handle,
+                          client_req, i, COMPAREPRIMES);
+        is_assigned = true;
+        break;
+      }
     }
   }
 
@@ -407,46 +494,61 @@ void handle_tick() {
   // printf("max num_worker: %d\n", mstate.max_num_workers);
   // for (unsigned int i = 0; i < mstate.my_workers.size(); i++)
   // {
-  //   DLOG(INFO) << "====HANDLE PROBE:====" << std::endl;
+  //   //DLOG(INFO) << "====HANDLE PROBE:====" << std::endl;
   //   printf("====HANDLE PROBE:====\n");
   //   for (int j = 0; j < NUM_OF_WORKTYPE; j++)
   //   {
-  //     DLOG(INFO) << j << ": " << mstate.my_workers[i].num_work_type[j] << std::endl;
+  //     //DLOG(INFO) << j << ": " << mstate.my_workers[i].num_work_type[j] << std::endl;
   //     printf("worktype: %d\n", mstate.my_workers[i].num_work_type[j]);
   //   }
   //   printf("\n");
-  //   DLOG(INFO) << std::endl;
+  //   //DLOG(INFO) << std::endl;
      
   // }
   // DLOG(INFO) << "request_queue size: " << mstate.requests_queue.size() << std::endl;
   // DLOG(INFO) << "request_queue vip size: " << mstate.requests_queue_vip.size() << std::endl;
-  #ifdef ELASTIC
-  if (!queue_size && mstate.my_workers.size() > 1)
+  if (mstate.my_workers.size() > 0)
   {
+    int min_worker_num_task = mstate.my_workers[0].num_running_task;
     for (unsigned int i = 0; i < mstate.my_workers.size(); i++)
     {
-      if (!mstate.my_workers[i].num_running_task)
+      if (min_worker_num_task > mstate.my_workers[i].num_running_task)
       {
-        kill_worker_node(mstate.my_workers[i].worker_handle);
-        mstate.my_workers.erase(mstate.my_workers.begin()+i);
-        mstate.current_num_wokers--;
-        // printf("decrease worker node\n");
-        // printf("current num_worker: %d\n", mstate.current_num_wokers);
-        // printf("max num_worker: %d\n", mstate.max_num_workers);
+        min_worker_num_task = mstate.my_workers[i].num_running_task;
       }
     }
+    //printf("min worker_num_task: %d\n", min_worker_num_task);
+  
+    #ifdef ELASTIC
+    if (!queue_size && mstate.my_workers.size() > 1 &&
+        min_worker_num_task < (MAX_EXEC_CONTEXT_LEVEL2 * THRESHOLD))
+    {
+      for (unsigned int i = 0; i < mstate.my_workers.size(); i++)
+      {
+        if (!mstate.my_workers[i].num_running_task)
+        {
+          kill_worker_node(mstate.my_workers[i].worker_handle);
+          mstate.my_workers.erase(mstate.my_workers.begin()+i);
+          mstate.current_num_wokers--;
+          //printf("decrease worker node\n");
+          // printf("current num_worker: %d\n", mstate.current_num_wokers);
+          // printf("max num_worker: %d\n", mstate.max_num_workers);
+        }
+      }
+    }
+    else if (((queue_size > 0) ||
+            (min_worker_num_task > (MAX_EXEC_CONTEXT_LEVEL2 * THRESHOLD))) &&
+             (mstate.current_num_wokers < mstate.max_num_workers))
+    {
+      //printf("increase worker node\n");
+      // printf("current num_worker: %d\n", mstate.current_num_wokers);
+      // printf("max num_worker: %d\n", mstate.max_num_workers);
+      int workerid = random();
+      Request_msg req(workerid);
+      req.set_arg("name", "my worker new");
+      request_new_worker_node(req);
+    }
+    #endif
   }
-  else if ((queue_size > THRESHOLD) &&
-           mstate.current_num_wokers < mstate.max_num_workers)
-  {
-    // printf("increase worker node\n");
-    // printf("current num_worker: %d\n", mstate.current_num_wokers);
-    // printf("max num_worker: %d\n", mstate.max_num_workers);
-    int workerid = random();
-    Request_msg req(workerid);
-    req.set_arg("name", "my worker new");
-    request_new_worker_node(req);
-  }
-  #endif
 }
 

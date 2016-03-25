@@ -8,19 +8,14 @@
 #include <map>
 
 #define RESERVED_CONTEXT 1
-#define MAX_EXEC_CONTEXT 24
+#define MAX_EXEC_CONTEXT 48
+#define THRESHOLD 0
 #define ELASTICx
 
+
 #define RESERVE_CONTEXT_FOR_PI(N) \
-if(true)\
-{ \
-  if(mstate.my_workers[i].num_running_task == MAX_EXEC_CONTEXT - N - RESERVED_CONTEXT + 1) \
-    continue;\
-}
-
-
-#define INIT_NUM_WORKER 1
-#define THRESHOLD 1
+if(mstate.my_workers[i].num_running_task == MAX_EXEC_CONTEXT - N - RESERVED_CONTEXT + 1) \
+  continue;
 
 /**
  * Enum type of work
@@ -152,7 +147,7 @@ void master_node_init(int max_workers, int& tick_period) {
 
   // set up tick handler to fire every 5 seconds. (feel free to
   // configure as you please)
-  tick_period = 5;
+  tick_period = 1;
 
   mstate.next_tag = 0;
   mstate.max_num_workers = max_workers;
@@ -225,7 +220,7 @@ void handle_worker_response(Worker_handle worker_handle, const Response_msg& res
 
 
   //find the worker
-  for(unsigned int i=0; i< mstate.my_workers.size(); i++)
+  for(unsigned int i = 0; i< mstate.my_workers.size(); i++)
   {
     if(mstate.my_workers[i].worker_handle == worker_handle)
     {
@@ -313,7 +308,7 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
     {
       // RESERVE_CONTEXT_FOR_PI(1);
       if(mstate.my_workers[i].num_running_task <= MAX_EXEC_CONTEXT &&
-         mstate.my_workers[i].num_work_type[PROJECTIDEA] < 1)
+         mstate.my_workers[i].num_work_type[PROJECTIDEA] <= 1)
       {
         send_and_update(client_handle, mstate.my_workers[i].worker_handle,
                         client_req, i, PROJECTIDEA);
@@ -378,7 +373,6 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
       break;
     }
   }
-
 
   //if all workers are busy, push the request to queue
   if(!is_assigned)

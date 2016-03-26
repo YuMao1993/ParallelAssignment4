@@ -14,12 +14,9 @@
 (2.4 GHz, 15MB L3 cache, hyper-threading, AVX2 instruction support)
 thus the total working context number is 2 * 6 * 2 = 24*/
 #define NUM_WORKER_THREADS 48
-#define CONTEXT_NUM 24
-
 static void* workerThread(void* args);
 
 WorkQueue<Request_msg> workQueue;
-WorkQueue<Request_msg> projectIdeaQueue;
 
 // Generate a valid 'countprimes' request dictionary from integer 'n'
 static void create_computeprimes_req(Request_msg& req, int n) {
@@ -92,64 +89,28 @@ void worker_node_init(const Request_msg& params) {
   // might initialize a few data structures, or maybe even spawn a few
   // pthreads here.  Remember, when running on Amazon servers, worker
   // processes will run on an instance with a dual-core CPU.
-  
+
   DLOG(INFO) << "**** Initializing worker: " << params.get_arg("name") << " ****\n";
 
   //create worker threads
   pthread_t tid;
   for(int i=0; i<NUM_WORKER_THREADS; i++)
   {
-    int *idptr = (int*) malloc(sizeof(int));
-    *idptr = i;
-    pthread_create(&tid, NULL, workerThread, idptr);
+    pthread_create(&tid, NULL, workerThread, NULL);
   }
 
 }
 
 void worker_handle_request(const Request_msg& req) {
   //put work into queue
-  if(req.get_arg("cmd") == "projectidea")
-  {
-    projectIdeaQueue.put_work(req);
-  }
-  else
-  {
-    workQueue.put_work(req);
-  }
+  workQueue.put_work(req);
 }
 
 static void* workerThread(void* args)
 {
-  int idx = *(int *)args;
-
-  //set thread affiliate
-  //to map the thread to 
-  //hardware
-  //compute mask
-  cpu_set_t cpuset;
-  CPU_ZERO(&cpuset);
-  int contextid = idx%CONTEXT_NUM;
-  CPU_SET(contextid, &cpuset);  
-  
-  //set affinity
-  pthread_t thread = pthread_self();
-  int s = pthread_setaffinity_np(thread, sizeof(cpu_set_t), &cpuset);
-  if(!s) DLOG(INFO) << "Set Affinity Failed. :(" << "\n";   
-
   while(true)
   {
-    bool assigned = false;
-    Request_msg req;
-    if(idx == 0 || idx == 1)
-    {
-      req = projectIdeaQueue.get_work();
-      assigned = true;
-    }
-    if(!assigned)
-    {
-      req = workQueue.get_work();
-      assigned = true;
-    }
+    Request_msg req = workQueue.get_work();
 
     // Make the tag of the reponse match the tag of the request.  This
     // is a way for your master to match worker responses to requests.
@@ -169,9 +130,8 @@ static void* workerThread(void* args)
       // execute_work.
       execute_compareprimes(req, resp);
 
-    } 
-    else
-    {
+    } else {
+
       // actually perform the work.  The response string is filled in by
       // 'execute_work'
       execute_work(req, resp);
@@ -183,6 +143,5 @@ static void* workerThread(void* args)
     // send a response string to the master
     worker_send_response(resp);
   }
-  free(args);
   return NULL;
 }

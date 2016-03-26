@@ -10,11 +10,9 @@
 #define RESERVED_CONTEXT 1
 #define MAX_EXEC_CONTEXT_LEVEL1 24
 #define MAX_EXEC_CONTEXT_LEVEL2 48
-#define PROJECTIDEA_LIMIT 2
-#define TICK_PERIOD 1
+#define THRESHOLD 0.7
 #define INIT_NUM_WORKER 1 
-#define ELASTIC  
-#define DEBUGx 
+#define ELASTIC
 
 
 #define RESERVE_CONTEXT_FOR_PI_LEVEL1(N) \
@@ -157,7 +155,7 @@ void master_node_init(int max_workers, int& tick_period) {
 
   // set up tick handler to fire every 5 seconds. (feel free to
   // configure as you please)
-  tick_period = TICK_PERIOD;
+  tick_period = 1;
 
   mstate.next_tag = 0;
   mstate.max_num_workers = max_workers;
@@ -339,7 +337,7 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
     for(unsigned int i=0; i<mstate.my_workers.size(); i++)
     {
       if(mstate.my_workers[i].num_running_task <= MAX_EXEC_CONTEXT_LEVEL1 &&
-         mstate.my_workers[i].num_work_type[PROJECTIDEA] < PROJECTIDEA_LIMIT)
+         mstate.my_workers[i].num_work_type[PROJECTIDEA] <= 1)
       {
         send_and_update(client_handle, mstate.my_workers[i].worker_handle,
                         client_req, i, PROJECTIDEA);
@@ -355,7 +353,7 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
       {
         // RESERVE_CONTEXT_FOR_PI(1);
         if(mstate.my_workers[i].num_running_task <= MAX_EXEC_CONTEXT_LEVEL2 &&
-           mstate.my_workers[i].num_work_type[PROJECTIDEA] < PROJECTIDEA_LIMIT)
+           mstate.my_workers[i].num_work_type[PROJECTIDEA] <= 1)
         {
           send_and_update(client_handle, mstate.my_workers[i].worker_handle,
                           client_req, i, PROJECTIDEA);
@@ -491,23 +489,22 @@ void handle_tick() {
   // 'master_node_init'.
   unsigned int queue_size = mstate.requests_queue.size() + mstate.requests_queue_vip.size();
   // profile worker usage
-  #ifdef DEBUG
-  printf("current queue size: %u\n", queue_size);
-  printf("current num_worker: %d\n", mstate.current_num_wokers);
-  printf("max num_worker: %d\n", mstate.max_num_workers);
-  for (unsigned int i = 0; i < mstate.my_workers.size(); i++)
-  {
-    //DLOG(INFO) << "====HANDLE PROBE:====" << std::endl;
-    printf("====HANDLE PROBE:====\n");
-    for (int j = 0; j < NUM_OF_WORKTYPE; j++)
-    {
-      //DLOG(INFO) << j << ": " << mstate.my_workers[i].num_work_type[j] << std::endl;
-      printf("worktype: %d\n", mstate.my_workers[i].num_work_type[j]);
-    }
-    printf("\n");
-    //DLOG(INFO) << std::endl;   
-  }
-  #endif
+  // printf("current queue size: %u\n", queue_size);
+  // printf("current num_worker: %d\n", mstate.current_num_wokers);
+  // printf("max num_worker: %d\n", mstate.max_num_workers);
+  // for (unsigned int i = 0; i < mstate.my_workers.size(); i++)
+  // {
+  //   //DLOG(INFO) << "====HANDLE PROBE:====" << std::endl;
+  //   printf("====HANDLE PROBE:====\n");
+  //   for (int j = 0; j < NUM_OF_WORKTYPE; j++)
+  //   {
+  //     //DLOG(INFO) << j << ": " << mstate.my_workers[i].num_work_type[j] << std::endl;
+  //     printf("worktype: %d\n", mstate.my_workers[i].num_work_type[j]);
+  //   }
+  //   printf("\n");
+  //   //DLOG(INFO) << std::endl;
+     
+  // }
   // DLOG(INFO) << "request_queue size: " << mstate.requests_queue.size() << std::endl;
   // DLOG(INFO) << "request_queue vip size: " << mstate.requests_queue_vip.size() << std::endl;
   if (mstate.my_workers.size() > 0)
@@ -520,13 +517,11 @@ void handle_tick() {
         min_worker_num_task = mstate.my_workers[i].num_running_task;
       }
     }
-    #ifdef DEBUG
-    printf("min worker_num_task: %d\n", min_worker_num_task);
-    #endif
+    //printf("min worker_num_task: %d\n", min_worker_num_task);
   
     #ifdef ELASTIC
     if (!queue_size && mstate.my_workers.size() > 1 &&
-        min_worker_num_task < (MAX_EXEC_CONTEXT_LEVEL1))
+        min_worker_num_task < (MAX_EXEC_CONTEXT_LEVEL2 * THRESHOLD))
     {
       for (unsigned int i = 0; i < mstate.my_workers.size(); i++)
       {
@@ -542,7 +537,7 @@ void handle_tick() {
       }
     }
     else if (((queue_size > 0) ||
-            (min_worker_num_task > MAX_EXEC_CONTEXT_LEVEL1)) &&
+            (min_worker_num_task > (MAX_EXEC_CONTEXT_LEVEL2 * THRESHOLD))) &&
              (mstate.current_num_wokers < mstate.max_num_workers))
     {
       //printf("increase worker node\n");
@@ -556,4 +551,3 @@ void handle_tick() {
     #endif
   }
 }
-

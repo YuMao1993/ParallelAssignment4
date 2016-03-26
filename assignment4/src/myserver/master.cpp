@@ -10,9 +10,10 @@
 #define RESERVED_CONTEXT 1
 #define MAX_EXEC_CONTEXT_LEVEL1 24
 #define MAX_EXEC_CONTEXT_LEVEL2 48
-#define THRESHOLD 0.7
+#define TICK_PERIOD 0.5
+#define THRESHOLD 0.6
 #define INIT_NUM_WORKER 1 
-#define ELASTIC
+#define ELASTICqstat  
 
 
 #define RESERVE_CONTEXT_FOR_PI_LEVEL1(N) \
@@ -155,7 +156,7 @@ void master_node_init(int max_workers, int& tick_period) {
 
   // set up tick handler to fire every 5 seconds. (feel free to
   // configure as you please)
-  tick_period = 1;
+  tick_period = TICK_PERIOD;
 
   mstate.next_tag = 0;
   mstate.max_num_workers = max_workers;

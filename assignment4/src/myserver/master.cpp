@@ -9,8 +9,8 @@
 
 #define RESERVED_CONTEXT 1
 #define MAX_EXEC_CONTEXT_LEVEL1 24
-#define MAX_EXEC_CONTEXT_LEVEL2 48
-#define THRESHOLD 0.7
+#define MAX_EXEC_CONTEXT_LEVEL2 47
+#define THRESHOLD 0.65
 #define INIT_NUM_WORKER 1 
 #define ELASTIC
 
@@ -333,27 +333,12 @@ void handle_client_request(Client_handle client_handle, const Request_msg& clien
   // assign to idle node 
   if (request_arg == "projectidea")
   {
-    // Level 1
-    for(unsigned int i=0; i<mstate.my_workers.size(); i++)
-    {
-      if(mstate.my_workers[i].num_running_task <= MAX_EXEC_CONTEXT_LEVEL1 &&
-         mstate.my_workers[i].num_work_type[PROJECTIDEA] <= 1)
-      {
-        send_and_update(client_handle, mstate.my_workers[i].worker_handle,
-                        client_req, i, PROJECTIDEA);
-        is_assigned = true;
-        break;
-      }
-    }
-
-    // Level 2
     if (!is_assigned)
     {
       for(unsigned int i=0; i<mstate.my_workers.size(); i++)
       {
-        // RESERVE_CONTEXT_FOR_PI(1);
-        if(mstate.my_workers[i].num_running_task <= MAX_EXEC_CONTEXT_LEVEL2 &&
-           mstate.my_workers[i].num_work_type[PROJECTIDEA] <= 1)
+        if(mstate.my_workers[i].num_running_task <= MAX_EXEC_CONTEXT_LEVEL2 + 1 &&
+           mstate.my_workers[i].num_work_type[PROJECTIDEA] == 0)
         {
           send_and_update(client_handle, mstate.my_workers[i].worker_handle,
                           client_req, i, PROJECTIDEA);

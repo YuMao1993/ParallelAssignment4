@@ -1,0 +1,19 @@
+Log file created at: 2016/03/27 22:32:40
+Running on machine: compute-0-11.local
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0327 22:32:40.006099 71899 main.cpp:49] Booting worker. Hostname: compute-0-11.local
+I0327 22:32:41.009330 71899 main.cpp:62] Connected to master compute-0-15.local:15418
+I0327 22:32:41.009346 71899 worker.cpp:95] **** Initializing worker: my worker new ****
+I0327 22:32:41.386281 71974 worker.cpp:170] Worker got request: [1466:cmd=projectidea;x=999882]
+I0327 22:32:44.802546 71974 worker.cpp:179] Worker completed work in 3416.23 ms (1466)
+I0327 22:32:45.032225 71974 worker.cpp:170] Worker got request: [1561:cmd=projectidea;x=38182]
+I0327 22:32:45.858196 71930 worker.cpp:129] Worker got request: [1578:cmd=compareprimes;n1=981276;n2=990583;n3=986731;n4=992821]
+I0327 22:32:46.115182 71927 worker.cpp:129] Worker got request: [1581:cmd=countprimes;n=996689]
+I0327 22:32:46.443159 71929 worker.cpp:129] Worker got request: [1592:cmd=compareprimes;n1=990554;n2=995253;n3=956591;n4=990931]
+I0327 22:32:47.022186 71930 worker.cpp:149] Worker completed work in 1163.97 ms (1578)
+I0327 22:32:47.279574 71927 worker.cpp:149] Worker completed work in 1164.36 ms (1581)
+I0327 22:32:47.591387 71929 worker.cpp:149] Worker completed work in 1148.21 ms (1592)
+I0327 22:32:48.269307 71974 worker.cpp:179] Worker completed work in 3237.06 ms (1561)
+I0327 22:32:48.288247 71974 worker.cpp:170] Worker got request: [1633:cmd=projectidea;x=611474]
+I0327 22:32:51.417109 71974 worker.cpp:179] Worker completed work in 3128.84 ms (1633)
+I0327 22:32:51.685127 71899 main.cpp:103] Worker on compute-0-11.local is shutting down (master terminated connection)
